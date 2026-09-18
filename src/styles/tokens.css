@@ -1,19 +1,20 @@
 /*
   Design tokens — the single source of truth for color, type, space, radius, motion.
-  Placeholder values below are deliberately NON-purple. The design-system agent (Phase 1)
-  finalizes the palette + font pairing once the brand direction is chosen (green / navy / burgundy).
+  Brand direction: deep NAVY (trust family; OVB-adjacent but the consultant's own identity,
+  NOT a copy of OVB branding) + a WARM GOLD accent so the palette is not all-cool "AI blue".
+  Navy hue ~214° stays clear of the purple/indigo range the style linter rejects.
   Rule: components reference these tokens; they never hardcode colors, sizes or radii.
 */
 :root {
-  /* Brand — deep-green placeholder. Swap for the chosen direction. */
-  --color-brand: #1f5e3f;
-  --color-brand-strong: #164a30;
-  --color-accent: #c2703d;        /* warm ochre accent, not a second cool hue */
-  --color-ink: #1a1c1a;
-  --color-muted: #55605a;
+  /* Brand — deep navy + warm gold accent */
+  --color-brand: #1e3a5f;
+  --color-brand-strong: #16293f;
+  --color-accent: #c2892f;        /* warm gold — deliberate warm/cool contrast */
+  --color-ink: #1a1d22;
+  --color-muted: #55606c;
   --color-bg: #ffffff;
-  --color-bg-soft: #f4f2ec;       /* warm off-white, not cool grey */
-  --color-line: #d9d6cc;
+  --color-bg-soft: #f4f5f2;       /* barely-warm off-white, not a cool grey */
+  --color-line: #d7dae0;
 
   /* Type — distinctive pairing (NOT Inter/Roboto). Finalize in Phase 1. */
   --font-heading: 'Fraunces', Georgia, serif;

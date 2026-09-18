@@ -7,6 +7,7 @@ Any rule with a numeric value becomes a token in `src/styles/tokens.css`, applie
 - DO: one dominant brand color that reads as trustworthy for finance in Slovakia — deep green,
   navy, or warm burgundy/ochre. One primary, one accent, a neutral ramp.
 - DON'T: purple/indigo, blue→purple gradients, gradient text, a timid rainbow of equal weights.
+- CHOSEN: deep navy primary (OVB-adjacent trust family, the consultant's OWN identity, not a copy of OVB branding) + warm gold accent to avoid the all-cool "AI blue" look.
 
 ## Typography
 - DO: a distinctive, readable pairing (e.g. humanist serif headings + clean grotesque body).

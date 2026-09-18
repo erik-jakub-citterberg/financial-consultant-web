@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const swatches = [
+  { name: 'Brand navy', v: '--color-brand', hex: '#1e3a5f' },
+  { name: 'Brand strong', v: '--color-brand-strong', hex: '#16293f' },
+  { name: 'Accent gold', v: '--color-accent', hex: '#c2892f' },
+  { name: 'Ink', v: '--color-ink', hex: '#1a1d22' },
+  { name: 'Muted', v: '--color-muted', hex: '#55606c' },
+  { name: 'Soft bg', v: '--color-bg-soft', hex: '#f4f5f2' },
+  { name: 'Line', v: '--color-line', hex: '#d7dae0' },
+];
+const radii = [
+  { name: 'sm', v: '--radius-sm' },
+  { name: 'md', v: '--radius-md' },
+  { name: 'lg', v: '--radius-lg' },
+];
+const spaces = ['--space-1', '--space-2', '--space-3', '--space-4', '--space-5', '--space-6'];
+const steps = ['--step-4', '--step-3', '--step-2', '--step-1', '--step-0', '--step--1'];
+---
+<BaseLayout title="Styleguide" description="Internal design-token reference for the site.">
+  <section style="padding-block:var(--space-5);">
+    <h1>Styleguide</h1>
+    <p>Design tokens for the site. Every component reads from these. Navy primary, warm gold accent.</p>
+
+    <h2 style="margin-top:var(--space-5);">Colour</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);">
+      {swatches.map((s) => (
+        <div style="width:9rem;">
+          <div style={`height:4rem;border-radius:var(--radius-md);border:1px solid var(--color-line);background:var(${s.v});`}></div>
+          <div style="font-size:var(--step--1);margin-top:var(--space-1);">{s.name}<br />{s.hex}</div>
+        </div>
+      ))}
+    </div>
+
+    <h2 style="margin-top:var(--space-5);">Type scale</h2>
+    {steps.map((st) => (
+      <p style={`font-size:var(${st});margin:0;`}>{st}: Finančné poradenstvo</p>
+    ))}
+    <p style="color:var(--color-muted);margin-top:var(--space-2);">Headings: Fraunces. Body: Source Sans 3.</p>
+
+    <h2 style="margin-top:var(--space-5);">Buttons</h2>
+    <p><a class="btn" href="#">Dohodnúť konzultáciu</a></p>
+
+    <h2 style="margin-top:var(--space-5);">Radii (varied by component)</h2>
+    <div style="display:flex;gap:var(--space-3);">
+      {radii.map((r) => (
+        <div style={`width:6rem;height:4rem;background:var(--color-bg-soft);border:1px solid var(--color-line);border-radius:var(${r.v});display:flex;align-items:center;justify-content:center;`}>{r.name}</div>
+      ))}
+    </div>
+
+    <h2 style="margin-top:var(--space-5);">Spacing</h2>
+    {spaces.map((sp) => (
+      <div style={`height:var(${sp});background:var(--color-accent);margin-bottom:var(--space-1);`}></div>
+    ))}
+  </section>
+</BaseLayout>

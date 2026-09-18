@@ -16,8 +16,8 @@
   --color-bg-soft: #f4f5f2;       /* barely-warm off-white, not a cool grey */
   --color-line: #d7dae0;
 
-  /* Type — distinctive pairing (NOT Inter/Roboto). Finalize in Phase 1. */
-  --font-heading: 'Fraunces', Georgia, serif;
+  /* Type — distinctive pairing (NOT Inter/Roboto), self-hosted via Fontsource. */
+  --font-heading: 'Fraunces Variable', Georgia, serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
   --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
   --step-0: 1rem;                 /* 16px min body */

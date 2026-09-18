@@ -11,19 +11,36 @@ interface Props {
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 
-// Placeholder LocalBusiness/FinancialService — fill with the consultant's REAL data before launch.
-const localBusiness = {
+const schema = {
   '@context': 'https://schema.org',
-  '@type': 'FinancialService',
-  name: 'TODO: meno poradcu / názov',
-  areaServed: ['Banská Bystrica', 'Žilina', 'Martin', 'Zvolen'],
-  telephone: '+421-TODO',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Banská Bystrica',
-    addressCountry: 'SK',
-  },
-  url: canonical,
+  '@graph': [
+    {
+      '@type': 'FinancialService',
+      '@id': new URL('/#business', Astro.site).toString(),
+      name: 'Erika Zajaková – dane a finančné poradenstvo',
+      areaServed: ['Brezno', 'Michalová', 'Podbrezová', 'Banská Bystrica'],
+      telephone: '+421907824728',
+      email: 'erika.zajakova@gmail.com',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Michalová',
+        postalCode: '976 57',
+        addressRegion: 'Banskobystrický kraj',
+        addressCountry: 'SK',
+      },
+      founder: { '@id': new URL('/#erika', Astro.site).toString() },
+      url: new URL('/', Astro.site).toString(),
+    },
+    {
+      '@type': 'Person',
+      '@id': new URL('/#erika', Astro.site).toString(),
+      name: 'Erika Zajaková',
+      honorificPrefix: 'Ing.',
+      jobTitle: 'Finančná poradkyňa',
+      worksFor: 'OVB Allfinanz Slovensko, a.s.',
+      alumniOf: 'Bankovní institut vysoká škola, Praha',
+    },
+  ],
 };
 ---
 <!doctype html>
@@ -34,20 +51,23 @@ const localBusiness = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
-    <header class="container" style="display:flex;justify-content:space-between;align-items:center;padding-block:var(--space-3);">
-      <a href="/" style="font-family:var(--font-heading);font-weight:600;">TODO: meno / logo</a>
-      <!-- Phone visible in header on every page (trust signal) -->
-      <a href="tel:+421TODO" class="btn">Zavolajte: +421 TODO</a>
+    <header class="container" style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-3);padding-block:var(--space-3);flex-wrap:wrap;">
+      <a href="/" style="font-family:var(--font-heading);font-weight:600;font-size:var(--step-1);color:var(--color-brand-strong);">Erika Zajaková</a>
+      <nav style="display:flex;align-items:center;gap:var(--space-4);">
+        <a href="/o-mne">O mne</a>
+        <a href="/kontakt">Kontakt</a>
+        <a href="tel:+421907824728" class="btn">0907 824 728</a>
+      </nav>
     </header>
     <main class="container">
       <slot />
     </main>
-    <footer class="container" style="padding-block:var(--space-5);color:var(--color-muted);">
-      <p>TODO: meno poradcu · IČO TODO · registračné číslo TODO</p>
-      <p>Informácie na tejto stránke nie sú individuálnym finančným poradenstvom.</p>
+    <footer class="container" style="padding-block:var(--space-5);color:var(--color-muted);font-size:var(--step--1);border-top:1px solid var(--color-line);margin-top:var(--space-6);">
+      <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie – fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
+      <p>Michalová, okres Brezno · 0907 824 728 · erika.zajakova@gmail.com</p>
     </footer>
   </body>
 </html>

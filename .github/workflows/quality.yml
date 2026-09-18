@@ -1,0 +1,26 @@
+name: quality
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  guardrails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Source guardrails (copy / style / images)
+        run: npm run quality
+      - name: Build
+        run: npm run build
+      - name: Structured-data validation
+        run: npm run quality:built
+      # - name: Lighthouse budget
+      #   uses: treosh/lighthouse-ci-action@v11
+      #   with:
+      #     budgetPath: ./quality/lighthouse-budget.json
+      #     uploadArtifacts: true

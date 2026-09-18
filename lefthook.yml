@@ -1,0 +1,13 @@
+# Pre-commit gates: tells never even reach git history.
+pre-commit:
+  parallel: true
+  commands:
+    copy-lint:
+      glob: "src/**/*.{astro,md,mdx}"
+      run: node quality/copy-lint.mjs {staged_files}
+    style-lint:
+      glob: "src/**/*.css"
+      run: node quality/style-lint.mjs {staged_files}
+    image-check:
+      glob: "src/**/*.{astro,md,mdx}"
+      run: node quality/image-check.mjs {staged_files}

@@ -1,0 +1,49 @@
+/*
+  Design tokens — the single source of truth for color, type, space, radius, motion.
+  Placeholder values below are deliberately NON-purple. The design-system agent (Phase 1)
+  finalizes the palette + font pairing once the brand direction is chosen (green / navy / burgundy).
+  Rule: components reference these tokens; they never hardcode colors, sizes or radii.
+*/
+:root {
+  /* Brand — deep-green placeholder. Swap for the chosen direction. */
+  --color-brand: #1f5e3f;
+  --color-brand-strong: #164a30;
+  --color-accent: #c2703d;        /* warm ochre accent, not a second cool hue */
+  --color-ink: #1a1c1a;
+  --color-muted: #55605a;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f4f2ec;       /* warm off-white, not cool grey */
+  --color-line: #d9d6cc;
+
+  /* Type — distinctive pairing (NOT Inter/Roboto). Finalize in Phase 1. */
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0: 1rem;                 /* 16px min body */
+  --step-1: 1.32rem;
+  --step-2: 1.75rem;
+  --step-3: 2.3rem;
+  --step-4: 3.05rem;
+  --leading-body: 1.6;
+
+  /* Space — a scale, used deliberately (not uniform padding everywhere) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.75rem;
+  --space-5: 3rem;
+  --space-6: 5rem;
+
+  /* Radius — VARY these by component; do not put one value on everything */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0, 0.1, 1);
+  --dur: 180ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; }
+}

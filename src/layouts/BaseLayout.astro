@@ -1,0 +1,50 @@
+---
+import '../styles/base.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+
+// Placeholder LocalBusiness/FinancialService — fill with the consultant's REAL data before launch.
+const localBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'FinancialService',
+  name: 'TODO: meno poradcu / názov',
+  areaServed: ['Banská Bystrica', 'Žilina', 'Martin', 'Zvolen'],
+  telephone: '+421-TODO',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Banská Bystrica',
+    addressCountry: 'SK',
+  },
+  url: canonical,
+};
+---
+<!doctype html>
+<html lang="sk-SK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
+  </head>
+  <body>
+    <header class="container" style="display:flex;justify-content:space-between;align-items:center;padding-block:var(--space-3);">
+      <a href="/" style="font-family:var(--font-heading);font-weight:600;">TODO: meno / logo</a>
+      <!-- Phone visible in header on every page (trust signal) -->
+      <a href="tel:+421TODO" class="btn">Zavolajte: +421 TODO</a>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="container" style="padding-block:var(--space-5);color:var(--color-muted);">
+      <p>TODO: meno poradcu · IČO TODO · registračné číslo TODO</p>
+      <p>Informácie na tejto stránke nie sú individuálnym finančným poradenstvom.</p>
+    </footer>
+  </body>
+</html>

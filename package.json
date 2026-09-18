@@ -1,0 +1,24 @@
+{
+  "name": "financial-consultant-web",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SEO-first Slovak website for a freelance financial/insurance/OVB consultant in central Slovakia.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint:copy": "node quality/copy-lint.mjs",
+    "lint:style": "node quality/style-lint.mjs",
+    "lint:images": "node quality/image-check.mjs",
+    "validate:schema": "node quality/schema-validate.mjs",
+    "quality": "npm run lint:copy && npm run lint:style && npm run lint:images",
+    "quality:built": "npm run validate:schema"
+  },
+  "dependencies": {
+    "astro": "^4.15.0"
+  },
+  "devDependencies": {
+    "lefthook": "^1.7.0"
+  }
+}

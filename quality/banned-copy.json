@@ -1,0 +1,40 @@
+{
+  "note": "Blocklist for copy-lint.mjs. Add a line whenever a new tell is spotted. Matching is case-insensitive, whole-word where sensible.",
+  "buzzwords_en": [
+    "delve", "seamless", "seamlessly", "leverage", "synergy", "holistic",
+    "end-to-end", "robust", "unlock", "elevate", "game-changer", "game changer",
+    "tapestry", "cutting-edge", "best-in-class", "world-class", "next-level",
+    "empower", "streamline", "supercharge", "revolutionize", "bespoke"
+  ],
+  "buzzwords_sk": [
+    "inovatívne riešenia", "komplexné riešenia", "na kľúč", "špičkové",
+    "revolučné", "jednoducho a rýchlo", "šité na mieru", "posuňte svoj biznis",
+    "nový level", "bezproblémovo"
+  ],
+  "phrases": [
+    "in today's rapidly evolving",
+    "in today's fast-paced",
+    "in the ever-changing landscape",
+    "it's not just",
+    "nie je to len",
+    "it's worth noting",
+    "that said",
+    "when it comes to",
+    "at the end of the day",
+    "whether you're",
+    "look no further",
+    "we've got you covered",
+    "stovky spokojných klientov",
+    "vaša spokojnosť je našou prioritou"
+  ],
+  "vague_claims": [
+    "hundreds of clients",
+    "significantly improve",
+    "studies show",
+    "many satisfied customers"
+  ],
+  "limits": {
+    "maxEmDashesPer1000Chars": 2,
+    "warnRuleOfThreeListsPerPage": 3
+  }
+}

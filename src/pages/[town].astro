@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const towns = await getCollection('towns');
+  return towns.map((t) => ({ params: { town: t.slug }, props: { town: t } }));
+}
+const { town } = Astro.props;
+const { Content } = await town.render();
+const name = town.data.name;
+---
+<BaseLayout
+  title={`Dane a finančné poradenstvo ${name} | Erika Zajaková`}
+  description={`Daňové priznania, jednoduché účtovníctvo a finančné poradenstvo pre ${name} a okolie. Prax od roku 2002.`}
+>
+  <section class="section">
+    <p class="eyebrow">{town.data.region}</p>
+    <h1>Dane a financie: {name}</h1>
+    <div class="prose"><Content /></div>
+
+    <div class="cards">
+      <article class="card"><h3>Dane a účtovníctvo</h3><p>Daňové priznania pre zamestnancov, živnostníkov aj firmy a jednoduché účtovníctvo. <a href="/dane">Viac</a></p></article>
+      <article class="card"><h3>Hypotéky a poistenie</h3><p>Hypotéky, poistenie a sporenie cez OVB Allfinanz. <a href="/financne-poradenstvo">Viac</a></p></article>
+    </div>
+
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Dohodnúť si stretnutie</a></p>
+  </section>
+</BaseLayout>

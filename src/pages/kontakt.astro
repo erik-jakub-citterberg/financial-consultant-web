@@ -16,6 +16,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Miesto: Michalová, okres Brezno
       </p>
     </div>
+
+    <!-- TODO: nastaviť action na reálny form endpoint (Formspree/Netlify Forms) pred spustením -->
+    <form action="https://formspree.io/f/TODO" method="POST" style="margin-top:var(--space-5);display:grid;gap:var(--space-3);">
+      <label>Meno<br /><input name="meno" type="text" required style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);" /></label>
+      <label>E-mail<br /><input name="email" type="email" required style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);" /></label>
+      <label>Telefón<br /><input name="telefon" type="tel" style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);" /></label>
+      <label>Správa<br /><textarea name="sprava" rows="4" required style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);"></textarea></label>
+      <label style="display:flex;gap:var(--space-2);align-items:flex-start;font-size:var(--step--1);color:var(--color-muted);">
+        <input name="suhlas" type="checkbox" required />
+        <span>Súhlasím so spracovaním osobných údajov na účel odpovede.</span>
+      </label>
+      <button class="btn" type="submit" style="justify-self:start;">Odoslať</button>
+    </form>
+
     <p class="note" style="margin-top:var(--space-4);">Erika Zajaková · IČO 40485242</p>
   </section>
 </BaseLayout>

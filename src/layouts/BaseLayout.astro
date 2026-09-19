@@ -48,6 +48,13 @@ const schema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
@@ -68,6 +75,7 @@ const schema = {
     <footer class="site-footer container">
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
       <p>Michalová, okres Brezno · 0907 824 728 · erika.zajakova@gmail.com</p>
+      <p>Regióny: <a href="/brezno">Brezno</a>, <a href="/michalova">Michalová</a>, <a href="/podbrezova">Podbrezová</a>, <a href="/banska-bystrica">Banská Bystrica</a></p>
     </footer>
   </body>
 </html>

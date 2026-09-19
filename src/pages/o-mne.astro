@@ -1,25 +1,139 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-6);
+    align-items: start;
+    padding-block: var(--space-6) var(--space-5);
+  }
+  @media (max-width: 52rem) {
+    .about-grid { grid-template-columns: 1fr; }
+    .about-visual { order: -1; }
+  }
+
+  .about-content .eyebrow { margin-bottom: var(--space-2); }
+  .about-content h1 { margin-bottom: var(--space-4); }
+  .about-content .prose > * + * { margin-top: var(--space-3); }
+  .about-content .badges { margin-top: var(--space-4); }
+  .about-content .btn { margin-top: var(--space-5); }
+
+  .about-visual { display: flex; flex-direction: column; gap: var(--space-4); }
+
+  .photo-frame {
+    aspect-ratio: 3 / 4;
+    background: var(--color-bg-gold);
+    border: 1px solid rgba(194,137,47,0.25);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    position: relative;
+    overflow: hidden;
+  }
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(194,137,47,0.04) 0px,
+      rgba(194,137,47,0.04) 1px,
+      transparent 1px,
+      transparent 12px
+    );
+  }
+  .photo-initials {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 700;
+    color: rgba(194,137,47,0.45);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    position: relative;
+  }
+  .photo-label {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    position: relative;
+  }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+  .cred {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: var(--space-3) var(--space-3);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .cred:last-child { border-bottom: 0; }
+  .cred strong {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: var(--step-0);
+    color: var(--color-brand-strong);
+  }
+  .cred span {
+    font-size: var(--step--1);
+    color: var(--color-muted);
+  }
+</style>
 <BaseLayout
   title="O mne | Erika Zajaková"
   description="Erika Zajaková, Ing. Finančná poradkyňa OVB od roku 2002, daňové priznania a jednoduché účtovníctvo od roku 2006. Michalová, okres Brezno."
 >
-  <section class="section" style="max-width:48rem;">
-    <p class="eyebrow">O mne</p>
-    <h1>Erika Zajaková</h1>
-    <div class="prose">
-      <p>Finančnému poradenstvu sa venujem od roku 2002 v spoločnosti OVB Allfinanz Slovensko. Od roku 2006 popri tom spracúvam daňové priznania a vediem jednoduché účtovníctvo ako samostatne zárobkovo činná osoba.</p>
-      <p>Ekonómiu a financie som vyštudovala na Bankovním institute vysoká škola v Prahe (Ing., 2015). Pôsobím v Michalovej v okrese Brezno a pracujem s klientmi z celého regiónu.</p>
-      <p>Pri daniach aj financiách vám vysvetlím každý krok jednoduchou rečou, aby ste vedeli, za čo platíte a prečo.</p>
+  <div class="about-grid">
+    <div class="about-content">
+      <p class="eyebrow">O mne</p>
+      <h1>Erika Zajaková</h1>
+      <div class="prose">
+        <p>Finančnému poradenstvu sa venujem od roku 2002 v spoločnosti OVB Allfinanz Slovensko. Od roku 2006 popri tom spracúvam daňové priznania a vediem jednoduché účtovníctvo ako samostatne zárobkovo činná osoba.</p>
+        <p>Ekonómiu a financie som vyštudovala na Bankovním institute vysoká škola v Prahe (Ing., 2015). Pôsobím v Michalovej v okrese Brezno a pracujem s klientmi z celého regiónu.</p>
+        <p>Pri daniach aj financiách vám vysvetlím každý krok jednoduchou rečou, aby ste vedeli, za čo platíte a prečo.</p>
+      </div>
+      <ul class="badges">
+        <li>Prax od roku 2002</li>
+        <li>Ing., financie a ekonómia</li>
+        <li>OVB Allfinanz</li>
+        <li>IČO 40485242</li>
+      </ul>
+      <p><a class="btn" href="/kontakt">Ozvite sa mi</a></p>
     </div>
-    <ul class="badges">
-      <li>Prax od roku 2002</li>
-      <li>Ing., financie a ekonómia</li>
-      <li>OVB Allfinanz</li>
-      <li>IČO 40485242</li>
-    </ul>
-    <!-- FOTO: doplní sa reálna fotka Eriky, žiadny stock -->
-    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Ozvite sa mi</a></p>
-  </section>
+
+    <div class="about-visual">
+      <!-- FOTO: doplní sa reálna fotka Eriky, žiadny stock -->
+      <div class="photo-frame">
+        <span class="photo-initials">E·Z</span>
+        <span class="photo-label">Foto bude doplnené</span>
+      </div>
+      <div class="credentials">
+        <div class="cred">
+          <strong>OVB Allfinanz Slovensko</strong>
+          <span>Finančná poradkyňa od roku 2002</span>
+        </div>
+        <div class="cred">
+          <strong>Ing., Bankovní institut Praha</strong>
+          <span>Financie a ekonómia, 2015</span>
+        </div>
+        <div class="cred">
+          <strong>Michalová, okres Brezno</strong>
+          <span>Celý región Brezno a Banská Bystrica</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

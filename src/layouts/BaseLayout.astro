@@ -1,8 +1,10 @@
 ---
 import '../styles/base.css';
-import '@fontsource-variable/fraunces';
-import '@fontsource/source-sans-3/400.css';
-import '@fontsource/source-sans-3/600.css';
+import '@fontsource/cormorant-garamond/600.css';
+import '@fontsource/cormorant-garamond/700.css';
+import '@fontsource/cormorant-garamond/600-italic.css';
+import '@fontsource-variable/dm-sans';
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props { title: string; description: string; }
 const { title, description } = Astro.props;
@@ -51,23 +53,28 @@ const schema = {
     <meta name="twitter:card" content="summary" />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     <script src="/enhance.js" defer></script>
+    <ViewTransitions />
   </head>
   <body>
     <div class="topbar">
       <div class="container">
+        <span class="topbar-creds">OVB Allfinanz · Ing. Erika Zajaková · Prax od 2002</span>
         <a href="tel:+421907824728">0907 824 728</a>
-        <span>Michalová, okres Brezno</span>
       </div>
     </div>
     <div class="site-header-wrap" id="hdr">
       <header class="site-header container">
         <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Dane · Financie · Poradenstvo</span></a>
-        <nav class="nav">
-          <a href="/dane">Dane</a>
+        <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="main-nav">
+          <a href="/dane">Dane a účtovníctvo</a>
+          <a href="/hypoteky">Hypotéky</a>
+          <a href="/poistenie">Poistenie</a>
           <a href="/financne-poradenstvo">Financie</a>
           <a href="/cennik">Cenník</a>
           <a href="/o-mne">O mne</a>
-          <a href="/kontakt">Kontakt</a>
           <a href="/kontakt" class="btn">Konzultácia</a>
         </nav>
       </header>

@@ -1,6 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Faq from '../components/Faq.astro';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'TaxPreparationService',
+  name: 'Daňové priznania a účtovníctvo — Erika Zajaková',
+  provider: { '@type': 'Person', name: 'Erika Zajaková', honorificPrefix: 'Ing.' },
+  areaServed: ['Brezno', 'Michalová', 'Podbrezová', 'Banská Bystrica'],
+  url: 'https://erikazajakova.sk/dane',
+  telephone: '+421907824728',
+};
 const faq = [
   { q: 'Koľko stojí spracovanie daňového priznania?', a: 'Pre zamestnanca (typ A) od 40 €, pre živnostníka (typ B) od 60 €, pre s.r.o. od 150 €. Finálna cena závisí od počtu dokladov a náročnosti.' },
   { q: 'Dokedy treba podať daňové priznanie?', a: 'Za predchádzajúci rok spravidla do 31. marca. Lehotu je možné odložiť, s tým vám tiež pomôžem.' },
@@ -11,6 +20,7 @@ const faq = [
   title="Daňové priznania a jednoduché účtovníctvo Brezno | Erika Zajaková"
   description="Spracovanie daňových priznaní pre zamestnancov, živnostníkov a firmy a vedenie jednoduchého účtovníctva v regióne Brezno. Prax od roku 2006."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <section class="section">
     <p class="eyebrow">Dane a účtovníctvo</p>
     <h1>Daňové priznania a jednoduché účtovníctvo</h1>

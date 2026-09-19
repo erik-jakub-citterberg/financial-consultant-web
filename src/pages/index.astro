@@ -8,35 +8,46 @@ import ServiceCard from '../components/ServiceCard.astro';
 >
   <section class="hero">
     <div class="hero-grid">
-      <div>
+      <div class="hero-text">
         <p class="eyebrow">Dane a financie v regióne Brezno</p>
-        <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
+        <h1>Dane, poistenie a&nbsp;hypotéky v&nbsp;Brezne a&nbsp;okolí</h1>
         <p class="lede">Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania a jednoduché účtovníctvo pre ľudí a firmy v regióne.</p>
-        <p style="margin-top:var(--space-4);"><a class="btn" href="/kontakt">Dohodnúť si nezáväznú konzultáciu</a></p>
+        <p><a class="btn btn-gold" href="/kontakt">Dohodnúť si nezáväznú konzultáciu</a></p>
       </div>
       <div class="facts">
         <div class="fact"><b>2002</b><span>Finančná poradkyňa OVB od roku</span></div>
         <div class="fact"><b>2006</b><span>Dane a jednoduché účtovníctvo od roku</span></div>
         <div class="fact"><b>Ing.</b><span>Financie a ekonómia, Praha</span></div>
-        <div class="fact"><b>BB</b><span>Michalová, okres Brezno</span></div>
+        <div class="fact"><b>Brezno</b><span>Michalová, okres Brezno</span></div>
       </div>
     </div>
   </section>
 
-  <section class="section" data-reveal>
-    <p class="statline">
-      <span class="stat"><span class="n" data-count="24">24</span><span class="l">rokov praxe</span></span>
-      <span class="stat"><span class="n">2</span><span class="l">oblasti pod jednou strechou</span></span>
-      <span class="stat"><span class="n">1:1</span><span class="l">osobný prístup ku klientovi</span></span>
-    </p>
-  </section>
+  <div class="stats-strip" data-reveal>
+    <div class="container">
+      <div class="statline" data-stagger>
+        <div class="stat">
+          <span class="n" data-count="24">24</span>
+          <span class="l">rokov praxe</span>
+        </div>
+        <div class="stat">
+          <span class="n">2</span>
+          <span class="l">oblasti pod jednou strechou</span>
+        </div>
+        <div class="stat">
+          <span class="n">1:1</span>
+          <span class="l">osobný prístup ku klientovi</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="section" data-reveal>
     <p class="eyebrow">S čím pomôžem</p>
-    <h2>Dve oblasti, jedna dôvera</h2>
-    <div class="cards">
-      <ServiceCard title="Dane a jednoduché účtovníctvo" href="/dane">
-        <p>Daňové priznania pre zamestnancov, živnostníkov aj firmy a vedenie jednoduchého účtovníctva počas celého roka.</p>
+    <h2>Štyri služby, jedna poradkyňa</h2>
+    <div class="cards cards--2col" data-stagger>
+      <ServiceCard title="Dane a účtovníctvo" href="/dane">
+        <p>Daňové priznania pre zamestnancov, živnostníkov aj firmy. Jednoduché účtovníctvo počas celého roka.</p>
       </ServiceCard>
       <ServiceCard title="Hypotéky" href="/hypoteky">
         <p>Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní. Porovnám ponuky bánk za vás.</p>
@@ -44,17 +55,32 @@ import ServiceCard from '../components/ServiceCard.astro';
       <ServiceCard title="Poistenie" href="/poistenie">
         <p>Životné a majetkové poistenie nastavené podľa toho, čo naozaj potrebujete vy a vaša rodina.</p>
       </ServiceCard>
+      <ServiceCard title="Sporenie a investície" href="/financne-poradenstvo">
+        <p>Sporenie na cieľ, dôchodkové piliere a plán pre deti. Nastavíme to spoločne podľa vašej situácie.</p>
+      </ServiceCard>
     </div>
   </section>
 
-  <section class="section section-alt" data-reveal>
+  <div class="steps-section" data-reveal>
     <p class="eyebrow">Ako to prebieha</p>
     <h2>Od prvého telefonátu po hotové riešenie</h2>
-    <div class="prose">
-      <p>1. Zavoláte alebo napíšete a dohodneme si termín.</p>
-      <p>2. Spolu prejdeme vašu situáciu a doklady.</p>
-      <p>3. Pripravím riešenie a vysvetlím vám každý krok.</p>
+    <div class="steps" data-stagger>
+      <div class="step">
+        <span class="step-n">1</span>
+        <strong>Zavoláte alebo napíšete</strong>
+        <p>Dohodneme si termín — u vás, v Michalovej alebo online podľa toho, čo vám vyhovuje.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">2</span>
+        <strong>Prejdeme vašu situáciu</strong>
+        <p>Spolu si pozrieme doklady, zmluvy a čo treba vyriešiť. Nič vopred nemusíte pripravovať.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">3</span>
+        <strong>Dostanete hotové riešenie</strong>
+        <p>Pripravím všetko za vás a vysvetlím každý krok jednoducho, aby ste vedeli, za čo platíte.</p>
+      </div>
     </div>
-    <p style="margin-top:var(--space-4);"><a class="btn" href="/kontakt">Napíšte mi</a></p>
-  </section>
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Napíšte mi</a></p>
+  </div>
 </BaseLayout>

@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  return allPosts
+    .filter((p) => p.data.draft !== true)
+    .map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+function formatDate(date: Date): string {
+  const d = date.getDate().toString().padStart(2, '0');
+  const m = (date.getMonth() + 1).toString().padStart(2, '0');
+  const y = date.getFullYear();
+  return `${d}. ${m}. ${y}`;
+}
+
+const serviceLabels: Record<string, string> = {
+  dane: 'Dane',
+  hypoteky: 'Hypotéky',
+  poistenie: 'Poistenie',
+  financie: 'Financie',
+  uctovnictvo: 'Účtovníctvo',
+  vseobecne: 'Všeobecné',
+};
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <div class="page-header">
+    <p class="eyebrow">Blog</p>
+    <h1>{post.data.title}</h1>
+    <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
+    {post.data.service && (
+      <span class="service-badge">{serviceLabels[post.data.service] ?? post.data.service}</span>
+    )}
+  </div>
+
+  <div class="prose">
+    <Content />
+  </div>
+
+  <div class="section" style="margin-top: var(--space-8);">
+    <p>Potrebujete pomoc? Dohodnite si konzultáciu.</p>
+    <a href="/kontakt" class="btn">Kontaktujte ma</a>
+  </div>
+</BaseLayout>
+
+<style>
+  .service-badge {
+    display: inline-block;
+    margin-top: var(--space-2);
+    padding: 0.2em 0.7em;
+    border: 1px solid var(--color-brand);
+    border-radius: 2em;
+    font-size: var(--step--1);
+    color: var(--color-brand);
+  }
+</style>

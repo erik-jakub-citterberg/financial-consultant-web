@@ -16,9 +16,12 @@
     "quality:built": "npm run validate:schema"
   },
   "dependencies": {
-    "astro": "^4.15.0",
+    "@fontsource-variable/dm-sans": "^5.3.0",
     "@fontsource-variable/fraunces": "^5.0.0",
-    "@fontsource/source-sans-3": "^5.0.0"
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.0.0",
+    "astro": "^4.15.0",
+    "playwright": "^1.63.0"
   },
   "devDependencies": {
     "lefthook": "^1.7.0"

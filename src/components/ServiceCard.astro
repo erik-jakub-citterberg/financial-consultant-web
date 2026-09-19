@@ -5,5 +5,5 @@ const { title, href } = Astro.props;
 <article class="card">
   <h3>{title}</h3>
   <slot />
-  <p><a href={href}>Viac o službe</a></p>
+  <a class="card-link" href={href}>Viac o službe</a>
 </article>

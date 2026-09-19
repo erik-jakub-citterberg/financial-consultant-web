@@ -33,4 +33,17 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { services, towns, posts };
+// Blog content collection (public-facing, with draft/tag/service metadata).
+const blog = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    draft: z.boolean().default(false),
+    tags: z.array(z.string()).default([]),
+    service: z.enum(['dane', 'hypoteky', 'poistenie', 'financie', 'uctovnictvo', 'vseobecne']).optional(),
+  }),
+});
+
+export const collections = { services, towns, posts, blog };

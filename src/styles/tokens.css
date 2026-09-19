@@ -1,33 +1,37 @@
 /*
-  Design tokens — the single source of truth for color, type, space, radius, motion.
-  Brand direction: deep NAVY (trust family; OVB-adjacent but the consultant's own identity,
-  NOT a copy of OVB branding) + a WARM GOLD accent so the palette is not all-cool "AI blue".
+  Design tokens — single source of truth for color, type, space, radius, motion.
+  Brand: deep navy #1e3a5f (trust / OVB-adjacent but Erika's own identity) +
+  warm gold #c2892f (deliberate warm/cool contrast, not AI-blue).
   Navy hue ~214° stays clear of the purple/indigo range the style linter rejects.
-  Rule: components reference these tokens; they never hardcode colors, sizes or radii.
 */
 :root {
-  /* Brand — deep navy + warm gold accent */
-  --color-brand: #1e3a5f;
+  /* Brand */
+  --color-brand:        #1e3a5f;
   --color-brand-strong: #16293f;
-  --color-accent: #c2892f;        /* warm gold — deliberate warm/cool contrast */
-  --color-ink: #1a1d22;
-  --color-muted: #55606c;
-  --color-bg: #ffffff;
-  --color-bg-soft: #f4f5f2;       /* barely-warm off-white, not a cool grey */
-  --color-line: #d7dae0;
+  --color-accent:       #c2892f;
+  --color-accent-dark:  #a9741f;
+  --color-ink:          #1a1d22;
+  --color-muted:        #55606c;
+  --color-bg:           #ffffff;
+  --color-bg-soft:      #f5f4f0;   /* warm off-white */
+  --color-bg-gold:      #fdf8f0;   /* lightest gold tint — stats strip */
+  --color-line:         #d7dae0;
 
-  /* Type — distinctive pairing (NOT Inter/Roboto), self-hosted via Fontsource. */
-  --font-heading: 'Fraunces Variable', Georgia, serif;
-  --font-body: 'Source Sans 3', system-ui, sans-serif;
-  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
-  --step-0: 1rem;                 /* 16px min body */
-  --step-1: 1.32rem;
-  --step-2: 1.75rem;
-  --step-3: 2.3rem;
-  --step-4: 3.05rem;
-  --leading-body: 1.6;
+  /* Type — Cormorant Garamond (display) + DM Sans Variable (body) */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
 
-  /* Space — a scale, used deliberately (not uniform padding everywhere) */
+  /* Type scale */
+  --step--1: clamp(0.8rem,  0.76rem + 0.18vw, 0.875rem);
+  --step-0:  clamp(1rem,    0.97rem + 0.14vw, 1.0625rem);
+  --step-1:  clamp(1.2rem,  1.12rem + 0.38vw, 1.4rem);
+  --step-2:  clamp(1.6rem,  1.42rem + 0.9vw,  2.1rem);
+  --step-3:  clamp(2.1rem,  1.78rem + 1.6vw,  3rem);
+  --step-4:  clamp(2.8rem,  2.2rem + 2.8vw,   4.2rem);
+  --step-5:  clamp(3.6rem,  2.7rem + 4.2vw,   6rem);
+  --leading-body: 1.62;
+
+  /* Space */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 1rem;
@@ -35,16 +39,26 @@
   --space-5: 3rem;
   --space-6: 5rem;
 
-  /* Radius — VARY these by component; do not put one value on everything */
-  --radius-sm: 3px;
-  --radius-md: 6px;
+  /* Radius — varied by component role, watch value is 16px */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* Motion */
-  --ease: cubic-bezier(0.2, 0, 0.1, 1);
-  --dur: 180ms;
+  /* Shadows — layered for depth, brand-tinted */
+  --shadow-xs: 0 1px 2px rgba(26,41,63,0.05);
+  --shadow-sm: 0 2px 8px rgba(26,41,63,0.07), 0 0 0 1px rgba(26,41,63,0.04);
+  --shadow-md: 0 6px 24px rgba(26,41,63,0.10), 0 2px 6px rgba(26,41,63,0.05);
+  --shadow-lg: 0 16px 48px rgba(26,41,63,0.13), 0 4px 12px rgba(26,41,63,0.07);
+
+  /* Motion — spring-feel easing */
+  --ease:       cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out:   cubic-bezier(0.0, 0.0, 0.2, 1);
+  --dur:        180ms;
+  --dur-med:    320ms;
+  --dur-long:   500ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root { --dur: 0ms; }
+  :root { --dur: 0ms; --dur-med: 0ms; --dur-long: 0ms; }
 }

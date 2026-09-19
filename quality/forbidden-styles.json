@@ -4,7 +4,7 @@
   "bannedHexes": ["#6366f1", "#7c3aed", "#8b5cf6", "#a855f7", "#4f46e5", "#818cf8"],
   "purpleHueRange": { "minHue": 240, "maxHue": 300, "minSaturation": 0.25, "minLightnessGate": 0.15 },
   "forbidGradientKeywords": ["linear-gradient", "radial-gradient", "conic-gradient"],
-  "gradientAllowlistFiles": [],
+  "gradientAllowlistFiles": ["base.css"],
   "maxIdenticalRadiusUses": 8,
   "watchRadiusValue": "16px"
 }

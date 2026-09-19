@@ -46,7 +46,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--color-accent);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   font-size: var(--step--1);
   font-family: var(--font-body);
 }
@@ -214,7 +214,7 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
   padding-bottom: 2px;
 }
-/* Slide-up underline on nav links */
+/* Slide-up underline on nav links — asymmetric: fast in, slow out */
 .nav a:not(.btn)::after {
   content: '';
   position: absolute;
@@ -223,14 +223,21 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--color-accent);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform var(--dur-med) var(--ease);
+  transition: transform 380ms var(--ease); /* slow return */
 }
 .nav a:not(.btn):hover { color: var(--color-brand-strong); }
-.nav a:not(.btn):hover::after { transform: scaleX(1); }
+.nav a:not(.btn):hover::after {
+  transform: scaleX(1);
+  transition-duration: 120ms; /* fast snap in */
+}
 
 /* ── Hero ─────────────────────────────────────────── */
 .hero {
   background: var(--color-brand);
+  /* Two radial glows: gold top-right + faint lighter pool bottom-left */
+  background-image:
+    radial-gradient(ellipse 55% 65% at 5% 95%, rgba(194,137,47,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 95% 5%, rgba(255,255,255,0.03) 0%, transparent 55%);
   color: #fff;
   border-radius: var(--radius-md);
   padding: var(--space-6) var(--space-5);
@@ -272,7 +279,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 @media (max-width: 52rem) { .hero-grid { grid-template-columns: 1fr; } }
 .hero h1 { color: #fff; max-width: 16ch; font-size: var(--step-4); }
-.hero .lede { color: rgba(255,255,255,0.78); }
+.hero .lede { color: rgba(255,255,255,0.78); font-weight: 300; }
 .hero .btn { background: var(--color-accent); color: var(--color-brand-strong); }
 .hero .btn:hover { background: var(--color-accent-dark); }
 
@@ -356,15 +363,18 @@ img { max-width: 100%; height: auto; display: block; }
   padding: var(--space-4) var(--space-4) var(--space-3);
   box-shadow: var(--shadow-sm);
   border-left: 3px solid transparent;
+  /* Slow release — 400ms when leaving hover */
   transition:
-    transform var(--dur-med) var(--ease),
-    box-shadow var(--dur-med) var(--ease),
-    border-color var(--dur-med) var(--ease);
+    transform 400ms var(--ease),
+    box-shadow 400ms var(--ease),
+    border-color 400ms var(--ease);
 }
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
   border-left-color: var(--color-accent);
+  /* Fast snap — 100ms when entering hover */
+  transition-duration: 100ms;
 }
 .card h3 { margin-bottom: var(--space-2); color: var(--color-brand-strong); }
 .card p { color: var(--color-muted); font-size: var(--step-0); }
@@ -390,6 +400,15 @@ img { max-width: 100%; height: auto; display: block; }
 /* ── Process steps ────────────────────────────────── */
 .steps-section {
   background: var(--color-brand-strong);
+  /* Subtle diagonal crosshatch — gives the dark panel depth without a gradient */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255,0.018) 0,
+    rgba(255,255,255,0.018) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 18px 18px;
   border-radius: var(--radius-md);
   padding: var(--space-5) var(--space-5) var(--space-6);
   margin-block: var(--space-5);

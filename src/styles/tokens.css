@@ -5,11 +5,15 @@
   Navy hue ~214° stays clear of the purple/indigo range the style linter rejects.
 */
 :root {
-  /* Brand */
+  /* Brand — hex for older browsers, oklch() overrides in modern ones */
   --color-brand:        #1e3a5f;
+  --color-brand:        oklch(28% 0.067 247);
   --color-brand-strong: #16293f;
+  --color-brand-strong: oklch(18% 0.05 248);
   --color-accent:       #c2892f;
+  --color-accent:       oklch(62% 0.127 62);
   --color-accent-dark:  #a9741f;
+  --color-accent-dark:  oklch(52% 0.11 62);
   --color-ink:          #1a1d22;
   --color-muted:        #55606c;
   --color-bg:           #ffffff;

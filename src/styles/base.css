@@ -256,6 +256,21 @@ img { max-width: 100%; height: auto; display: block; }
   z-index: 0;
   overflow: visible;
 }
+/* Faint ledger-line texture */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,0.025) 0px,
+    rgba(255,255,255,0.025) 1px,
+    transparent 1px,
+    transparent 30px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
 /* SVG grain for depth */
 .hero::after {
   content: '';
@@ -555,12 +570,85 @@ img { max-width: 100%; height: auto; display: block; }
   padding-block: var(--space-6) var(--space-4);
   border-bottom: 1px solid var(--color-line);
   margin-bottom: var(--space-5);
+  position: relative;
+  overflow: hidden;
 }
 .page-header h1 { margin-top: var(--space-2); }
 .page-header .lede { margin-top: var(--space-3); }
 
+/* ── Service glyph watermark ──────────────────────── */
+[data-glyph] {
+  position: relative;
+  overflow: hidden;
+}
+[data-glyph]::before {
+  content: attr(data-glyph);
+  position: absolute;
+  right: -0.05em;
+  top: -0.15em;
+  font-family: var(--font-heading);
+  font-size: clamp(8rem, 18vw, 13rem);
+  font-weight: 700;
+  color: var(--color-brand);
+  opacity: 0.045;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* ── Diamond divider ──────────────────────────────── */
+.divider--diamond {
+  border: none;
+  height: 1px;
+  background: var(--color-line);
+  margin-block: var(--space-5);
+  position: relative;
+}
+.divider--diamond::before {
+  content: '◆';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-bg);
+  padding: 0 0.75rem;
+  color: var(--color-accent);
+  font-size: 0.45rem;
+  line-height: 1;
+}
+
+/* ── Credential seal badge ────────────────────────── */
+.badge-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+/* ── Step process icons ───────────────────────────── */
+.step-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: rgba(194,137,47,0.7);
+  margin-bottom: var(--space-1);
+}
+
 /* ── Blog preview (homepage) ──────────────────────── */
-.blog-preview { background: var(--color-bg-soft); border-radius: var(--radius-md); }
+.blog-preview { background: var(--color-bg-soft); border-radius: var(--radius-md); padding: var(--space-5) var(--space-5) var(--space-5); }
 .bp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

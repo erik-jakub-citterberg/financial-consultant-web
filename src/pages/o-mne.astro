@@ -95,6 +95,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin-block: var(--space-3) var(--space-4);
     margin-inline: 0;
   }
+  .cred--with-badge {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .about-meta {
+    font-size: var(--step--1);
+    color: var(--color-muted);
+    margin-top: var(--space-3);
+    letter-spacing: 0.02em;
+  }
 </style>
 <BaseLayout
   title="O mne | Erika Zajaková"
@@ -111,12 +122,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p>Pri daniach aj financiách vám vysvetlím každý krok jednoduchou rečou, aby ste vedeli, za čo platíte a prečo.</p>
       </div>
       <hr class="divider" />
-      <ul class="badges">
-        <li>Prax od roku 2002</li>
-        <li>Ing., financie a ekonómia</li>
-        <li>OVB Allfinanz</li>
-        <li>IČO 40485242</li>
-      </ul>
+      <p class="about-meta">Prax od roku 2002 · Ing., financie a ekonómia · OVB Allfinanz · IČO 40485242</p>
       <p style="margin-top: var(--space-4);"><a class="btn" href="/kontakt">Konzultácia</a></p>
     </div>
 
@@ -128,9 +134,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <p class="eyebrow" style="margin-bottom: var(--space-3);">Skúsenosti</p>
       <div class="credentials">
-        <div class="cred">
-          <strong>OVB Allfinanz Slovensko</strong>
-          <span>Finančná poradkyňa od roku 2002</span>
+        <div class="cred cred--with-badge">
+          <div class="badge-seal">OVB<br/>2002</div>
+          <div>
+            <strong>OVB Allfinanz Slovensko</strong>
+            <span>Finančná poradkyňa od roku 2002</span>
+          </div>
         </div>
         <div class="cred">
           <strong>Ing., Bankovní institut Praha</strong>

@@ -1,12 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ServiceCard from '../components/ServiceCard.astro';
-import { getCollection } from 'astro:content';
-
-const recentPosts = (await getCollection('blog'))
-  .filter(p => !p.data.draft)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
 
 const SVG = `fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"`;
 const icons = {
@@ -16,9 +10,6 @@ const icons = {
   growth: `<svg viewBox="0 0 24 24" ${SVG}><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
 };
 
-function formatDate(d: Date) {
-  return `${d.getDate().toString().padStart(2,'0')}. ${(d.getMonth()+1).toString().padStart(2,'0')}. ${d.getFullYear()}`;
-}
 ---
 <BaseLayout
   title="Dane, poistenie a hypotéky v Brezne a okolí | Erika Zajaková"
@@ -26,11 +17,11 @@ function formatDate(d: Date) {
 >
   <section class="hero">
     <svg class="hero-rings" viewBox="0 0 500 500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="470" cy="470" r="70"  fill="none" stroke="rgba(194,137,47,0.22)" stroke-width="1.5"/>
-      <circle cx="470" cy="470" r="130" fill="none" stroke="rgba(194,137,47,0.14)" stroke-width="1.5"/>
-      <circle cx="470" cy="470" r="200" fill="none" stroke="rgba(194,137,47,0.08)" stroke-width="1.5"/>
-      <circle cx="470" cy="470" r="285" fill="none" stroke="rgba(194,137,47,0.05)" stroke-width="1"/>
-      <circle cx="470" cy="470" r="385" fill="none" stroke="rgba(194,137,47,0.025)" stroke-width="1"/>
+      <circle cx="470" cy="470" r="70"  fill="none" stroke="rgba(194,137,47,0.55)" stroke-width="1.5"/>
+      <circle cx="470" cy="470" r="130" fill="none" stroke="rgba(194,137,47,0.38)" stroke-width="1.5"/>
+      <circle cx="470" cy="470" r="200" fill="none" stroke="rgba(194,137,47,0.22)" stroke-width="1.5"/>
+      <circle cx="470" cy="470" r="285" fill="none" stroke="rgba(194,137,47,0.13)" stroke-width="1"/>
+      <circle cx="470" cy="470" r="385" fill="none" stroke="rgba(194,137,47,0.07)" stroke-width="1"/>
     </svg>
     <div class="hero-grid">
       <div class="hero-text">
@@ -91,39 +82,22 @@ function formatDate(d: Date) {
     <h2>Od prvého telefonátu po hotové riešenie</h2>
     <div class="steps" data-stagger>
       <div class="step">
-        <span class="step-n">1</span>
+        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.41 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.36a16 16 0 0 0 5.93 5.93l1.72-1.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <strong>Zavoláte alebo napíšete</strong>
         <p>Dohodneme si termín — u vás, v Michalovej alebo online podľa toho, čo vám vyhovuje.</p>
       </div>
       <div class="step">
-        <span class="step-n">2</span>
+        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         <strong>Prejdeme vašu situáciu</strong>
         <p>Spolu si pozrieme doklady, zmluvy a čo treba vyriešiť. Nič vopred nemusíte pripravovať.</p>
       </div>
       <div class="step">
-        <span class="step-n">3</span>
+        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
         <strong>Dostanete hotové riešenie</strong>
         <p>Pripravím všetko za vás a vysvetlím každý krok jednoducho, aby ste vedeli, za čo platíte.</p>
       </div>
     </div>
-    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Napíšte mi</a></p>
+    <p style="margin-top:var(--space-5);"><a class="btn btn-gold" href="/kontakt">Konzultácia</a></p>
   </div>
 
-  {recentPosts.length > 0 && (
-    <section class="blog-preview section" data-reveal>
-      <p class="eyebrow">Z blogu</p>
-      <h2>Aktuálne tipy a rady</h2>
-      <div class="bp-grid" data-stagger>
-        {recentPosts.map(post => (
-          <a href={`/blog/${post.slug}`} class="bp-item">
-            <time class="bp-date">{formatDate(post.data.pubDate)}</time>
-            <h3 class="bp-title">{post.data.title}</h3>
-            <p class="bp-desc">{post.data.description}</p>
-            <span class="bp-read">Čítať →</span>
-          </a>
-        ))}
-      </div>
-      <p style="margin-top: var(--space-4);"><a href="/blog" class="btn">Všetky články</a></p>
-    </section>
-  )}
 </BaseLayout>

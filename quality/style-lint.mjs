@@ -14,6 +14,8 @@ const files = args.length
   ? args.filter((f) => /\.css$/.test(f))
   : walk(join(here, '..', 'src'), (f) => /\.css$/.test(f));
 
+const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 function hexToHsl(hex) {
   let h = hex.replace('#', '');
   if (h.length === 3) h = h.split('').map((c) => c + c).join('');
@@ -41,8 +43,10 @@ for (const file of files) {
   css = css.replace(/\/\*[\s\S]*?\*\//g, ' '); // ignore comments (docs mention banned values)
   const lower = css.toLowerCase();
 
+  // Whole-word match so font "Inter" does not match inside "pointer"/"printer".
   for (const font of cfg.bannedFontFamilies) {
-    if (lower.includes(font.toLowerCase())) {
+    const re = new RegExp('\\b' + esc(font.toLowerCase()) + '\\b');
+    if (re.test(lower)) {
       console.error(`  [font] banned font "${font}"  in ${file}`);
       violations++;
     }
@@ -76,7 +80,7 @@ for (const file of files) {
     }
   }
 
-  const radiusHits = (lower.match(new RegExp(`border-radius\\s*:\\s*${cfg.watchRadiusValue}`, 'g')) || []).length;
+  const radiusHits = (lower.match(new RegExp(`border-radius\\s*:\\s*${esc(cfg.watchRadiusValue)}`, 'g')) || []).length;
   if (radiusHits > cfg.maxIdenticalRadiusUses) {
     console.error(`  [radius] ${cfg.watchRadiusValue} used ×${radiusHits} (>${cfg.maxIdenticalRadiusUses}) — vary radii by component  in ${file}`);
     violations++;

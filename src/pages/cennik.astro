@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+// POZOR: ceny nižšie sú orientačné, odvodené z prieskumu trhu (docs/pricing-research.md).
+// Erika ich potvrdí alebo upraví pred spustením stránky.
+---
+<BaseLayout
+  title="Cenník | Erika Zajaková"
+  description="Orientačný cenník daňových priznaní a jednoduchého účtovníctva. Finančné poradenstvo cez OVB s bezplatnou konzultáciou."
+>
+  <section class="section">
+    <p class="eyebrow">Cenník</p>
+    <h1>Cenník služieb</h1>
+
+    <h2 style="margin-top:var(--space-5);">Dane a účtovníctvo</h2>
+    <table class="price-table">
+      <thead><tr><th>Služba</th><th>Cena</th></tr></thead>
+      <tbody>
+        <tr><td>Daňové priznanie, zamestnanec (typ A)</td><td class="price">od 40 €</td></tr>
+        <tr><td>Daňové priznanie, živnostník (typ B)</td><td class="price">od 60 €</td></tr>
+        <tr><td>Daňové priznanie, s.r.o.</td><td class="price">od 150 €</td></tr>
+        <tr><td>Jednoduché účtovníctvo</td><td class="price">od 0,90 € / doklad</td></tr>
+        <tr><td>Mesačné vedenie účtovníctva</td><td class="price">od 50 € / mesiac</td></tr>
+        <tr><td>DPH priznanie a kontrolný výkaz</td><td class="price">od 20 €</td></tr>
+        <tr><td>Spracovanie mzdy</td><td class="price">od 12 € / zamestnanec</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:var(--space-3);">Ceny sú orientačné. Finálnu cenu určím podľa počtu dokladov a náročnosti po krátkej konzultácii.</p>
+
+    <h2 style="margin-top:var(--space-5);">Finančné poradenstvo</h2>
+    <div class="prose">
+      <p>Hypotéky, poistenie a sporenie sprostredkúvam cez OVB Allfinanz. Prvá konzultácia je bezplatná a nezáväzná. Za sprostredkovanie ma odmeňuje finančná inštitúcia, vy za poradenstvo neplatíte.</p>
+    </div>
+
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Dohodnúť si termín</a></p>
+  </section>
+</BaseLayout>

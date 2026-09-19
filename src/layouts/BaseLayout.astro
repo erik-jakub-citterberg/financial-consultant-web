@@ -4,10 +4,7 @@ import '@fontsource-variable/fraunces';
 import '@fontsource/source-sans-3/400.css';
 import '@fontsource/source-sans-3/600.css';
 
-interface Props {
-  title: string;
-  description: string;
-}
+interface Props { title: string; description: string; }
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 
@@ -54,9 +51,12 @@ const schema = {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
-    <header class="container" style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-3);padding-block:var(--space-3);flex-wrap:wrap;">
-      <a href="/" style="font-family:var(--font-heading);font-weight:600;font-size:var(--step-1);color:var(--color-brand-strong);">Erika Zajaková</a>
-      <nav style="display:flex;align-items:center;gap:var(--space-4);">
+    <header class="site-header container">
+      <a href="/" class="brand">Erika Zajaková</a>
+      <nav class="nav">
+        <a href="/dane">Dane</a>
+        <a href="/financne-poradenstvo">Financie</a>
+        <a href="/cennik">Cenník</a>
         <a href="/o-mne">O mne</a>
         <a href="/kontakt">Kontakt</a>
         <a href="tel:+421907824728" class="btn">0907 824 728</a>
@@ -65,8 +65,8 @@ const schema = {
     <main class="container">
       <slot />
     </main>
-    <footer class="container" style="padding-block:var(--space-5);color:var(--color-muted);font-size:var(--step--1);border-top:1px solid var(--color-line);margin-top:var(--space-6);">
-      <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie – fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
+    <footer class="site-footer container">
+      <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
       <p>Michalová, okres Brezno · 0907 824 728 · erika.zajakova@gmail.com</p>
     </footer>
   </body>

@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+const faq = [
+  { q: 'Koľko stojí spracovanie daňového priznania?', a: 'Pre zamestnanca (typ A) od 40 €, pre živnostníka (typ B) od 60 €, pre s.r.o. od 150 €. Finálna cena závisí od počtu dokladov a náročnosti.' },
+  { q: 'Dokedy treba podať daňové priznanie?', a: 'Za predchádzajúci rok spravidla do 31. marca. Lehotu je možné odložiť, s tým vám tiež pomôžem.' },
+  { q: 'Čo si mám priniesť?', a: 'Doklady o príjmoch a výdavkoch za daný rok, potvrdenia od zamestnávateľa alebo z podnikania a doklady k prípadným odpočtom.' },
+];
+---
+<BaseLayout
+  title="Daňové priznania a jednoduché účtovníctvo Brezno | Erika Zajaková"
+  description="Spracovanie daňových priznaní pre zamestnancov, živnostníkov a firmy a vedenie jednoduchého účtovníctva v regióne Brezno. Prax od roku 2006."
+>
+  <section class="section">
+    <p class="eyebrow">Dane a účtovníctvo</p>
+    <h1>Daňové priznania a jednoduché účtovníctvo</h1>
+    <div class="prose">
+      <p>Daňové priznania spracúvam od roku 2006 pre zamestnancov, živnostníkov aj firmy. Pripravím podklady, skontrolujem, čo si môžete uplatniť, a priznanie podám včas.</p>
+      <p>Počas roka vediem jednoduché účtovníctvo, spracúvam DPH a mzdy podľa toho, čo vaše podnikanie potrebuje.</p>
+    </div>
+
+    <h2 style="margin-top:var(--space-5);">Orientačné ceny</h2>
+    <table class="price-table">
+      <thead><tr><th>Služba</th><th>Cena</th></tr></thead>
+      <tbody>
+        <tr><td>Daňové priznanie, zamestnanec (typ A)</td><td class="price">od 40 €</td></tr>
+        <tr><td>Daňové priznanie, živnostník (typ B)</td><td class="price">od 60 €</td></tr>
+        <tr><td>Daňové priznanie, s.r.o.</td><td class="price">od 150 €</td></tr>
+        <tr><td>Jednoduché účtovníctvo</td><td class="price">od 0,90 € / doklad</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:var(--space-3);">Ceny sú orientačné. Finálnu cenu určím podľa počtu dokladov a náročnosti. Celý cenník nájdete na stránke <a href="/cennik">Cenník</a>.</p>
+
+    <h2 style="margin-top:var(--space-5);">Časté otázky</h2>
+    <Faq items={faq} />
+
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Dohodnúť si termín</a></p>
+  </section>
+</BaseLayout>

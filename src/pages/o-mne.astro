@@ -68,19 +68,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .credentials {
     display: flex;
     flex-direction: column;
-    gap: 0;
-    border: 1px solid var(--color-line);
-    border-radius: var(--radius-sm);
-    overflow: hidden;
+    gap: var(--space-4);
   }
   .cred {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    padding: var(--space-3) var(--space-3);
-    border-bottom: 1px solid var(--color-line);
+    padding-left: var(--space-3);
+    border-left: 2px solid var(--color-accent);
   }
-  .cred:last-child { border-bottom: 0; }
   .cred strong {
     font-family: var(--font-body);
     font-weight: 600;
@@ -91,6 +87,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-size: var(--step--1);
     color: var(--color-muted);
   }
+  .h1-rule {
+    width: 2.5rem;
+    height: 2px;
+    background: var(--color-accent);
+    border: none;
+    margin-block: var(--space-3) var(--space-4);
+    margin-inline: 0;
+  }
 </style>
 <BaseLayout
   title="O mne | Erika Zajaková"
@@ -100,18 +104,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="about-content">
       <p class="eyebrow">O mne</p>
       <h1>Erika Zajaková</h1>
+      <hr class="h1-rule" />
       <div class="prose">
         <p>Finančnému poradenstvu sa venujem od roku 2002 v spoločnosti OVB Allfinanz Slovensko. Od roku 2006 popri tom spracúvam daňové priznania a vediem jednoduché účtovníctvo ako samostatne zárobkovo činná osoba.</p>
         <p>Ekonómiu a financie som vyštudovala na Bankovním institute vysoká škola v Prahe (Ing., 2015). Pôsobím v Michalovej v okrese Brezno a pracujem s klientmi z celého regiónu.</p>
         <p>Pri daniach aj financiách vám vysvetlím každý krok jednoduchou rečou, aby ste vedeli, za čo platíte a prečo.</p>
       </div>
+      <hr class="divider" />
       <ul class="badges">
         <li>Prax od roku 2002</li>
         <li>Ing., financie a ekonómia</li>
         <li>OVB Allfinanz</li>
         <li>IČO 40485242</li>
       </ul>
-      <p><a class="btn" href="/kontakt">Ozvite sa mi</a></p>
+      <p style="margin-top: var(--space-4);"><a class="btn" href="/kontakt">Konzultácia</a></p>
     </div>
 
     <div class="about-visual">
@@ -120,6 +126,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="photo-initials">E·Z</span>
         <span class="photo-label">Foto bude doplnené</span>
       </div>
+      <p class="eyebrow" style="margin-bottom: var(--space-3);">Skúsenosti</p>
       <div class="credentials">
         <div class="cred">
           <strong>OVB Allfinanz Slovensko</strong>

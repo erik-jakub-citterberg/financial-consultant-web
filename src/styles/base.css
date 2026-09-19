@@ -245,18 +245,16 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
   overflow: hidden;
 }
-/* Subtle texture — a faint radial highlight, no gradient keyword */
-.hero::before {
-  content: '';
+/* Concentric ring decoration — SVG placed directly in hero markup */
+.hero-rings {
   position: absolute;
-  top: -40%;
-  right: -10%;
-  width: 60%;
-  aspect-ratio: 1;
-  background: rgba(194,137,47,0.07);
-  border-radius: 50%;
+  bottom: -4%;
+  right: -4%;
+  width: 58%;
+  max-width: 480px;
   pointer-events: none;
   z-index: 0;
+  overflow: visible;
 }
 /* SVG grain for depth */
 .hero::after {
@@ -346,6 +344,18 @@ img { max-width: 100%; height: auto; display: block; }
 /* ── Section scaffolding ──────────────────────────── */
 .section { padding-block: var(--space-6); }
 
+/* ── Dividers ─────────────────────────────────────── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-line);
+  margin-block: var(--space-4);
+}
+.divider--accent {
+  border-top-color: var(--color-accent);
+  width: 2.5rem;
+  margin-inline: 0;
+}
+
 /* ── Cards ────────────────────────────────────────── */
 .cards {
   display: grid;
@@ -358,10 +368,11 @@ img { max-width: 100%; height: auto; display: block; }
 }
 @media (max-width: 36rem) { .cards--2col { grid-template-columns: 1fr; } }
 .card {
-  background: var(--color-bg);
+  background: var(--color-bg-soft);
   border-radius: var(--radius-sm);
   padding: var(--space-4) var(--space-4) var(--space-3);
   box-shadow: var(--shadow-sm);
+  border-top: 2px solid rgba(194,137,47,0.18);
   border-left: 3px solid transparent;
   /* Slow release — 400ms when leaving hover */
   transition:
@@ -372,6 +383,7 @@ img { max-width: 100%; height: auto; display: block; }
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  border-top-color: var(--color-accent);
   border-left-color: var(--color-accent);
   /* Fast snap — 100ms when entering hover */
   transition-duration: 100ms;
@@ -399,7 +411,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ── Process steps ────────────────────────────────── */
 .steps-section {
-  background: var(--color-brand-strong);
+  background: var(--color-brand);
   /* Subtle diagonal crosshatch — gives the dark panel depth without a gradient */
   background-image: repeating-linear-gradient(
     -45deg,

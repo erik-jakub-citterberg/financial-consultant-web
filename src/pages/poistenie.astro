@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+const faq = [
+  { q: 'Aké poistenie potrebujem?', a: 'Závisí od vašej situácie. Na stretnutí prejdeme, čo dáva zmysel pre vás a vašu rodinu, a nastavíme rozsah podľa toho.' },
+  { q: 'Koľko stojí konzultácia?', a: 'Prvá konzultácia je bezplatná a nezáväzná. Za sprostredkovanie ma odmeňuje poisťovňa, nie vy.' },
+  { q: 'Pomôžete aj pri poistnej udalosti?', a: 'Áno. Poradím, ako postupovať, a pomôžem s nahlásením poistnej udalosti.' },
+];
+---
+<BaseLayout
+  title="Životné a majetkové poistenie Brezno | Erika Zajaková"
+  description="Životné a majetkové poistenie nastavené podľa vašej situácie v regióne Brezno. Konzultácia zdarma, cez OVB Allfinanz."
+>
+  <section class="section" data-reveal>
+    <p class="eyebrow">Finančné poradenstvo</p>
+    <h1>Poistenie</h1>
+    <p class="lede">Životné a majetkové poistenie nastavím podľa toho, čo naozaj potrebujete, bez zbytočných pripoistení.</p>
+
+    <div class="cards">
+      <article class="card"><h3>Životné poistenie</h3><p>Ochrana príjmu a rodiny pre prípad choroby, úrazu alebo výpadku príjmu.</p></article>
+      <article class="card"><h3>Poistenie majetku</h3><p>Poistenie domu, bytu a domácnosti proti bežným rizikám.</p></article>
+      <article class="card"><h3>Revízia zmlúv</h3><p>Prejdem vaše existujúce zmluvy a poviem, kde platíte zbytočne veľa.</p></article>
+    </div>
+
+    <p class="note" style="margin-top:var(--space-4);">Konzultácia je bezplatná a nezáväzná. Za sprostredkovanie ma odmeňuje poisťovňa, vy neplatíte.</p>
+
+    <h2 style="margin-top:var(--space-5);">Časté otázky</h2>
+    <Faq items={faq} />
+
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a></p>
+  </section>
+</BaseLayout>

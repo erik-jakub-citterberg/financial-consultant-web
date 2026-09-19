@@ -7,38 +7,47 @@ import ServiceCard from '../components/ServiceCard.astro';
   description="Erika Zajaková: daňové priznania, jednoduché účtovníctvo a finančné poradenstvo OVB v regióne Brezno a Banská Bystrica. Prax od roku 2002."
 >
   <section class="hero">
-    <p class="eyebrow">Dane a financie v regióne Brezno</p>
-    <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
-    <p class="lede">
-      Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006
-      spracúvam daňové priznania a jednoduché účtovníctvo pre ľudí a firmy v regióne Brezno
-      a Banská Bystrica.
-    </p>
-    <p style="margin-top:var(--space-4);"><a class="btn" href="/kontakt">Dohodnúť si nezáväznú konzultáciu</a></p>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Dane a financie v regióne Brezno</p>
+        <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
+        <p class="lede">Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania a jednoduché účtovníctvo pre ľudí a firmy v regióne.</p>
+        <p style="margin-top:var(--space-4);"><a class="btn" href="/kontakt">Dohodnúť si nezáväznú konzultáciu</a></p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>2002</b><span>Finančná poradkyňa OVB od roku</span></div>
+        <div class="fact"><b>2006</b><span>Dane a jednoduché účtovníctvo od roku</span></div>
+        <div class="fact"><b>Ing.</b><span>Financie a ekonómia, Praha</span></div>
+        <div class="fact"><b>BB</b><span>Michalová, okres Brezno</span></div>
+      </div>
+    </div>
   </section>
 
-  <ul class="badges">
-    <li>Prax od roku 2002</li>
-    <li>OVB Allfinanz</li>
-    <li>Ing. v odbore financie</li>
-    <li>IČO 40485242</li>
-    <li>Michalová, okres Brezno</li>
-  </ul>
+  <section class="section" data-reveal>
+    <p class="statline">
+      <span class="stat"><span class="n" data-count="24">24</span><span class="l">rokov praxe</span></span>
+      <span class="stat"><span class="n">2</span><span class="l">oblasti pod jednou strechou</span></span>
+      <span class="stat"><span class="n">1:1</span><span class="l">osobný prístup ku klientovi</span></span>
+    </p>
+  </section>
 
-  <section class="section">
+  <section class="section" data-reveal>
     <p class="eyebrow">S čím pomôžem</p>
     <h2>Dve oblasti, jedna dôvera</h2>
     <div class="cards">
       <ServiceCard title="Dane a jednoduché účtovníctvo" href="/dane">
         <p>Daňové priznania pre zamestnancov, živnostníkov aj firmy a vedenie jednoduchého účtovníctva počas celého roka.</p>
       </ServiceCard>
-      <ServiceCard title="Finančné poradenstvo" href="/financne-poradenstvo">
-        <p>Hypotéky, životné a majetkové poistenie a sporenie cez OVB Allfinanz, nastavené podľa vašej situácie.</p>
+      <ServiceCard title="Hypotéky" href="/hypoteky">
+        <p>Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní. Porovnám ponuky bánk za vás.</p>
+      </ServiceCard>
+      <ServiceCard title="Poistenie" href="/poistenie">
+        <p>Životné a majetkové poistenie nastavené podľa toho, čo naozaj potrebujete vy a vaša rodina.</p>
       </ServiceCard>
     </div>
   </section>
 
-  <section class="section section-alt">
+  <section class="section section-alt" data-reveal>
     <p class="eyebrow">Ako to prebieha</p>
     <h2>Od prvého telefonátu po hotové riešenie</h2>
     <div class="prose">

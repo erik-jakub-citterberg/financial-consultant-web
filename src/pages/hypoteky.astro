@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+const faq = [
+  { q: 'Koľko ma bude stáť poradenstvo pri hypotéke?', a: 'Konzultácia aj sprostredkovanie sú pre vás bezplatné. Za sprostredkovanie ma odmeňuje banka, nie vy.' },
+  { q: 'Čo potrebujem k žiadosti o hypotéku?', a: 'Doklad o príjme, údaje o nehnuteľnosti a doklad totožnosti. Presný zoznam prejdeme na stretnutí a pomôžem s podkladmi.' },
+  { q: 'Pomôžete aj s refinancovaním existujúcej hypotéky?', a: 'Áno. Prepočítam, či sa vám oplatí prejsť k inej banke, a vybavím prenos za vás.' },
+];
+---
+<BaseLayout
+  title="Hypotéky v Brezne a okolí | Erika Zajaková"
+  description="Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní v regióne Brezno. Porovnanie ponúk bánk. Konzultácia zdarma."
+>
+  <section class="section" data-reveal>
+    <p class="eyebrow">Finančné poradenstvo</p>
+    <h1>Hypotéky</h1>
+    <p class="lede">Pomôžem vám vybrať a vybaviť hypotéku podľa vašej situácie a prevediem vás celým procesom.</p>
+
+    <div class="cards">
+      <article class="card"><h3>Kúpa bytu alebo domu</h3><p>Porovnám ponuky bánk a nájdem financovanie, ktoré vám sadne na mieru rozpočtu.</p></article>
+      <article class="card"><h3>Stavba a rekonštrukcia</h3><p>Poradím s hypotékou na stavbu aj s čerpaním počas výstavby.</p></article>
+      <article class="card"><h3>Refinancovanie</h3><p>Prepočítam, či sa oplatí prejsť k inej banke, a vybavím prenos za vás.</p></article>
+    </div>
+
+    <p class="note" style="margin-top:var(--space-4);">Konzultácia je bezplatná a nezáväzná. Za sprostredkovanie ma odmeňuje banka, vy neplatíte.</p>
+
+    <h2 style="margin-top:var(--space-5);">Časté otázky</h2>
+    <Faq items={faq} />
+
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a></p>
+  </section>
+</BaseLayout>

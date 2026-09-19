@@ -4,7 +4,7 @@ export async function GET(context: { site?: URL }) {
   const site = (context.site?.toString() || 'https://example.sk').replace(/\/$/, '');
   const towns = await getCollection('towns');
   const routes = [
-    '/', '/dane', '/financne-poradenstvo', '/cennik', '/o-mne', '/kontakt',
+    '/', '/dane', '/financne-poradenstvo', '/hypoteky', '/poistenie', '/cennik', '/o-mne', '/kontakt',
     ...towns.map((t) => `/${t.slug}`),
   ];
   const body =

@@ -18,13 +18,7 @@ const schema = {
       areaServed: ['Brezno', 'Michalová', 'Podbrezová', 'Banská Bystrica'],
       telephone: '+421907824728',
       email: 'erika.zajakova@gmail.com',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Michalová',
-        postalCode: '976 57',
-        addressRegion: 'Banskobystrický kraj',
-        addressCountry: 'SK',
-      },
+      address: { '@type': 'PostalAddress', addressLocality: 'Michalová', postalCode: '976 57', addressRegion: 'Banskobystrický kraj', addressCountry: 'SK' },
       founder: { '@id': new URL('/#erika', Astro.site).toString() },
       url: new URL('/', Astro.site).toString(),
     },
@@ -56,25 +50,35 @@ const schema = {
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary" />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script src="/enhance.js" defer></script>
   </head>
   <body>
-    <header class="site-header container">
-      <a href="/" class="brand">Erika Zajaková</a>
-      <nav class="nav">
-        <a href="/dane">Dane</a>
-        <a href="/financne-poradenstvo">Financie</a>
-        <a href="/cennik">Cenník</a>
-        <a href="/o-mne">O mne</a>
-        <a href="/kontakt">Kontakt</a>
-        <a href="tel:+421907824728" class="btn">0907 824 728</a>
-      </nav>
-    </header>
+    <div class="topbar">
+      <div class="container">
+        <a href="tel:+421907824728">0907 824 728</a>
+        <span>Michalová, okres Brezno</span>
+      </div>
+    </div>
+    <div class="site-header-wrap" id="hdr">
+      <header class="site-header container">
+        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Dane · Financie · Poradenstvo</span></a>
+        <nav class="nav">
+          <a href="/dane">Dane</a>
+          <a href="/financne-poradenstvo">Financie</a>
+          <a href="/cennik">Cenník</a>
+          <a href="/o-mne">O mne</a>
+          <a href="/kontakt">Kontakt</a>
+          <a href="/kontakt" class="btn">Konzultácia</a>
+        </nav>
+      </header>
+    </div>
     <main class="container">
       <slot />
     </main>
     <footer class="site-footer container">
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
       <p>Michalová, okres Brezno · 0907 824 728 · erika.zajakova@gmail.com</p>
+      <p>Služby: <a href="/dane">Dane a účtovníctvo</a>, <a href="/hypoteky">Hypotéky</a>, <a href="/poistenie">Poistenie</a>, <a href="/cennik">Cenník</a></p>
       <p>Regióny: <a href="/brezno">Brezno</a>, <a href="/michalova">Michalová</a>, <a href="/podbrezova">Podbrezová</a>, <a href="/banska-bystrica">Banská Bystrica</a></p>
     </footer>
   </body>

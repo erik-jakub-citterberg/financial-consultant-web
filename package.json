@@ -13,7 +13,8 @@
     "lint:images": "node quality/image-check.mjs",
     "validate:schema": "node quality/schema-validate.mjs",
     "quality": "npm run lint:copy && npm run lint:style && npm run lint:patterns && npm run lint:images",
-    "quality:built": "npm run validate:schema",
+    "quality:built": "npm run validate:schema && npm run check:carons",
+    "check:carons": "node quality/caron-render.mjs",
     "lint:patterns": "node quality/pattern-lint.mjs"
   },
   "dependencies": {

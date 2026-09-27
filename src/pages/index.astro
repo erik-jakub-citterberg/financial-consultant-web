@@ -1,51 +1,127 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ServiceCard from '../components/ServiceCard.astro';
+// FOTO 1 (z max. dvoch): portrét Eriky nahradí iniciály v .d-avatar a v .d-portrait.
 ---
 <BaseLayout
-  title="Dane, poistenie a hypotéky v Brezne a okolí | Erika Zajaková"
-  description="Erika Zajaková: daňové priznania, účtovníctvo, mzdy a finančné poradenstvo OVB v regióne Brezno. Prax od roku 2002."
+  title="Poistenie, investície a hypotéky Brezno | Erika Zajaková, OVB"
+  description="Erika Zajaková, finančná poradkyňa OVB od roku 2002: životné a majetkové poistenie, investície, sporenie, hypotéky a daňové priznania v regióne Brezno."
 >
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
-        <p class="lede">Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania, vediem účtovníctvo a mzdy pre ľudí a firmy v regióne.</p>
-        <p style="margin-top: var(--space-4);"><a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a></p>
+  <section class="d-hero">
+    <div class="d-hero-text">
+      <h1>Poistenie, investície a hypotéky v Brezne a okolí</h1>
+      <p class="lede">Som Erika Zajaková, finančná poradkyňa OVB od roku 2002. Pomôžem vám s poistením, sporením aj hypotékou a keď treba, pripravím aj daňové priznanie.</p>
+      <ul class="d-checks">
+        <li class="c-ins">Stretneme sa u vás, v Michalovej alebo online</li>
+        <li class="c-inv">Prvá konzultácia je bezplatná</li>
+        <li class="c-mor">Poistenie, investície, hypotéky aj dane na jednom mieste</li>
+        <li class="c-tax">Viac ako 20 rokov praxe v regióne</li>
+      </ul>
+      <p class="d-cta">
+        <a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a>
+        <a class="d-phone" href="tel:+421907824728">0907 824 728</a>
+      </p>
+    </div>
+
+    <div class="d-stage" aria-hidden="true">
+      <div class="d-chat">
+        <div class="d-chat-head">
+          <span class="d-avatar">EZ</span>
+          <span><b>Erika Zajaková</b><small>Finančná poradkyňa OVB · Michalová</small></span>
+        </div>
+        <div class="d-msgs">
+          <p class="d-msg d-them m1">Dobrý deň, chceme poistiť dom a neviem, či mám dobré životné poistenie.</p>
+          <p class="d-typing t1"><i></i><i></i><i></i></p>
+          <p class="d-msg d-me m2">Dobrý deň, pošlite mi fotky zmlúv. Pozriem ich a v stredu vám všetko vysvetlím.</p>
+          <p class="d-typing t2"><i></i><i></i><i></i></p>
+          <p class="d-msg d-me m3">Stretnúť sa môžeme aj u vás doma. Prvá konzultácia je zadarmo.</p>
+        </div>
       </div>
-      <dl class="facts">
-        <div class="fact"><dt>Finančná poradkyňa OVB</dt><dd>od 2002</dd></div>
-        <div class="fact"><dt>Dane a účtovníctvo</dt><dd>od 2006</dd></div>
-        <div class="fact"><dt>Vzdelanie</dt><dd>Ing., financie</dd></div>
-        <div class="fact"><dt>Sídlo</dt><dd>Michalová</dd></div>
-      </dl>
+      <div class="d-plan">
+        <b>Váš prehľad</b>
+        <ul>
+          <li class="c-ins"><span>Poistenie domu</span><em>skontrolované</em></li>
+          <li class="c-ins"><span>Životné poistenie</span><em>na stretnutie</em></li>
+          <li class="c-inv"><span>Sporenie pre deti</span><em>návrh</em></li>
+          <li class="c-tax"><span>Daňové priznanie</span><em>do 31. marca</em></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="d-section">
     <h2>S čím vám pomôžem</h2>
-    <div class="cards cards--2col">
-      <ServiceCard title="Dane a účtovníctvo" href="/dane">
-        <p>Daňové priznania, jednoduché a podvojné účtovníctvo, mzdy a personalistika.</p>
-      </ServiceCard>
-      <ServiceCard title="Hypotéky" href="/hypoteky">
-        <p>Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní. Porovnám ponuky bánk za vás.</p>
-      </ServiceCard>
-      <ServiceCard title="Poistenie" href="/poistenie">
-        <p>Životné a majetkové poistenie nastavené podľa toho, čo naozaj potrebujete vy a vaša rodina.</p>
-      </ServiceCard>
-      <ServiceCard title="Sporenie a investície" href="/financne-poradenstvo">
-        <p>Sporenie na cieľ, dôchodkové piliere a plán pre deti.</p>
-      </ServiceCard>
+    <div class="d-services">
+      <a class="d-svc s-ins d-svc-wide" href="/poistenie">
+        <svg viewBox="0 0 40 40" width="44" height="44" aria-hidden="true"><path d="M4 21a16 14 0 0 1 32 0q-4-3-8 0q-4-3-8 0q-4-3-8 0q-4-3-8 0z" fill="currentColor"/><path d="M20 21v10a3 3 0 0 1-6 0M20 7V5" fill="none" stroke="var(--brand-navy)" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Poistenie</h3>
+        <p>Životné poistenie, poistenie domu a domácnosti, PZP a havarijné poistenie aj poistenie firiem. Prejdem aj zmluvy, ktoré už máte, a poviem, kde platíte zbytočne.</p>
+        <span class="d-more">Životné, majetkové, auto, firmy</span>
+      </a>
+      <a class="d-svc s-inv" href="/financne-poradenstvo">
+        <svg viewBox="0 0 40 40" width="44" height="44" aria-hidden="true"><ellipse cx="20" cy="31" rx="13" ry="5" fill="currentColor"/><path d="M20 29V14" fill="none" stroke="var(--brand-navy)" stroke-width="2.2" stroke-linecap="round"/><path d="M20 19c-6 0-9-4-9-9 6 0 9 4 9 9zM20 15c5 0 8-3 8-8-5 0-8 3-8 8z" fill="var(--brand-navy)"/></svg>
+        <h3>Investície a sporenie</h3>
+        <p>Sporenie na cieľ, investovanie, dôchodok a plán pre deti.</p>
+        <span class="d-more">Pravidelne aj jednorazovo</span>
+      </a>
+      <a class="d-svc s-mor" href="/hypoteky">
+        <svg viewBox="0 0 40 40" width="44" height="44" aria-hidden="true"><path d="M6 19L20 7l14 12v15H6z" fill="currentColor"/><circle cx="20" cy="23" r="3.2" fill="var(--brand-navy)"/><path d="M20 25v5" stroke="var(--brand-navy)" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <h3>Hypotéky</h3>
+        <p>Kúpa, stavba aj refinancovanie. Porovnám ponuky bánk a vybavím podklady.</p>
+        <span class="d-more">Pre vás bezplatne</span>
+      </a>
+      <a class="d-svc s-tax" href="/dane">
+        <svg viewBox="0 0 40 40" width="44" height="44" aria-hidden="true"><path d="M9 5h15l7 7v23H9z" fill="currentColor"/><path d="M14 18h11M14 23h11M14 28h6" stroke="var(--brand-navy)" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Dane a účtovníctvo</h3>
+        <p>Daňové priznanie pre zamestnancov aj živnostníkov, jednoduché účtovníctvo.</p>
+        <span class="d-more">Priznanie od 40 €</span>
+      </a>
+      <div class="d-svc s-call">
+        <h3>Neviete, kde začať?</h3>
+        <p>Zavolajte a spolu prejdeme, čo riešite. Prvá konzultácia je bezplatná.</p>
+        <a href="tel:+421907824728">0907 824 728</a>
+      </div>
     </div>
   </section>
 
-  <section class="steps-section">
-    <h2>Ako prebieha spolupráca</h2>
-    <div class="steps">
-      <div class="step"><strong>Zavoláte alebo napíšete</strong><p>Dohodneme si termín u vás, v Michalovej alebo online.</p></div>
-      <div class="step"><strong>Prejdeme vašu situáciu</strong><p>Spolu si pozrieme doklady a zmluvy. Vopred nemusíte nič pripravovať.</p></div>
-      <div class="step"><strong>Pripravím riešenie</strong><p>Vybavím, čo treba, a vysvetlím každý krok, aby ste vedeli, za čo platíte.</p></div>
+  <section class="d-section d-about">
+    <div class="d-portrait" aria-hidden="true"><span>EZ</span></div>
+    <div>
+      <h2>Kto vám bude radiť</h2>
+      <p>Volám sa Erika Zajaková a bývam v Michalovej. Ako finančná poradkyňa OVB Allfinanz pracujem od roku 2002. Od roku 2006 k tomu spracúvam daňové priznania a jednoduché účtovníctvo.</p>
+      <p>Vyštudovala som Bankovní institut vysoká škola v Prahe. Klientov mám z Brezna, Podbrezovej, Banskej Bystrice aj z okolitých dedín.</p>
+      <p><a href="/o-mne">Viac o mne</a></p>
     </div>
+  </section>
+
+  <section class="d-section">
+    <h2>Ako prebieha spolupráca</h2>
+    <ol class="d-steps">
+      <li class="c-ins"><b>Zavoláte alebo napíšete</b><p>Dohodneme termín u vás, v Michalovej alebo online.</p></li>
+      <li class="c-inv"><b>Prejdeme vašu situáciu</b><p>Pozriem zmluvy, ktoré máte, a spýtam sa, čo chcete zabezpečiť.</p></li>
+      <li class="c-mor"><b>Dostanete návrh</b><p>Vysvetlím ho bez odborných slov. Rozhodnete sa, keď budete chcieť.</p></li>
+    </ol>
+  </section>
+
+  <section class="d-career">
+    <div>
+      <h2>Hľadám kolegov do tímu OVB</h2>
+      <p>Baví vás pracovať s ľuďmi a chcete si plánovať čas sami? Ukážem vám, ako vyzerá práca finančného poradcu, a pomôžem vám so skúškou aj s registráciou v Národnej banke Slovenska.</p>
+      <p><a class="btn" href="/kariera">Ako začať v OVB</a></p>
+    </div>
+    <svg class="d-route" viewBox="0 0 320 210" aria-hidden="true">
+      <path class="d-route-line" d="M24 170C90 170 70 100 140 100S200 40 292 40" fill="none" stroke="var(--brand-navy)" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <circle cx="24" cy="170" r="9" fill="var(--ins)"/>
+      <circle cx="140" cy="100" r="9" fill="var(--mor)"/>
+      <circle cx="292" cy="40" r="11" fill="var(--brand-navy)"/>
+      <text x="10" y="200">Stretnutie</text>
+      <text x="152" y="130">Skúška a NBS</text>
+      <text x="300" y="76" text-anchor="end">Prví klienti</text>
+    </svg>
+  </section>
+
+  <section class="d-contact">
+    <h2>Zavolajte, napíšte alebo sa zastavte</h2>
+    <a class="d-contact-phone" href="tel:+421907824728">0907 824 728</a>
+    <p><a href="mailto:erika.zajakova@gmail.com">erika.zajakova@gmail.com</a> · Michalová, okres Brezno</p>
   </section>
 </BaseLayout>

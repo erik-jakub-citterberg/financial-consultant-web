@@ -1,12 +1,14 @@
 ---
 import '../styles/base.css';
-import '@fontsource-variable/libre-franklin/wght.css';
+import '@fontsource-variable/work-sans/wght.css';
 import '../styles/theme.css';
 import { ViewTransitions } from 'astro:transitions';
 
 interface Props { title: string; description: string; }
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+// First path segment, so a theme can colour-code a page by service (poistenie, hypoteky, ...)
+const section = Astro.url.pathname.split('/').filter(Boolean)[0] || 'home';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -53,7 +55,7 @@ const schema = {
     <script src="/enhance.js" defer></script>
     <ViewTransitions />
   </head>
-  <body>
+  <body data-section={section}>
     <div class="topbar">
       <div class="container">
         <span class="topbar-creds">OVB Allfinanz · Ing. Erika Zajaková · Prax od 2002</span>
@@ -62,7 +64,7 @@ const schema = {
     </div>
     <div class="site-header-wrap" id="hdr">
       <header class="site-header container">
-        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Dane a financie, Michalová</span></a>
+        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Finančná poradkyňa OVB · Michalová</span></a>
         <a href="tel:+421907824728" class="hdr-phone-m">0907 824 728</a>
         <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>

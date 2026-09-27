@@ -1,15 +1,16 @@
 /*
   Variant B · Modernist
   Idea: Central European modernist print. Trust through clarity and confidence.
-  One voice: Libre Franklin (Franklin Gothic lineage: newspaper headlines, bank signage).
+  One voice: Work Sans (grotesque lineage: newspaper headlines, bank signage).
+  Was Libre Franklin until 2026-09-28: it drops the ľ/ď caron at 700/800 ("veľký" → "velký").
   Weight extremes are used once, deliberately: 800 headlines against 400 text.
   White ground + full-bleed navy bands, strict grid, square corners.
   Ornament: a small gold square. Motion: one page-load stagger in the hero, nothing else.
 */
 :root {
-  --font-heading: 'Libre Franklin Variable', 'Helvetica Neue', Arial, sans-serif;
-  --font-body:    'Libre Franklin Variable', 'Helvetica Neue', Arial, sans-serif;
-  --font-ui:      'Libre Franklin Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Work Sans Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Work Sans Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-ui:      'Work Sans Variable', 'Helvetica Neue', Arial, sans-serif;
   --weight-heading: 800;
   --tracking-heading: -0.028em;
   --leading-heading: 1;

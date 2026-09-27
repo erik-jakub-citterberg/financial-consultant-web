@@ -164,3 +164,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Breathing room between a page title and what follows it */
 h1 + .prose, h1 + p, h1 + .lede, h1 + div { margin-top: 1.25rem; }
 h2 + .prose, h2 + p, h2 + .price-table, h2 + .faq { margin-top: 1rem; }
+/* Headings placed directly in a section (not inside .prose) still need air above them */
+.section > * + h2 { margin-top: var(--space-5); }
+.section > h2 + ul, .section > h2 + ol { margin-top: 1rem; }
+.section > ul.prose > li + li { margin-top: 0.4rem; }

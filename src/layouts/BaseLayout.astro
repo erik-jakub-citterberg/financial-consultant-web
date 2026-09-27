@@ -6,6 +6,8 @@ import { ViewTransitions } from 'astro:transitions';
 interface Props { title: string; description: string; }
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+// First path segment, so a theme can colour-code a page by service (poistenie, hypoteky, ...)
+const section = Astro.url.pathname.split('/').filter(Boolean)[0] || 'home';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -52,7 +54,7 @@ const schema = {
     <script src="/enhance.js" defer></script>
     <ViewTransitions />
   </head>
-  <body>
+  <body data-section={section}>
     <div class="topbar">
       <div class="container">
         <span class="topbar-creds">OVB Allfinanz · Ing. Erika Zajaková · Prax od 2002</span>

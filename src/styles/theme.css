@@ -1,1 +1,135 @@
-/* Variant theme layer. Empty on design/base-v2; each design/variant-* branch fills it. */
+/*
+  Variant B · Modernist
+  Idea: Central European modernist print. Trust through clarity and confidence.
+  One voice: Libre Franklin (Franklin Gothic lineage: newspaper headlines, bank signage).
+  Weight extremes are used once, deliberately: 800 headlines against 400 text.
+  White ground + full-bleed navy bands, strict grid, square corners.
+  Ornament: a small gold square. Motion: one page-load stagger in the hero, nothing else.
+*/
+:root {
+  --font-heading: 'Libre Franklin Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Libre Franklin Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-ui:      'Libre Franklin Variable', 'Helvetica Neue', Arial, sans-serif;
+  --weight-heading: 800;
+  --tracking-heading: -0.028em;
+  --leading-heading: 1;
+
+  --color-bg:      #ffffff;
+  --color-bg-soft: #f3f5f8;
+  --color-line:    #dde2e8;
+  --color-accent:  #c2892f;
+  --color-muted:   #56606b;
+
+  --step-0: 1.0625rem;
+  --step-3: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  --step-4: clamp(2.6rem, 1.7rem + 4vw, 5rem);
+  --leading-body: 1.55;
+
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --square: 0.5rem;
+}
+
+.topbar { display: none; }
+.site-header { padding-block: 1.2rem; }
+.site-header-wrap.is-stuck { box-shadow: 0 1px 0 var(--color-line); }
+.brand strong { font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; }
+.brand span { font-weight: 500; }
+.nav a { font-weight: 500; font-size: 0.98rem; }
+.nav a:not(.hdr-phone):hover { text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; text-underline-offset: 0.35em; }
+.hdr-phone { font-weight: 800; color: var(--color-brand-strong) !important; font-variant-numeric: tabular-nums; }
+.hdr-phone-m { display: none; }
+@media (max-width: 48rem) {
+  .hdr-phone-m { display: inline; margin-left: auto; margin-right: 0.5rem; font-weight: 800; white-space: nowrap; color: var(--color-brand-strong); text-decoration: none; font-size: 0.95rem; }
+  .brand span { display: none; }
+}
+
+a { text-decoration-thickness: 1px; }
+a:hover { text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; color: var(--color-brand-strong); }
+.btn, .nav a.btn { border-radius: 0; padding: 0.85rem 1.5rem; font-weight: 700; }
+
+/* Full-bleed band that breaks out of the page container */
+.b-band {
+  margin-inline: calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
+  background: var(--color-brand);
+  color: #fff;
+}
+.b-band h1, .b-band h2 { color: #fff; }
+
+/* Hero on a 12-column grid, asymmetric */
+.b-hero { padding-block: 5.5rem 4.5rem; }
+.b-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 1.5rem; }
+.b-hero h1 { grid-column: 1 / span 8; max-width: 13ch; }
+.b-hero .lede { grid-column: 1 / span 6; color: #d3dbe6; margin-top: 1.75rem; max-width: 44ch; }
+.b-hero .b-cta { grid-column: 1 / span 8; margin-top: 2.25rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; }
+.b-hero .b-cta .btn { background: #fff; color: var(--color-brand-strong); border-color: #fff; }
+.b-hero .b-cta .btn:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-brand-strong); }
+.b-hero .b-cta a:not(.btn) { color: #fff; font-weight: 700; font-variant-numeric: tabular-nums; }
+.b-facts { grid-column: 9 / span 4; grid-row: 1 / span 3; align-self: end; list-style: none; padding: 0; }
+.b-facts li { padding-block: 0.85rem; border-top: 1px solid rgba(255,255,255,0.22); display: grid; grid-template-columns: var(--square) 1fr; column-gap: 0.9rem; align-items: baseline; }
+.b-facts li::before { content: ""; width: var(--square); height: var(--square); background: var(--color-accent); transform: translateY(-0.1em); }
+.b-facts b { display: block; font-weight: 800; font-size: 1.15rem; color: #fff; }
+.b-facts span { color: #c5cfdc; font-size: 0.95rem; }
+@media (max-width: 60rem) {
+  .b-hero h1, .b-hero .lede, .b-hero .b-cta, .b-facts { grid-column: 1 / -1; grid-row: auto; }
+  .b-facts { margin-top: 3rem; }
+  .b-hero { padding-block: 3.5rem 3rem; }
+}
+
+/* One orchestrated moment: hero lines arrive in sequence on load */
+@keyframes b-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.b-hero .b-grid > * { animation: b-rise 480ms var(--ease) both; }
+.b-hero .b-grid > *:nth-child(2) { animation-delay: 70ms; }
+.b-hero .b-grid > *:nth-child(3) { animation-delay: 140ms; }
+.b-hero .b-grid > *:nth-child(4) { animation-delay: 210ms; }
+@media (prefers-reduced-motion: reduce) { .b-hero .b-grid > * { animation: none; } }
+
+/* Sections */
+.b-section { padding-block: 5.5rem 1rem; }
+.b-section > h2 { max-width: 18ch; }
+
+/* Services: 2 × 2, hairlines, no boxes */
+.b-services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 2.5rem; border-top: 2px solid var(--color-brand-strong); }
+.b-service { padding: 2rem 2.5rem 2.25rem 0; border-bottom: 1px solid var(--color-line); }
+.b-service:nth-child(even) { padding-left: 2.5rem; padding-right: 0; border-left: 1px solid var(--color-line); }
+.b-service h3 { font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; letter-spacing: -0.02em; }
+.b-service h3 a { color: var(--color-brand-strong); text-decoration: none; }
+.b-service h3 a:hover { text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 3px; text-underline-offset: 0.18em; }
+.b-service p { color: var(--color-muted); margin-top: 0.6rem; }
+.b-service .b-tag { margin-top: 1.1rem; font-weight: 700; color: var(--color-brand-strong); font-size: 0.95rem; display: flex; align-items: center; gap: 0.6rem; }
+.b-service .b-tag::before { content: ""; width: var(--square); height: var(--square); background: var(--color-accent); }
+@media (max-width: 44rem) {
+  .b-services { grid-template-columns: 1fr; }
+  .b-service, .b-service:nth-child(even) { padding: 1.75rem 0; border-left: 0; }
+}
+
+/* Process: a line with three points (it is genuinely sequential) */
+.b-line { list-style: none; padding: 0; margin-top: 3rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; border-top: 2px solid var(--color-brand-strong); }
+.b-line li { position: relative; padding-top: 1.6rem; }
+.b-line li::before { content: ""; position: absolute; top: calc(-0.5 * var(--square) - 1px); left: 0; width: var(--square); height: var(--square); background: var(--color-accent); }
+.b-line b { display: block; font-weight: 800; font-size: 1.2rem; color: var(--color-brand-strong); }
+.b-line p { color: var(--color-muted); margin-top: 0.4rem; }
+@media (max-width: 44rem) {
+  .b-line { grid-template-columns: 1fr; border-top: 0; border-left: 2px solid var(--color-brand-strong); gap: 0; }
+  .b-line li { padding: 0 0 1.75rem 1.5rem; }
+  .b-line li::before { top: 0.4rem; left: calc(-0.5 * var(--square) - 1px); }
+}
+
+/* Closing band: the phone number, set big */
+.b-call { margin-top: 5.5rem; padding-block: 4.5rem; }
+.b-call p { color: #c5cfdc; font-weight: 500; }
+.b-call a { display: inline-block; margin-top: 0.5rem; color: #fff; text-decoration: none; font-weight: 800; letter-spacing: -0.03em; font-size: clamp(2.6rem, 1.6rem + 5vw, 5.5rem); line-height: 1; font-variant-numeric: tabular-nums lining-nums; }
+.b-call a:hover { color: var(--color-accent); }
+.b-call small { display: block; margin-top: 1rem; color: #c5cfdc; font-size: 1rem; }
+.b-call small a { font-size: 1rem; font-weight: 700; letter-spacing: 0; color: #fff; text-decoration: underline; }
+
+/* Inner pages */
+.price-table thead th { font-weight: 700; color: var(--color-brand-strong); border-bottom: 2px solid var(--color-brand-strong); }
+.faq summary { font-weight: 700; }
+.card { border-top: 2px solid var(--color-brand-strong); }
+.card h3 { font-weight: 800; }
+.site-footer { margin-top: 0; }
+html, body { overflow-x: clip; } /* full-bleed bands use 100vw; avoid scrollbar-width overflow */
+@media (max-width: 48rem) { .brand strong { font-size: 1.15rem; white-space: nowrap; } }

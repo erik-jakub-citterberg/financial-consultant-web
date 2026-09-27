@@ -1,6 +1,6 @@
 ---
 title: "Čo si môžete odpísať z daní pred koncom roka 2026?"
-description: "Termín 31. december sa blíži. Tieto daňové kroky musíte urobiť ešte tento rok — po Novom roku je neskoro."
+description: "Termín 31. december sa blíži. Tieto daňové kroky musíte urobiť ešte tento rok – po Novom roku je neskoro."
 pubDate: 2026-09-19
 draft: false
 tags: ["daň z príjmu", "nezdaniteľná časť", "odpis", "rok 2026"]
@@ -17,9 +17,9 @@ Ak váš manžel alebo manželka mal v roku 2026 nízky alebo žiadny príjem, m
 - Mal/a príjem nižší ako 5 455 € za rok (2026)
 - Príjem manžela/manželky sa zohľadňuje: uplatníte si rozdiel medzi 5 455 € a jeho/jej skutočným príjmom
 
-Výška odpočtu závisí od výšky manželovho/manželkiného príjmu a vášho daňového základu. Pri nulom príjme partnera/partnerky si môžete znížiť základ dane až o **5 455 €** — pri 19 % sadzbe to znamená úsporu okolo 1 036 € na dani. Nad základ dane 60 349 € nárok zaniká.
+Výška odpočtu závisí od výšky manželovho/manželkiného príjmu a vášho daňového základu. Pri nulom príjme partnera/partnerky si môžete znížiť základ dane až o **5 455 €** – pri 19 % sadzbe to znamená úsporu okolo 1 036 € na dani. Nad základ dane 60 349 € nárok zaniká.
 
-**Čo treba urobiť do 31. 12.?** Nič špeciálne — tento odpočet si uplatníte v daňovom priznaní alebo pri ročnom zúčtovaní, ale podmienky (spoločná domácnosť, výška príjmu manžela/manželky) sa hodnotia za celý rok 2026.
+**Čo treba urobiť do 31. 12.?** Nič špeciálne – tento odpočet si uplatníte v daňovom priznaní alebo pri ročnom zúčtovaní, ale podmienky (spoločná domácnosť, výška príjmu manžela/manželky) sa hodnotia za celý rok 2026.
 
 ## 2. Príspevok na III. pilier: doplnkové dôchodkové sporenie
 
@@ -40,11 +40,11 @@ Dary fyzickej osoby registrovaným organizáciám sú odpočítateľné od zákl
 
 **Čo treba urobiť do 31. 12.?** Dar poukázať ešte v roku 2026. Uschovajte si potvrdenie o dare.
 
-Pozor: toto je iné ako asignácia 2 % — tá sa uplatňuje pri podaní daňového priznania a netýka sa tohto odpočtu.
+Pozor: toto je iné ako asignácia 2 % – tá sa uplatňuje pri podaní daňového priznania a netýka sa tohto odpočtu.
 
 ## 4. Nezdaniteľná časť na vlastníka: základ pre všetkých
 
-Každý daňovník má nárok na nezdaniteľnú časť základu dane pre seba — pre rok 2026 je to **5 966,73 €**. Tú si uplatňujete vždy automaticky, no môžu nastať situácie, keď ju zamestnávateľ nezohľadnil (napríklad pri viacerých zamestnávateľoch v roku, alebo ak ste podpisovanie vyhlásenia zabudli).
+Každý daňovník má nárok na nezdaniteľnú časť základu dane pre seba – pre rok 2026 je to **5 966,73 €**. Tú si uplatňujete vždy automaticky, no môžu nastať situácie, keď ju zamestnávateľ nezohľadnil (napríklad pri viacerých zamestnávateľoch v roku, alebo ak ste podpisovanie vyhlásenia zabudli).
 
 ## Čo robiť teraz
 

@@ -11,3 +11,6 @@ pre-commit:
     image-check:
       glob: "src/**/*.{astro,md,mdx}"
       run: node quality/image-check.mjs {staged_files}
+    pattern-lint:
+      glob: "src/**/*.{astro,css,md,mdx}"
+      run: node quality/pattern-lint.mjs

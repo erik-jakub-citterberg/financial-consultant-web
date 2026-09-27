@@ -1,39 +1,36 @@
 /*
-  Design tokens — single source of truth for color, type, space, radius, motion.
-  Brand: deep navy #1e3a5f (trust / OVB-adjacent but Erika's own identity) +
-  warm gold #c2892f (deliberate warm/cool contrast, not AI-blue).
-  Navy hue ~214° stays clear of the purple/indigo range the style linter rejects.
+  Design tokens: the single source of truth. Each design variant overrides these
+  in src/styles/theme.css. Components reference tokens only; they never hardcode
+  colour, type, space or radius.
+  Brand: deep navy + warm gold (Erika's own identity; not a copy of OVB branding).
 */
 :root {
-  /* Brand — hex for older browsers, oklch() overrides in modern ones */
+  /* Colour */
   --color-brand:        #1e3a5f;
-  --color-brand:        oklch(28% 0.067 247);
   --color-brand-strong: #16293f;
-  --color-brand-strong: oklch(18% 0.05 248);
-  --color-accent:       #c2892f;
-  --color-accent:       oklch(62% 0.127 62);
-  --color-accent-dark:  #a9741f;
-  --color-accent-dark:  oklch(52% 0.11 62);
+  --color-accent:       #b07a26;
   --color-ink:          #1a1d22;
-  --color-muted:        #55606c;
+  --color-muted:        #535c66;
   --color-bg:           #ffffff;
-  --color-bg-soft:      #f5f4f0;   /* warm off-white */
-  --color-bg-gold:      #fdf8f0;   /* lightest gold tint — stats strip */
-  --color-line:         #d7dae0;
+  --color-bg-soft:      #f4f2ec;
+  --color-line:         #d9d4c8;
+  --color-on-brand:     #ffffff;
 
-  /* Type — Cormorant Garamond (display) + DM Sans Variable (body) */
-  --font-heading: 'Cormorant Garamond', Georgia, serif;
-  --font-body:    'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
+  /* Type (variants set real faces; these are safe fallbacks) */
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body:    system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-ui:      var(--font-body);
+  --weight-heading: 600;
+  --tracking-heading: -0.01em;
 
-  /* Type scale */
-  --step--1: clamp(0.8rem,  0.76rem + 0.18vw, 0.875rem);
-  --step-0:  clamp(1rem,    0.97rem + 0.14vw, 1.0625rem);
-  --step-1:  clamp(1.2rem,  1.12rem + 0.38vw, 1.4rem);
-  --step-2:  clamp(1.6rem,  1.42rem + 0.9vw,  2.1rem);
-  --step-3:  clamp(2.1rem,  1.78rem + 1.6vw,  3rem);
-  --step-4:  clamp(2.8rem,  2.2rem + 2.8vw,   4.2rem);
-  --step-5:  clamp(3.6rem,  2.7rem + 4.2vw,   6rem);
-  --leading-body: 1.62;
+  --step--1: 0.875rem;
+  --step-0:  1.0625rem;
+  --step-1:  1.3rem;
+  --step-2:  1.7rem;
+  --step-3:  clamp(2rem, 1.6rem + 1.6vw, 2.8rem);
+  --step-4:  clamp(2.4rem, 1.8rem + 2.8vw, 4rem);
+  --leading-body: 1.6;
+  --leading-heading: 1.1;
 
   /* Space */
   --space-1: 0.25rem;
@@ -43,26 +40,17 @@
   --space-5: 3rem;
   --space-6: 5rem;
 
-  /* Radius — varied by component role, watch value is 16px */
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  /* Shape */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --rule: 1px solid var(--color-line);
 
-  /* Shadows — layered for depth, brand-tinted */
-  --shadow-xs: 0 1px 2px rgba(26,41,63,0.05);
-  --shadow-sm: 0 2px 8px rgba(26,41,63,0.07), 0 0 0 1px rgba(26,41,63,0.04);
-  --shadow-md: 0 6px 24px rgba(26,41,63,0.10), 0 2px 6px rgba(26,41,63,0.05);
-  --shadow-lg: 0 16px 48px rgba(26,41,63,0.13), 0 4px 12px rgba(26,41,63,0.07);
-
-  /* Motion — spring-feel easing */
-  --ease:       cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-out:   cubic-bezier(0.0, 0.0, 0.2, 1);
-  --dur:        180ms;
-  --dur-med:    320ms;
-  --dur-long:   500ms;
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --dur: 160ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root { --dur: 0ms; --dur-med: 0ms; --dur-long: 0ms; }
+  :root { --dur: 0ms; }
 }

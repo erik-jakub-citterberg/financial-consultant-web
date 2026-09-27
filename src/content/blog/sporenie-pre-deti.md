@@ -1,5 +1,5 @@
 ---
-title: "Sporenie pre deti: investičné fondy vs. stavebné sporenie — čo sa oplatí viac?"
+title: "Sporenie pre deti: investičné fondy vs. stavebné sporenie – čo sa oplatí viac?"
 description: "Stavebné sporenie alebo investičný fond pre dieťa? Porovnávame obe možnosti s konkrétnymi číslami, aby ste sa mohli rozhodnúť informovane."
 pubDate: 2026-09-19
 draft: false
@@ -11,7 +11,7 @@ Každý rodič chce dať dieťaťu dobrý štart do života. Jednou z praktický
 
 ## Stavebné sporenie
 
-Stavebné sporenie je produkt regulovaný zákonom. Sporiteľ vkladá pravidelne peniaze, štát pridáva štátnu prémiu (v roku 2026 je to **70 € ročne** — 6 % z vkladu — pri vklade aspoň **1 167 €** ročne), a po 6 rokoch môžete peniaze vybrať alebo využiť na úver.
+Stavebné sporenie je produkt regulovaný zákonom. Sporiteľ vkladá pravidelne peniaze, štát pridáva štátnu prémiu (v roku 2026 je to **70 € ročne** – 6 % z vkladu – pri vklade aspoň **1 167 €** ročne), a po 6 rokoch môžete peniaze vybrať alebo využiť na úver.
 
 **Výhody:**
 - Garantovaný úrok (typicky 1–2 % ročne na sporenie)
@@ -57,9 +57,9 @@ Investičné fondy (podielové fondy) investujú vaše peniaze do akcií, dlhopi
 
 ## Otázky, ktoré si treba položiť
 
-1. **Ako dlho plánujete sporiť?** Pod 6 rokov — stavebné sporenie môže byť problematické. Nad 15 rokov — fondy majú štatisticky výhodu.
+1. **Ako dlho plánujete sporiť?** Pod 6 rokov – stavebné sporenie môže byť problematické. Nad 15 rokov – fondy majú štatisticky výhodu.
 2. **Na čo dieťa peniaze použije?** Ak na bývanie, stavebné sporenie ponúka bonus v podobe lacného úveru. Ak slobodne, fondy dávajú viac slobody.
-3. **Aké poplatky platíte?** Pri fondoch porovnajte TER (total expense ratio) — rozdiel medzi 0,3 % a 1,5 % ročne je za 15 rokov tisícky eur.
+3. **Aké poplatky platíte?** Pri fondoch porovnajte TER (total expense ratio) – rozdiel medzi 0,3 % a 1,5 % ročne je za 15 rokov tisícky eur.
 4. **Kto je majiteľom?** Ak je sporenie vedené na meno dieťaťa, disponovať s ním plnohodnotne môže až pri plnoletosti.
 
 ## Kombinácia je tiež možnosť

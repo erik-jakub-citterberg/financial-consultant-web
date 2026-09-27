@@ -1,10 +1,40 @@
 {
-  "note": "Blocklist for style-lint.mjs. Purple/indigo detection is by HSL hue range; add explicit hexes if needed.",
-  "bannedFontFamilies": ["Inter", "Roboto", "Open Sans", "Poppins", "Montserrat"],
-  "bannedHexes": ["#6366f1", "#7c3aed", "#8b5cf6", "#a855f7", "#4f46e5", "#818cf8"],
-  "purpleHueRange": { "minHue": 240, "maxHue": 300, "minSaturation": 0.25, "minLightnessGate": 0.15 },
-  "forbidGradientKeywords": ["linear-gradient", "radial-gradient", "conic-gradient"],
-  "gradientAllowlistFiles": ["base.css"],
+  "note": "Blocklist for style-lint.mjs. Fonts: generic defaults + the AI 'designed-look' cluster + faces that failed our Slovak caron test (see DESIGN.md). Gradients are banned everywhere; no file is allowlisted.",
+  "bannedFontFamilies": [
+    "Inter",
+    "Roboto",
+    "Open Sans",
+    "Lato",
+    "Poppins",
+    "Montserrat",
+    "Space Grotesk",
+    "Instrument Serif",
+    "Geist",
+    "Fraunces",
+    "Cormorant",
+    "Vollkorn",
+    "Libre Caslon"
+  ],
+  "bannedHexes": [
+    "#6366f1",
+    "#7c3aed",
+    "#8b5cf6",
+    "#a855f7",
+    "#4f46e5",
+    "#818cf8"
+  ],
+  "purpleHueRange": {
+    "minHue": 240,
+    "maxHue": 300,
+    "minSaturation": 0.25,
+    "minLightnessGate": 0.15
+  },
+  "forbidGradientKeywords": [
+    "linear-gradient",
+    "radial-gradient",
+    "conic-gradient"
+  ],
+  "gradientAllowlistFiles": [],
   "maxIdenticalRadiusUses": 8,
   "watchRadiusValue": "16px"
 }

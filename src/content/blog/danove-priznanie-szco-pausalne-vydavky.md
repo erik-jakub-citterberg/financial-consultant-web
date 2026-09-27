@@ -7,7 +7,7 @@ tags: ["SZČO", "živnostník", "paušálne výdavky", "daňové priznanie"]
 service: "dane"
 ---
 
-Paušálne výdavky sú jednou z najjednoduchších a najvýhodnejších možností, ako si môže živnostník legálne znížiť základ dane. Napriek tomu ich mnohí SZČO stále nevyužívajú — buď o nich nevedia, alebo si myslia, že musia evidovať každý účtenku.
+Paušálne výdavky sú jednou z najjednoduchších a najvýhodnejších možností, ako si môže živnostník legálne znížiť základ dane. Napriek tomu ich mnohí SZČO stále nevyužívajú – buď o nich nevedia, alebo si myslia, že musia evidovať každý účtenku.
 
 ## Čo sú paušálne výdavky?
 
@@ -15,7 +15,7 @@ Namiesto toho, aby ste pri daňovom priznaní dokladali každý výdavok (benzí
 
 Zákonný limit: paušálne výdavky môžu byť maximálne **20 000 € ročne** (tzn. pri príjmoch nad 33 334 € sa limit stropuje).
 
-Do paušálu sú zahrnuté aj zaplatené odvody do Sociálnej poisťovne a zdravotnej poisťovne. Tie sa do výpočtu základu dane pripočítavajú ako ďalší odpočet nad rámec paušálu — alebo, pri paušáli, sa uplatňujú osobitne. (Presné pravidlo: pri paušáli si odpočítate poistné nad rámec paušálu — tzn. 60 % paušál + zaplatené povinné odvody.)
+Do paušálu sú zahrnuté aj zaplatené odvody do Sociálnej poisťovne a zdravotnej poisťovne. Tie sa do výpočtu základu dane pripočítavajú ako ďalší odpočet nad rámec paušálu – alebo, pri paušáli, sa uplatňujú osobitne. (Presné pravidlo: pri paušáli si odpočítate poistné nad rámec paušálu – tzn. 60 % paušál + zaplatené povinné odvody.)
 
 ## Kto môže paušál použiť?
 
@@ -39,7 +39,7 @@ Predstavte si živnostníka s príjmami 30 000 € za rok 2026 a zaplatením odv
 | Základ dane | 30 000 − 18 000 − 4 200 = **7 800 €** |
 | Nezdaniteľná časť (5 967 €) | −5 967 € |
 | Zdaniteľný základ | **1 833 €** |
-| Daň (15 % — SZČO do 100 000 € príjmov) | **275 €** |
+| Daň (15 % – SZČO do 100 000 € príjmov) | **275 €** |
 
 **Výpočet so skutočnými výdavkami** (ak máte doklady napr. za 8 000 €):
 
@@ -53,7 +53,7 @@ Predstavte si živnostníka s príjmami 30 000 € za rok 2026 a zaplatením odv
 | Zdaniteľný základ | **11 833 €** |
 | Daň (15 %) | **1 775 €** |
 
-Rozdiel: **1 500 €** v prospech paušálu — aj keď skutočné výdavky sú 8 000 €.
+Rozdiel: **1 500 €** v prospech paušálu – aj keď skutočné výdavky sú 8 000 €.
 
 Paušál dáva zmysel, keď skutočné výdavky sú nižšie ako 60 % príjmov (v tomto prípade nižšie ako 18 000 €).
 
@@ -66,7 +66,7 @@ Paušál neznamená nulová administratíva. Stále musíte viesť:
 - **Evidenciu záväzkov:** nezaplatené záväzky voči dodávateľom
 - **Evidenciu hmotného majetku:** ak máte napr. auto používané na podnikanie
 
-Nemusíte evidovať výdavky — to je výhoda paušálu. Ale doklady od výdavkov si napriek tomu schovávajte minimálne 5 rokov — pre prípad daňovej kontroly.
+Nemusíte evidovať výdavky – to je výhoda paušálu. Ale doklady od výdavkov si napriek tomu schovávajte minimálne 5 rokov – pre prípad daňovej kontroly.
 
 ## Najčastejšie chyby
 
@@ -81,7 +81,7 @@ Spočítajte si reálne výdavky spojené s podnikaním za rok. Ak sú nižšie 
 
 **Poznámka k sadzbe:** SZČO s príjmami do 100 000 € ročne platí v roku 2026 daň z príjmu vo výške 15 % (nie 19 %). Pri vyšších príjmoch platia progresívne pásma.
 
-Ak máte vysoké reálne výdavky (napríklad kupujete materiál, platíte prenájom, máte výdavky na auto) a ich suma presahuje 60 % príjmov — skutočné výdavky môžu byť výhodnejšie.
+Ak máte vysoké reálne výdavky (napríklad kupujete materiál, platíte prenájom, máte výdavky na auto) a ich suma presahuje 60 % príjmov – skutočné výdavky môžu byť výhodnejšie.
 
 Viac o [daňových priznanich pre živnostníkov](/dane) nájdete na stránke daní.
 

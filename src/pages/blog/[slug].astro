@@ -31,7 +31,6 @@ const serviceLabels: Record<string, string> = {
 
 <BaseLayout title={post.data.title} description={post.data.description}>
   <div class="page-header">
-    <p class="eyebrow">Blog</p>
     <h1>{post.data.title}</h1>
     <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
     {post.data.service && (

@@ -60,8 +60,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-family: var(--font-body);
     font-size: var(--step--1);
     color: var(--color-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
     position: relative;
   }
 
@@ -74,8 +72,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    padding-left: var(--space-3);
-    border-left: 2px solid var(--color-accent);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--color-line);
   }
   .cred strong {
     font-family: var(--font-body);
@@ -115,9 +113,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <div class="about-grid">
     <div class="about-content">
-      <p class="eyebrow">O mne</p>
       <h1>Erika Zajaková</h1>
-      <hr class="h1-rule" />
       <div class="prose">
         <p>Finančnému poradenstvu sa venujem od roku 2002 v spoločnosti OVB Allfinanz Slovensko. Od roku 2006 popri tom spracúvam daňové priznania a vediem jednoduché účtovníctvo ako samostatne zárobkovo činná osoba.</p>
         <p>Ekonómiu a financie som vyštudovala na Bankovním institute vysoká škola v Prahe (Ing., 2015). Pôsobím v Michalovej v okrese Brezno a pracujem s klientmi z celého regiónu.</p>
@@ -134,7 +130,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="photo-initials">E·Z</span>
         <span class="photo-label">Foto bude doplnené</span>
       </div>
-      <p class="eyebrow" style="margin-bottom: var(--space-3);">Skúsenosti</p>
+      <h2 class="about-subhead">Skúsenosti</h2>
       <div class="credentials">
         <div class="cred cred--with-badge">
           <div class="badge-seal">OVB<br/>2002</div>

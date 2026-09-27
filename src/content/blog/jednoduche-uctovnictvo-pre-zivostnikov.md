@@ -7,13 +7,13 @@ tags: ["jednoduché účtovníctvo", "živnostník", "SZČO", "účtovníctvo"]
 service: "uctovnictvo"
 ---
 
-Účtovníctvo je pre mnohých živnostníkov slabá stránka — nie preto, že by to bolo príliš ťažké, ale preto, že zaberá čas, ktorý by mohli venovať podnikaniu. Aký typ účtovníctva sa vás týka a čo všetko musíte evidovať?
+Účtovníctvo je pre mnohých živnostníkov slabá stránka – nie preto, že by to bolo príliš ťažké, ale preto, že zaberá čas, ktorý by mohli venovať podnikaniu. Aký typ účtovníctva sa vás týka a čo všetko musíte evidovať?
 
 ## Jednoduché vs. podvojné účtovníctvo
 
 **Podvojné účtovníctvo** je povinné pre obchodné spoločnosti (s.r.o., a.s.) a vyžaduje evidenciu každej transakcie na dvoch stranách (má dať / dal). Je komplexnejšie a zvyčajne vyžaduje odborníka.
 
-**Jednoduché účtovníctvo** vedú fyzické osoby — podnikatelia (SZČO), ktoré sa rozhodli nepoužívať paušálne výdavky, alebo ktoré sú na to povinné zo zákona. Je prehľadnejšie, ale stále vyžaduje disciplínu.
+**Jednoduché účtovníctvo** vedú fyzické osoby – podnikatelia (SZČO), ktoré sa rozhodli nepoužívať paušálne výdavky, alebo ktoré sú na to povinné zo zákona. Je prehľadnejšie, ale stále vyžaduje disciplínu.
 
 Ako SZČO máte v podstate tri možnosti:
 1. **Paušálne výdavky:** len evidencia príjmov, žiadne účtovníctvo (ak nie ste platiteľ DPH)
@@ -45,19 +45,19 @@ Okrem toho: inventúra majetku na konci roka a výkaz o majetku a záväzkoch.
 
 Na slovenskom trhu existuje niekoľko osvedčených možností:
 
-**Pohoda** (Stormware) — pravdepodobne najrozšírenejší softvér v SR. Robustný, má verzie pre jednoduché aj podvojné účtovníctvo. Cena: od cca 130 € ročne za jednoduché účtovníctvo.
+**Pohoda** (Stormware) – pravdepodobne najrozšírenejší softvér v SR. Robustný, má verzie pre jednoduché aj podvojné účtovníctvo. Cena: od cca 130 € ročne za jednoduché účtovníctvo.
 
-**OMEGA** (Kros) — silná alternatíva, obľúbená najmä u účtovníkov. Dobrá podpora a aktualizácie podľa legislatívy.
+**OMEGA** (Kros) – silná alternatíva, obľúbená najmä u účtovníkov. Dobrá podpora a aktualizácie podľa legislatívy.
 
 **Money S3:** ďalšia populárna voľba, intuitívne rozhranie.
 
-**Jednoduché online riešenia** (napr. iDoklad, Billdu) — vhodné ak potrebujete hlavne fakturáciu a základnú evidenciu. Lacnejšie, ale menej komplexné.
+**Jednoduché online riešenia** (napr. iDoklad, Billdu) – vhodné ak potrebujete hlavne fakturáciu a základnú evidenciu. Lacnejšie, ale menej komplexné.
 
 Pri výbere softvéru si overte: podporuje export pre daňové tlačivá v aktuálnom roku? Má aktualizácie pri zmenách legislatívy? Je kompatibilný s vaším účtovníkom (ak ho plánujete mať)?
 
 ## Čo zvládnete sami?
 
-Jednoduché účtovníctvo pri malej prevádzke (do 200 dokladov mesačne, žiadni zamestnanci, nie ste platiteľ DPH) je zvládnuteľné svojpomocne — ak ste ochotní venovať mu pravidelne čas a dôsledne archivovať doklady.
+Jednoduché účtovníctvo pri malej prevádzke (do 200 dokladov mesačne, žiadni zamestnanci, nie ste platiteľ DPH) je zvládnuteľné svojpomocne – ak ste ochotní venovať mu pravidelne čas a dôsledne archivovať doklady.
 
 Typická chyba ľudí, čo robia účtovníctvo sami: **nechávajú to na koniec roka**. Potom hľadajú faktúry z januára, nevedia priradiť výdavky a urobia chyby.
 
@@ -75,10 +75,10 @@ Zvažte externého účtovníka, ak:
 
 ## Ako pracujem s klientmi
 
-Každý klient je iný — malý živnostník s 20 faktúrami mesačne má iné potreby ako firma s 10 zamestnancami. Preto cenu nastavujem individuálne:
+Každý klient je iný – malý živnostník s 20 faktúrami mesačne má iné potreby ako firma s 10 zamestnancami. Preto cenu nastavujem individuálne:
 
 - **Cena za doklad** od 0,90 € (vhodné pri nepravidelnom a menšom objeme)
-- **Paušálny mesačný poplatok** od 50 € (pri pravidelnom objeme — predvídateľné náklady)
+- **Paušálny mesačný poplatok** od 50 € (pri pravidelnom objeme – predvídateľné náklady)
 
 V cene je vždy komunikácia, kontrola súladu s legislatívou a príprava podkladov pre daňové priznanie.
 

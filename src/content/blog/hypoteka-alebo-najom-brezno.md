@@ -82,7 +82,7 @@ Matematika je len časť rovnice. Treba zohľadniť:
 
 ## Praktická rada pre región Brezno
 
-Brezno nie je Bratislava ani Banská Bystrica — tu hypotéka pri primeranom byte skutočne konkuruje nájmu mesačnou splátkou. To je dôležitý rozdiel oproti veľkým mestám, kde cena bytu a splátky sú výrazne vyššie ako nájom.
+Brezno nie je Bratislava ani Banská Bystrica – tu hypotéka pri primeranom byte skutočne konkuruje nájmu mesačnou splátkou. To je dôležitý rozdiel oproti veľkým mestám, kde cena bytu a splátky sú výrazne vyššie ako nájom.
 
 Ak máte lokálne väzby, stabilnú prácu a dostatok na akontáciu, kúpa dáva v tomto regióne spravidla ekonomický zmysel. Naviac získate vlastníctvo a istotu.
 

@@ -30,11 +30,11 @@ Daňové priznanie MUSÍTE podať, ak ste v roku 2026:
 
 Aj keď nemusíte, oplatí sa podať, ak:
 
-- **Ste mali časť roka nízky príjem alebo žiadny** (materská, PN, nezamestnanie) — nezdaniteľná časť sa prepočíta a môže vzniknúť preplatok
+- **Ste mali časť roka nízky príjem alebo žiadny** (materská, PN, nezamestnanie) – nezdaniteľná časť sa prepočíta a môže vzniknúť preplatok
 - **Chcete uplatniť nezdaniteľnú časť na manžela/manželku** s nízkym príjmom
 - **Platili ste príspevky na III. pilier** a zamestnávateľ ich nezohľadnil
 - **Máte daňový bonus na deti** a chcete sa uistiť, že bol správne vypočítaný
-- **Ste mali príjmy z brigády** (dohoda o brigádnickej práci), kde vám zrážali daň zrážkou — môžete ju vrátiť, ak celkový príjem bol pod nezdaniteľnou hranicou
+- **Ste mali príjmy z brigády** (dohoda o brigádnickej práci), kde vám zrážali daň zrážkou – môžete ju vrátiť, ak celkový príjem bol pod nezdaniteľnou hranicou
 
 ## Termíny, ktoré treba poznať
 
@@ -43,9 +43,9 @@ Aj keď nemusíte, oplatí sa podať, ak:
 | **31. január 2027** | Požiadajte zamestnávateľa o ročné zúčtovanie (ak to chcete cez neho) |
 | **15. február 2027** | Odovzdajte zamestnávateľovi všetky potvrdenia a doklady |
 | **31. marec 2027** | Zákonný termín na podanie daňového priznania |
-| **30. apríl 2027** | Predĺžený termín — podáte oznámenie o predĺžení najneskôr 31. marca |
+| **30. apríl 2027** | Predĺžený termín – podáte oznámenie o predĺžení najneskôr 31. marca |
 
-Predĺženie podáte jednoduchou notifikáciou Daňovému úradu — nie je potrebný súhlas, stačí oznámiť.
+Predĺženie podáte jednoduchou notifikáciou Daňovému úradu – nie je potrebný súhlas, stačí oznámiť.
 
 ## Aké dokumenty si pripraviť?
 
@@ -58,15 +58,15 @@ Predĺženie podáte jednoduchou notifikáciou Daňovému úradu — nie je potr
 ## Najčastejšie chyby
 
 1. **Nežiadajú o ročné zúčtovanie:** ak nepodpíšete vyhlásenie a nepožiadate, zamestnávateľ nezúčtuje
-2. **Zabudnú na príjmy z dohôd** u iného zamestnávateľa — tieto príjmy musíte zahrnúť sami, ak ich zamestnávateľ nezúčtoval
-3. **Neuplatnia odpočet na manžela/manželku** pri nízkych príjmoch partnera — tento odpočet treba aktívne uplatniť
+2. **Zabudnú na príjmy z dohôd** u iného zamestnávateľa – tieto príjmy musíte zahrnúť sami, ak ich zamestnávateľ nezúčtoval
+3. **Neuplatnia odpočet na manžela/manželku** pri nízkych príjmoch partnera – tento odpočet treba aktívne uplatniť
 4. **Nepodajú pri predaji nehnuteľnosti:** aj keď predaj prebiehol bezdaňovo (napríklad oslobodenie po 5 rokoch), v niektorých prípadoch treba podať priznanie s vysvetlením
 
 ## Prečo požiadať odborníka?
 
 Daňové priznanie zamestnanca (typ A) je relatívne jednoduché. Ak máte len príjmy zo zamestnania, ročné zúčtovanie cez zamestnávateľa je zvyčajne postačujúce.
 
-Ak máte akýkoľvek iný príjem, predávali ste nehnuteľnosť alebo chcete maximalizovať odpočty — oplatí sa nechať to skontrolovať odborníkom. Chyba v daňovom priznaní môže viesť k pokutatám alebo plateniu dane, ktorú platiť nemusíte.
+Ak máte akýkoľvek iný príjem, predávali ste nehnuteľnosť alebo chcete maximalizovať odpočty – oplatí sa nechať to skontrolovať odborníkom. Chyba v daňovom priznaní môže viesť k pokutatám alebo plateniu dane, ktorú platiť nemusíte.
 
 Viac o [daňových priznanich a ročnom zúčtovaní](/dane) nájdete na stránke daní.
 

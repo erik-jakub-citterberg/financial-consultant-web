@@ -1,51 +1,41 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ServiceCard from '../components/ServiceCard.astro';
 ---
 <BaseLayout
   title="Dane, poistenie a hypotéky v Brezne a okolí | Erika Zajaková"
   description="Erika Zajaková: daňové priznania, účtovníctvo, mzdy a finančné poradenstvo OVB v regióne Brezno. Prax od roku 2002."
 >
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
-        <p class="lede">Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania, vediem účtovníctvo a mzdy pre ľudí a firmy v regióne.</p>
-        <p style="margin-top: var(--space-4);"><a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a></p>
-      </div>
-      <dl class="facts">
-        <div class="fact"><dt>Finančná poradkyňa OVB</dt><dd>od 2002</dd></div>
-        <div class="fact"><dt>Dane a účtovníctvo</dt><dd>od 2006</dd></div>
-        <div class="fact"><dt>Vzdelanie</dt><dd>Ing., financie</dd></div>
-        <div class="fact"><dt>Sídlo</dt><dd>Michalová</dd></div>
-      </dl>
+  <section class="c-hero">
+    <div>
+      <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
+      <p class="lede">Som Erika Zajaková z Michalovej. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania, vediem účtovníctvo a mzdy pre ľudí a firmy z Horehronia.</p>
+      <p class="c-cta">
+        <a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a>
+        <a href="tel:+421907824728">0907 824 728</a>
+      </p>
     </div>
+    <figure class="c-portrait">
+      <!-- FOTO: sem príde reálna fotografia Eriky (4:5), žiadny stock ani AI -->
+      <div class="c-frame">Tu bude fotografia</div>
+      <figcaption>Ing. Erika Zajaková, Michalová</figcaption>
+    </figure>
   </section>
 
-  <section class="section">
+  <svg class="c-ridge" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path class="c-ridge-fill" d="M0 112 L70 104 L130 108 L190 92 L240 98 L300 80 L350 86 L410 66 L450 72 L500 52 L540 60 L590 40 L630 48 L680 30 L720 18 L760 26 L800 44 L850 38 L900 58 L950 54 L1010 74 L1060 70 L1120 90 L1160 86 L1200 98 L1200 120 L0 120 Z"/><path class="c-ridge-line" d="M0 112 L70 104 L130 108 L190 92 L240 98 L300 80 L350 86 L410 66 L450 72 L500 52 L540 60 L590 40 L630 48 L680 30 L720 18 L760 26 L800 44 L850 38 L900 58 L950 54 L1010 74 L1060 70 L1120 90 L1160 86 L1200 98"/></svg>
+
+  <section class="c-section">
     <h2>S čím vám pomôžem</h2>
-    <div class="cards cards--2col">
-      <ServiceCard title="Dane a účtovníctvo" href="/dane">
-        <p>Daňové priznania, jednoduché a podvojné účtovníctvo, mzdy a personalistika.</p>
-      </ServiceCard>
-      <ServiceCard title="Hypotéky" href="/hypoteky">
-        <p>Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní. Porovnám ponuky bánk za vás.</p>
-      </ServiceCard>
-      <ServiceCard title="Poistenie" href="/poistenie">
-        <p>Životné a majetkové poistenie nastavené podľa toho, čo naozaj potrebujete vy a vaša rodina.</p>
-      </ServiceCard>
-      <ServiceCard title="Sporenie a investície" href="/financne-poradenstvo">
-        <p>Sporenie na cieľ, dôchodkové piliere a plán pre deti.</p>
-      </ServiceCard>
-    </div>
+    <ul class="c-services">
+      <li><h3><a href="/dane">Dane a účtovníctvo</a></h3><p>Daňové priznanie, jednoduché aj podvojné účtovníctvo, mzdy. Priznanie od 40 €.</p></li>
+      <li><h3><a href="/hypoteky">Hypotéky</a></h3><p>Kúpa, stavba alebo refinancovanie. Porovnám ponuky bánk, pre vás bezplatne.</p></li>
+      <li><h3><a href="/poistenie">Poistenie</a></h3><p>Životné a majetkové poistenie podľa toho, čo naozaj potrebujete.</p></li>
+      <li><h3><a href="/financne-poradenstvo">Sporenie a dôchodok</a></h3><p>Sporenie na cieľ, dôchodkové piliere a plán pre deti.</p></li>
+    </ul>
   </section>
 
-  <section class="steps-section">
-    <h2>Ako prebieha spolupráca</h2>
-    <div class="steps">
-      <div class="step"><strong>Zavoláte alebo napíšete</strong><p>Dohodneme si termín u vás, v Michalovej alebo online.</p></div>
-      <div class="step"><strong>Prejdeme vašu situáciu</strong><p>Spolu si pozrieme doklady a zmluvy. Vopred nemusíte nič pripravovať.</p></div>
-      <div class="step"><strong>Pripravím riešenie</strong><p>Vybavím, čo treba, a vysvetlím každý krok, aby ste vedeli, za čo platíte.</p></div>
-    </div>
+  <section class="c-section">
+    <h2>Ako spolu začneme</h2>
+    <p class="c-prose">Najprv mi zavoláte alebo napíšete. Stretneme sa u vás, v Michalovej alebo online a spolu prejdeme, čo treba vybaviť. Potom to pripravím a podám za vás a každý krok vám vysvetlím, aby ste vedeli, za čo platíte.</p>
+    <p class="c-places">Pracujem s klientmi v <a href="/brezno">Brezne</a>, <a href="/michalova">Michalovej</a>, <a href="/podbrezova">Podbrezovej</a> a <a href="/banska-bystrica">Banskej Bystrici</a>.</p>
   </section>
 </BaseLayout>

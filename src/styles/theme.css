@@ -1,1 +1,101 @@
-/* Variant theme layer. Empty on design/base-v2; each design/variant-* branch fills it. */
+/*
+  Variant C · Horehronie
+  Idea: rooted in the place. Brezno and Michalová sit under the Nízke Tatry;
+  trust comes from proximity and a real person, not from polish.
+  Type: Spectral (Production Type) headings at 500, Red Hat Text body.
+  Warm off-white + sand, navy text. Signature: one original single-line ridge.
+  Layout: photo-led split; prose instead of components.
+  Motion: one reveal of the portrait frame on load. Nothing else moves.
+*/
+:root {
+  --font-heading: 'Spectral', Georgia, serif;
+  --font-body:    'Red Hat Text Variable', 'Segoe UI', sans-serif;
+  --font-ui:      'Red Hat Text Variable', 'Segoe UI', sans-serif;
+  --weight-heading: 500;
+  --tracking-heading: -0.005em;
+  --leading-heading: 1.12;
+
+  --color-bg:      #faf7f2;
+  --color-bg-soft: #efe6d8;   /* sand */
+  --color-line:    #e2d8c6;
+  --color-accent:  #a8732a;
+  --color-muted:   #5b6068;
+
+  --step-0: 1.0625rem;
+  --step-3: clamp(1.9rem, 1.5rem + 1.5vw, 2.6rem);
+  --step-4: clamp(2.5rem, 1.9rem + 2.8vw, 4rem);
+  --leading-body: 1.65;
+
+  --radius-sm: 6px;
+  --radius-lg: 10px;
+}
+
+body { background: var(--color-bg); }
+.topbar { display: none; }
+.site-header-wrap { background: var(--color-bg); }
+.site-header { padding-block: 1.25rem; }
+.brand strong { font-family: var(--font-heading); font-weight: 600; font-size: 1.4rem; }
+.brand span { font-family: var(--font-heading); font-style: italic; font-size: 0.95rem; }
+.nav a { font-weight: 500; }
+.hdr-phone { font-weight: 600; color: var(--color-brand-strong) !important; padding: 0.45rem 0.9rem; border: 1px solid var(--color-brand-strong); border-radius: 999px; font-variant-numeric: tabular-nums; }
+.hdr-phone:hover { background: var(--color-brand-strong); color: #fff !important; text-decoration: none !important; }
+.hdr-phone-m { display: none; }
+@media (max-width: 48rem) {
+  .hdr-phone-m { display: inline; margin-left: auto; margin-right: 0.5rem; font-weight: 600; white-space: nowrap; color: var(--color-brand-strong); text-decoration: none; font-size: 0.95rem; }
+  .brand span { display: none; }
+  .brand strong { font-size: 1.2rem; white-space: nowrap; }
+}
+
+h1, h2 { font-weight: 500; }
+h3 { font-family: var(--font-heading); font-weight: 600; }
+a:hover { color: var(--color-accent); }
+.btn, .nav a.btn { border-radius: var(--radius-sm); padding: 0.8rem 1.4rem; }
+
+/* Hero: text beside a portrait frame reserved for Erika's photo */
+.c-hero { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 4rem; align-items: center; padding-block: 4rem 3rem; }
+@media (max-width: 56rem) { .c-hero { grid-template-columns: 1fr; gap: 2.5rem; padding-block: 2.5rem 2rem; } }
+.c-hero .lede { color: var(--color-ink); margin-top: 1.5rem; max-width: 40ch; }
+.c-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.5rem; margin-top: 2rem; }
+.c-cta a:not(.btn) { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.c-portrait { margin: 0; }
+.c-frame {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-soft);
+  display: flex; align-items: flex-end;
+  padding: 1.5rem;
+  color: var(--color-muted);
+  font-family: var(--font-heading);
+  font-style: italic;
+  animation: c-reveal 900ms var(--ease) 120ms both;
+}
+.c-portrait figcaption { margin-top: 0.75rem; font-family: var(--font-heading); font-style: italic; color: var(--color-muted); }
+@keyframes c-reveal { from { clip-path: inset(6% 6% 6% 6% round 10px); opacity: 0.4; } to { clip-path: inset(0 0 0 0 round 10px); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .c-frame { animation: none; } }
+
+/* The ridge: one original line, used twice (under the hero, above the footer) */
+.c-ridge { display: block; width: 100%; height: clamp(70px, 9vw, 120px); margin-top: 1rem; }
+.c-ridge-fill { fill: var(--color-bg-soft); }
+.c-ridge-line { fill: none; stroke: var(--color-brand); stroke-width: 1.25; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.c-ridge--foot { width: min(70rem, 100% - 2 * var(--space-4)); margin: 5rem auto 0; height: clamp(40px, 5vw, 64px); }
+.c-ridge--foot .c-ridge-line { stroke: var(--color-line); }
+.c-frame { max-height: 34rem; }
+.c-ridge--foot + .site-footer { margin-top: 0; border-top: 0; }
+
+/* Sections */
+.c-section { padding-block: 4.5rem 1rem; }
+.c-services { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 4rem; margin-top: 1.5rem; }
+.c-services li { padding-block: 1.5rem; border-bottom: 1px solid var(--color-line); }
+.c-services h3 { font-size: 1.5rem; }
+.c-services h3 a { color: var(--color-brand-strong); text-decoration: none; }
+.c-services h3 a:hover { color: var(--color-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+.c-services p { color: var(--color-muted); margin-top: 0.35rem; }
+@media (max-width: 44rem) { .c-services { grid-template-columns: 1fr; } }
+
+.c-prose { font-family: var(--font-heading); font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.65rem); line-height: 1.5; color: var(--color-brand-strong); max-width: 34em; margin-top: 1.25rem; }
+.c-places { margin-top: 2rem; color: var(--color-muted); }
+
+/* Inner pages */
+.price-table thead th { border-bottom: 1px solid var(--color-brand-strong); }
+.faq summary { font-family: var(--font-heading); font-weight: 600; font-size: 1.15rem; }

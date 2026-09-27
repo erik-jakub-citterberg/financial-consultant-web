@@ -1,5 +1,9 @@
 ---
 import '../styles/base.css';
+import '@fontsource/spectral/500.css';
+import '@fontsource/spectral/600.css';
+import '@fontsource/spectral/500-italic.css';
+import '@fontsource-variable/red-hat-text/wght.css';
 import '../styles/theme.css';
 import { ViewTransitions } from 'astro:transitions';
 
@@ -61,7 +65,8 @@ const schema = {
     </div>
     <div class="site-header-wrap" id="hdr">
       <header class="site-header container">
-        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Dane · Financie · Poradenstvo</span></a>
+        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Dane a financie · Horehronie</span></a>
+        <a href="tel:+421907824728" class="hdr-phone-m">0907 824 728</a>
         <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
         </button>
@@ -72,13 +77,14 @@ const schema = {
           <a href="/financne-poradenstvo">Financie</a>
           <a href="/cennik">Cenník</a>
           <a href="/o-mne">O mne</a>
-          <a href="/kontakt" class="btn">Konzultácia</a>
+          <a href="tel:+421907824728" class="hdr-phone">0907 824 728</a>
         </nav>
       </header>
     </div>
     <main class="container">
       <slot />
     </main>
+    <svg class="c-ridge c-ridge--foot" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path class="c-ridge-line" d="M0 112 L70 104 L130 108 L190 92 L240 98 L300 80 L350 86 L410 66 L450 72 L500 52 L540 60 L590 40 L630 48 L680 30 L720 18 L760 26 L800 44 L850 38 L900 58 L950 54 L1010 74 L1060 70 L1120 90 L1160 86 L1200 98"/></svg>
     <footer class="site-footer container">
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
       <p>Michalová, okres Brezno · 0907 824 728 · erika.zajakova@gmail.com</p>

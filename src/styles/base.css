@@ -160,3 +160,7 @@ img { max-width: 100%; height: auto; display: block; }
   .js-ready [data-reveal]:not(.in) { opacity: 1; }
   [data-reveal] { transition: none; }
 }
+
+/* Breathing room between a page title and what follows it */
+h1 + .prose, h1 + p, h1 + .lede, h1 + div { margin-top: 1.25rem; }
+h2 + .prose, h2 + p, h2 + .price-table, h2 + .faq { margin-top: 1rem; }

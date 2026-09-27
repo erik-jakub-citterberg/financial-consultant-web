@@ -111,3 +111,26 @@ Real name in the header; IČO and address in the footer and structured data; Ing
 on O mne with a real photo (no stock, no AI avatar); real prices or a free-consultation booking;
 blog posts carry Erika's byline, date and a disclaimer; service pages carry a regulated-advice
 disclaimer; NBS registration number once Erika provides it.
+
+## 9. Update 2026-09-28: Claude house style and Erik's constraints
+
+**Finding (Erik):** variants A and C looked like claude.ai itself: warm cream/paper background,
+editorial serif, muted ochre accent, hairline rules, italic asides. It is the default look of
+every "build a website in a day with Claude" tutorial. When Claude steers away from generic SaaS,
+it drifts to its maker's aesthetic, and Claude's own review cannot see it.
+Guardrail: `style-lint` now fails warm cream/paper grounds (`paperBackground` in
+`quality/forbidden-styles.json`). Treat serif-on-cream as banned.
+
+**Taste now comes from outside Claude.** Erik chose from a board of real sites (2026-09-28):
+- Liked: #7 Bench (friendly, conversational, real face in a chat bubble, product-style view,
+  clear checklist) and #8 Lang Steuerberater (a family tax firm with a real identity system and monogram).
+- Rejected: Pictet (type-only minimalism) and DEVISIA (photographic metaphor).
+- Wanted: **colour**, not monochrome black and white.
+
+**Constraints:**
+- Photos: at most two profile photos of Erika; optionally one tasteful stock photo for the home page.
+  The design must work without a photo-heavy layout.
+- OVB first: insurance and investments are Erika's main business; taxes are secondary.
+- Recruitment: Erika wants to bring people into OVB through her (`/kariera`), and to be presentable
+  enough to be featured on OVB's own site. Harmonise with OVB navy; never copy OVB branding.
+- Motion and logos: only what we draw ourselves (CSS/SVG) or open-source assets. No paid animation.

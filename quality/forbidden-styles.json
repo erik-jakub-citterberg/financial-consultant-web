@@ -36,5 +36,12 @@
   ],
   "gradientAllowlistFiles": [],
   "maxIdenticalRadiusUses": 8,
-  "watchRadiusValue": "16px"
+  "watchRadiusValue": "16px",
+  "paperBackground": {
+    "minHue": 20,
+    "maxHue": 65,
+    "minSaturation": 0.1,
+    "minLightness": 0.9,
+    "why": "Warm cream/paper page backgrounds + editorial serif are Anthropic's own house style; every Claude-built tutorial site reproduces it (Erik, 2026-09-27)."
+  }
 }

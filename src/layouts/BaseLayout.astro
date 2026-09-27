@@ -1,5 +1,7 @@
 ---
 import '../styles/base.css';
+import '@fontsource-variable/literata/opsz.css';
+import '@fontsource-variable/literata/opsz-italic.css';
 import '../styles/theme.css';
 import { ViewTransitions } from 'astro:transitions';
 
@@ -61,7 +63,8 @@ const schema = {
     </div>
     <div class="site-header-wrap" id="hdr">
       <header class="site-header container">
-        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Dane · Financie · Poradenstvo</span></a>
+        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>dane, účtovníctvo a financie · Michalová</span></a>
+        <a href="tel:+421907824728" class="hdr-phone-m">0907 824 728</a>
         <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
         </button>
@@ -72,7 +75,8 @@ const schema = {
           <a href="/financne-poradenstvo">Financie</a>
           <a href="/cennik">Cenník</a>
           <a href="/o-mne">O mne</a>
-          <a href="/kontakt" class="btn">Konzultácia</a>
+          <a href="/kontakt">Kontakt</a>
+          <a href="tel:+421907824728" class="hdr-phone">0907 824 728</a>
         </nav>
       </header>
     </div>

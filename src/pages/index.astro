@@ -1,51 +1,67 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ServiceCard from '../components/ServiceCard.astro';
 ---
 <BaseLayout
   title="Dane, poistenie a hypotéky v Brezne a okolí | Erika Zajaková"
   description="Erika Zajaková: daňové priznania, účtovníctvo, mzdy a finančné poradenstvo OVB v regióne Brezno. Prax od roku 2002."
 >
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
-        <p class="lede">Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania, vediem účtovníctvo a mzdy pre ľudí a firmy v regióne.</p>
-        <p style="margin-top: var(--space-4);"><a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a></p>
-      </div>
-      <dl class="facts">
-        <div class="fact"><dt>Finančná poradkyňa OVB</dt><dd>od 2002</dd></div>
-        <div class="fact"><dt>Dane a účtovníctvo</dt><dd>od 2006</dd></div>
-        <div class="fact"><dt>Vzdelanie</dt><dd>Ing., financie</dd></div>
-        <div class="fact"><dt>Sídlo</dt><dd>Michalová</dd></div>
-      </dl>
+  <section class="a-hero">
+    <div>
+      <h1>Dane, poistenie a hypotéky v Brezne a okolí</h1>
+      <p class="lede">Som Erika Zajaková. Od roku 2002 pracujem ako finančná poradkyňa OVB a od roku 2006 spracúvam daňové priznania, vediem účtovníctvo a mzdy pre ľudí a firmy v regióne.</p>
+      <p class="a-cta">
+        <a class="btn" href="/kontakt">Dohodnúť si konzultáciu</a>
+        <span class="a-or">alebo zavolajte <a href="tel:+421907824728">0907 824 728</a></span>
+      </p>
     </div>
+    <table class="a-vypis">
+      <caption>Výpis</caption>
+      <tbody>
+        <tr><th scope="row">Finančná poradkyňa OVB</th><td>od 2002</td></tr>
+        <tr><th scope="row">Dane a účtovníctvo</th><td>od 2006</td></tr>
+        <tr><th scope="row">Vzdelanie</th><td>Ing., financie a ekonómia</td></tr>
+        <tr><th scope="row">Sídlo</th><td>Michalová, okres Brezno</td></tr>
+        <tr><th scope="row">IČO</th><td>40485242</td></tr>
+      </tbody>
+    </table>
   </section>
 
-  <section class="section">
-    <h2>S čím vám pomôžem</h2>
-    <div class="cards cards--2col">
-      <ServiceCard title="Dane a účtovníctvo" href="/dane">
-        <p>Daňové priznania, jednoduché a podvojné účtovníctvo, mzdy a personalistika.</p>
-      </ServiceCard>
-      <ServiceCard title="Hypotéky" href="/hypoteky">
-        <p>Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní. Porovnám ponuky bánk za vás.</p>
-      </ServiceCard>
-      <ServiceCard title="Poistenie" href="/poistenie">
-        <p>Životné a majetkové poistenie nastavené podľa toho, čo naozaj potrebujete vy a vaša rodina.</p>
-      </ServiceCard>
-      <ServiceCard title="Sporenie a investície" href="/financne-poradenstvo">
-        <p>Sporenie na cieľ, dôchodkové piliere a plán pre deti.</p>
-      </ServiceCard>
-    </div>
+  <section class="a-section">
+    <h2>Služby a ceny</h2>
+    <ul class="a-rows">
+      <li class="a-row">
+        <p class="a-margin">Dane</p>
+        <div><h3><a href="/dane">Daňové priznania a účtovníctvo</a></h3><p>Priznanie pre zamestnancov aj živnostníkov, jednoduché a podvojné účtovníctvo, mzdy.</p></div>
+        <p class="a-value">od 40 €<small>priznanie typ A</small></p>
+      </li>
+      <li class="a-row">
+        <p class="a-margin">Hypotéky</p>
+        <div><h3><a href="/hypoteky">Výber a vybavenie hypotéky</a></h3><p>Kúpa, stavba alebo refinancovanie. Porovnám ponuky bánk a vybavím podklady.</p></div>
+        <p class="a-value">bezplatne<small>platí banka</small></p>
+      </li>
+      <li class="a-row">
+        <p class="a-margin">Poistenie</p>
+        <div><h3><a href="/poistenie">Životné a majetkové poistenie</a></h3><p>Nastavené podľa toho, čo naozaj potrebujete, bez zbytočných pripoistení.</p></div>
+        <p class="a-value">bezplatne<small>platí poisťovňa</small></p>
+      </li>
+      <li class="a-row">
+        <p class="a-margin">Sporenie</p>
+        <div><h3><a href="/financne-poradenstvo">Sporenie a dôchodok</a></h3><p>Sporenie na cieľ, dôchodkové piliere a plán pre deti.</p></div>
+        <p class="a-value">bezplatne<small>prvá konzultácia</small></p>
+      </li>
+    </ul>
+    <p class="a-after"><a href="/cennik">Celý cenník</a></p>
   </section>
 
-  <section class="steps-section">
+  <section class="a-section">
     <h2>Ako prebieha spolupráca</h2>
-    <div class="steps">
-      <div class="step"><strong>Zavoláte alebo napíšete</strong><p>Dohodneme si termín u vás, v Michalovej alebo online.</p></div>
-      <div class="step"><strong>Prejdeme vašu situáciu</strong><p>Spolu si pozrieme doklady a zmluvy. Vopred nemusíte nič pripravovať.</p></div>
-      <div class="step"><strong>Pripravím riešenie</strong><p>Vybavím, čo treba, a vysvetlím každý krok, aby ste vedeli, za čo platíte.</p></div>
-    </div>
+    <table class="a-table">
+      <thead><tr><th></th><th>Vy</th><th>Ja</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Prvý kontakt</th><td data-who="Vy:">Zavoláte alebo napíšete.</td><td data-who="Ja:">Dohodneme termín u vás, v Michalovej alebo online.</td></tr>
+        <tr><th scope="row">Stretnutie</th><td data-who="Vy:">Prinesiete doklady, ktoré máte.</td><td data-who="Ja:">Prejdem vašu situáciu a poviem, čo treba vybaviť.</td></tr>
+        <tr><th scope="row">Vybavenie</th><td data-who="Vy:">Podpíšete, keď všetko sedí.</td><td data-who="Ja:">Pripravím a podám všetko za vás a vysvetlím každý krok.</td></tr>
+      </tbody>
+    </table>
   </section>
 </BaseLayout>

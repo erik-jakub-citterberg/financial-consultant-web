@@ -1,1 +1,139 @@
-/* Variant theme layer. Empty on design/base-v2; each design/variant-* branch fills it. */
+/*
+  Variant A · Účtovná kniha (ledger)
+  Idea: a meticulously kept ledger. Trust through precision, not decoration.
+  One voice: Literata (TypeTogether), optical sizes do the display/text work.
+  Paper surface, ink navy, warm hairline rules, a double rule under the header.
+  No boxes, no shadows, no lift. Motion: link underline thickness only.
+*/
+:root {
+  --font-heading: 'Literata Variable', Georgia, serif;
+  --font-body:    'Literata Variable', Georgia, serif;
+  --font-ui:      'Literata Variable', Georgia, serif;
+  --weight-heading: 620;
+  --tracking-heading: -0.012em;
+  --leading-heading: 1.12;
+
+  --color-bg:      #f6f3ec;   /* paper */
+  --color-bg-soft: #eee8da;   /* row highlight */
+  --color-line:    #d6ccb8;   /* warm hairline */
+  --color-accent:  #946520;   /* ledger gold, AA on paper */
+  --color-muted:   #5a5f63;
+
+  --step-0: 1.125rem;         /* 18px body: a document meant to be read */
+  --step-1: 1.3rem;
+  --step-3: clamp(1.9rem, 1.5rem + 1.4vw, 2.5rem);
+  --step-4: clamp(2.5rem, 1.9rem + 2.6vw, 3.8rem);
+
+  --radius-sm: 1px;
+  --rule-ink: 1px solid var(--color-brand-strong);
+}
+
+body { background: var(--color-bg); }
+
+/* Header: no utility bar; phone lives in the header; ledger double rule */
+.topbar { display: none; }
+.site-header-wrap { background: var(--color-bg); border-bottom: 4px double var(--color-brand-strong); }
+.site-header-wrap.is-stuck { box-shadow: none; }
+.site-header { padding-block: 1.1rem; }
+.brand strong { font-size: 1.45rem; font-weight: 640; letter-spacing: -0.01em; }
+.brand span { font-style: italic; font-size: 0.95rem; }
+.nav { gap: 1.4rem; }
+.nav a { font-size: 1rem; }
+.nav a:not(.hdr-phone):hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.3em; }
+.hdr-phone {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 600;
+  color: var(--color-brand-strong) !important;
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--color-line);
+}
+@media (max-width: 48rem) { .hdr-phone { border-left: 0; padding-left: 0; } }
+
+/* Links and buttons: ink, square-ish, no lift */
+a { text-decoration-thickness: 1px; }
+a:hover { color: var(--color-accent); }
+.btn, .nav a.btn { border-radius: 1px; padding: 0.75rem 1.4rem; font-weight: 600; }
+
+/* Headings get a ruled section head, like a ledger section */
+.a-section { padding-block: 4.5rem 1rem; }
+.a-section > h2 { padding-bottom: 0.9rem; border-bottom: var(--rule-ink); }
+
+/* Hero: text on paper + a ruled statement ("výpis") of facts */
+.a-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 4rem;
+  align-items: end;
+  padding-block: 4.5rem 3.5rem;
+}
+@media (max-width: 56rem) { .a-hero { grid-template-columns: 1fr; gap: 2.5rem; padding-block: 2.5rem; } }
+.a-hero h1 { max-width: 15ch; }
+.a-hero .lede { color: var(--color-ink); max-width: 38ch; font-size: 1.25rem; margin-top: 1.5rem; }
+.a-cta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6rem 1.4rem; margin-top: 2rem; }
+.a-cta .a-or { font-style: italic; color: var(--color-muted); }
+.a-cta .a-or a { font-style: normal; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.a-vypis { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.a-vypis caption { caption-side: top; text-align: left; font-style: italic; color: var(--color-muted); padding-bottom: 0.5rem; }
+.a-vypis tbody { border-top: 2px solid var(--color-brand-strong); border-bottom: 4px double var(--color-brand-strong); }
+.a-vypis th, .a-vypis td { padding: 0.6rem 0; border-bottom: 1px solid var(--color-line); vertical-align: baseline; }
+.a-vypis tr:last-child th, .a-vypis tr:last-child td { border-bottom: 0; }
+.a-vypis th { text-align: left; font-weight: 400; color: var(--color-muted); padding-right: 1rem; }
+.a-vypis td { text-align: right; font-weight: 600; color: var(--color-brand-strong); font-variant-numeric: tabular-nums lining-nums; }
+
+/* Ledger rows: marginal label · entry · value */
+.a-rows { list-style: none; padding: 0; }
+.a-row {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr) 11rem;
+  gap: 1.5rem;
+  align-items: baseline;
+  padding-block: 1.35rem;
+  border-bottom: 1px solid var(--color-line);
+  transition: background var(--dur) var(--ease);
+}
+.a-row:hover { background: var(--color-bg-soft); }
+.a-margin { font-style: italic; color: var(--color-muted); }
+.a-row h3 { font-size: 1.35rem; font-weight: 620; }
+.a-row h3 a { color: var(--color-brand-strong); text-decoration: none; }
+.a-row h3 a:hover { text-decoration: underline; text-decoration-thickness: 1px; color: var(--color-brand-strong); }
+.a-row p { color: var(--color-muted); margin-top: 0.3rem; font-size: 1.05rem; }
+.a-value { text-align: right; font-weight: 600; color: var(--color-brand-strong); font-variant-numeric: tabular-nums lining-nums; }
+.a-value small { display: block; font-weight: 400; font-style: italic; color: var(--color-muted); font-size: 0.9rem; }
+@media (max-width: 48rem) {
+  .a-row { grid-template-columns: 1fr; gap: 0.3rem; }
+  .a-value { text-align: left; }
+}
+.a-after { margin-top: 1.25rem; font-style: italic; }
+
+/* Process as a ruled table: what you do / what I do */
+.a-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+.a-table th, .a-table td { text-align: left; vertical-align: top; padding: 1.1rem 1.5rem 1.1rem 0; border-bottom: 1px solid var(--color-line); }
+.a-table thead th { font-style: italic; font-weight: 400; color: var(--color-muted); padding-block: 0.8rem; }
+.a-table tbody th { font-weight: 620; color: var(--color-brand-strong); width: 11rem; }
+@media (max-width: 48rem) {
+  .a-table thead { display: none; }
+  .a-table tr { display: grid; padding-block: 0.8rem; border-bottom: 1px solid var(--color-line); }
+  .a-table th, .a-table td { border: 0; padding: 0.2rem 0; }
+  .a-table td::before { content: attr(data-who) " "; font-style: italic; color: var(--color-muted); }
+}
+
+/* Inner pages inherit the ledger voice */
+.price-table { font-size: 1.05rem; }
+.price-table thead th { font-style: italic; font-weight: 400; border-bottom: var(--rule-ink); }
+.card { border-top: 1px solid var(--color-line); }
+.faq summary { font-family: var(--font-heading); font-weight: 600; }
+.note { font-style: italic; }
+
+.site-footer { border-top: 4px double var(--color-brand-strong); font-size: 0.95rem; }
+
+/* Mobile: keep the phone number in the first screen on every page */
+.hdr-phone-m { display: none; }
+@media (max-width: 48rem) {
+  .hdr-phone-m { display: inline; margin-left: auto; margin-right: 0.5rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--color-brand-strong); text-decoration: none; }
+  .brand span { display: none; }
+}
+@media (max-width: 48rem) {
+  .hdr-phone-m { white-space: nowrap; font-size: 0.95rem; }
+  .brand strong { font-size: 1.2rem; white-space: nowrap; }
+}

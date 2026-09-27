@@ -1,1 +1,177 @@
-/* Variant theme layer. Empty on design/base-v2; each design/variant-* branch fills it. */
+/*
+  Variant E · Identita
+  Idea: a small firm with a real identity, like Lang Steuerberater: one strong mark, solid
+  colour blocks, square corners, confident type. Made colourful: each service owns a colour.
+  Mark: an original EZ ligature. E and Z share their top and bottom bars; the Z diagonal is amber.
+  Type: Epilogue (headings, 800) + Albert Sans (text). Both pass the in-context caron check.
+  Motion: the mark draws itself and the four service tiles arrive once, on load. Nothing else.
+*/
+:root {
+  --navy: #16335c;
+  --navy-deep: #0f2545;
+  --ins: #0b7a65;  --ins-tint: #d4efe7;
+  --inv: #e3a21a;  --inv-tint: #ffe8a8;
+  --mor: #e5664b;  --mor-tint: #fbd9cf;
+  --tax: #1f6fae;  --tax-tint: #d6e9f8;
+
+  --color-brand: #16335c;
+  --color-brand-strong: #0f2545;
+  --color-accent: #e3a21a;
+  --color-ink: #17202c;
+  --color-muted: #4c5868;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f2f5f9;
+  --color-line: #d9e0e8;
+
+  --font-heading: 'Epilogue Variable', 'Arial Black', sans-serif;
+  --font-body:    'Albert Sans Variable', 'Segoe UI', sans-serif;
+  --font-ui:      'Albert Sans Variable', 'Segoe UI', sans-serif;
+  --weight-heading: 800;
+  --tracking-heading: -0.035em;
+  --leading-heading: 1.02;
+  --step-0: 1.0625rem;
+  --step-3: clamp(1.9rem, 1.3rem + 2.4vw, 3rem);
+  --step-4: clamp(2.3rem, 1.4rem + 3.6vw, 4.2rem);
+  --leading-body: 1.6;
+
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpath d='M3 3H61M3 37H61M3 3V37M3 20H22' stroke='%2316335c' stroke-width='6' fill='none' stroke-linecap='square'/%3E%3Cpath d='M59 5L31 35' stroke='%23e3a21a' stroke-width='6' fill='none'/%3E%3C/svg%3E");
+}
+html, body { overflow-x: clip; }
+
+/* Header: the mark + name */
+.topbar { background: var(--navy-deep); }
+.topbar a { font-weight: 700; font-variant-numeric: tabular-nums; }
+.site-header { padding-block: 1.1rem; }
+.brand { display: grid; grid-template-columns: 48px auto; column-gap: 0.85rem; align-items: center; }
+.brand::before { content: ""; grid-row: 1 / span 2; width: 48px; height: 30px; background: var(--mark) center / contain no-repeat; }
+.brand strong { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em; }
+.brand span { font-size: 0.85rem; }
+.nav { gap: 1.5rem; }
+.nav a { font-weight: 600; font-size: 0.98rem; }
+.nav a:not(.btn):hover { text-decoration: underline; text-decoration-color: var(--inv); text-decoration-thickness: 3px; text-underline-offset: 0.4em; }
+@media (max-width: 48rem) { .brand span { display: none; } .brand::before { grid-row: 1; } }
+
+a { color: var(--navy); }
+a:hover { color: var(--navy-deep); text-decoration-color: var(--inv); }
+.btn, .nav a.btn { background: var(--navy); border-color: var(--navy); padding: 0.9rem 1.5rem; font-weight: 700; }
+.btn:hover, .nav a.btn:hover { background: var(--navy-deep); border-color: var(--navy-deep); color: #fff; box-shadow: inset 0 -4px 0 var(--inv); }
+
+/* Full-bleed helper */
+.e-block, .e-career, .e-contact { margin-inline: calc(50% - 50vw); padding-inline: calc(50vw - 50%); }
+
+/* ── Hero: a navy block and four colour tiles ── */
+.e-hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); margin-top: 0.5rem; }
+.e-lead { background: var(--navy); color: #fff; padding: 3rem 3rem 3.25rem; }
+.e-lead h1 { color: #fff; margin-top: 2.25rem; max-width: 13ch; }
+.e-lead .lede { color: #cdd7e4; max-width: 40ch; }
+.e-mono { display: block; overflow: visible; }
+.e-mono path { fill: none; stroke-width: 6; }
+.e-mono-e { stroke: #fff; stroke-linecap: square; }
+.e-mono-z { stroke: var(--inv); }
+.e-cta { margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
+.e-cta .btn { background: var(--inv); border-color: var(--inv); color: var(--navy-deep); }
+.e-cta .btn:hover { background: #fff; border-color: #fff; color: var(--navy-deep); box-shadow: none; }
+.e-tel { color: #fff; font-weight: 700; font-size: 1.2rem; text-decoration: none; font-variant-numeric: tabular-nums; border-bottom: 2px solid var(--inv); }
+.e-tel:hover { color: var(--inv); }
+
+.e-tiles { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.e-tile {
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 0.3rem;
+  padding: 1.5rem; min-height: 11rem; text-decoration: none; color: #fff;
+  transition: background var(--dur) var(--ease);
+}
+.e-tile b { font-family: var(--font-heading); font-weight: 800; font-size: clamp(1.4rem, 1rem + 1vw, 1.9rem); letter-spacing: -0.03em; line-height: 1.05; }
+.e-tile span { font-size: 0.95rem; font-weight: 500; }
+.e-tile:hover b { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 0.15em; }
+.t-ins { background: var(--ins); }
+.t-inv { background: var(--inv); color: var(--navy-deep); }
+.t-mor { background: var(--mor); color: var(--navy-deep); }
+.t-tax { background: var(--tax); }
+.t-ins:hover { background: #096a58; color: #fff; }
+.t-inv:hover { background: #d99513; color: var(--navy-deep); }
+.t-mor:hover { background: #dc583c; color: var(--navy-deep); }
+.t-tax:hover { background: #1a6099; color: #fff; }
+
+@keyframes e-draw { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+@keyframes e-tile { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: no-preference) {
+  .e-mono path { stroke-dasharray: 100; animation: e-draw 900ms var(--ease) both; }
+  .e-mono-z { animation-delay: 600ms !important; animation-duration: 420ms !important; }
+  .e-tile { animation: e-tile 500ms var(--ease) both; }
+  .t-ins { animation-delay: 250ms; } .t-inv { animation-delay: 350ms; }
+  .t-mor { animation-delay: 450ms; } .t-tax { animation-delay: 550ms; }
+}
+
+@media (max-width: 60rem) {
+  .e-hero { grid-template-columns: 1fr; margin-inline: calc(-1 * var(--space-4)); }
+  .e-lead { padding: 2rem var(--space-4) 2.5rem; }
+  .e-lead h1 { margin-top: 1.5rem; }
+  .e-tile { min-height: 8rem; padding: 1.1rem var(--space-4); }
+}
+
+/* ── Intro: face + one big sentence ── */
+.e-intro { display: grid; grid-template-columns: 9rem 1fr; gap: 2.5rem; align-items: center; padding-block: 4.5rem; }
+.e-face { width: 9rem; height: 9rem; border-radius: 50%; background: var(--inv-tint); display: grid; place-items: center; overflow: hidden; }
+.e-face span { font-family: var(--font-heading); font-weight: 800; font-size: 2.6rem; color: var(--navy); }
+.e-big { font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.4rem, 1rem + 1.4vw, 2.1rem); line-height: 1.25; letter-spacing: -0.02em; color: var(--navy); max-width: 32ch; }
+.e-sign { margin-top: 1rem; color: var(--color-muted); font-weight: 600; }
+@media (max-width: 44rem) { .e-intro { grid-template-columns: 1fr; gap: 1.25rem; padding-block: 3rem; } .e-face { width: 6.5rem; height: 6.5rem; } }
+
+/* ── Service blocks: full-bleed tint bands, insurance first ── */
+.e-block { padding-block: 4rem; }
+.e-block h2 { max-width: 20ch; }
+.e-ins { background: var(--ins-tint); --c: var(--ins); }
+.e-inv { background: var(--inv-tint); --c: #b27a00; }
+.e-cols { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; margin-top: 1.75rem; }
+.e-cols > p { font-size: 1.15rem; }
+.e-list { list-style: none; padding: 0; border-top: 3px solid var(--navy); }
+.e-list li { display: grid; grid-template-columns: 0.75rem 1fr; gap: 0.9rem; align-items: center; padding-block: 0.75rem; border-bottom: 1px solid rgba(15, 37, 69, 0.18); font-weight: 600; }
+.e-list li::before { content: ""; width: 0.75rem; height: 0.75rem; background: var(--c); }
+.e-link { display: inline-block; margin-top: 1.75rem; font-weight: 700; font-size: 1.05rem; text-decoration-thickness: 2px; }
+@media (max-width: 48rem) { .e-cols { grid-template-columns: 1fr; gap: 1.5rem; } .e-block { padding-block: 3rem; } }
+
+/* ── Steps: colour bars on top ── */
+.e-section { padding-block: 4.5rem 1rem; }
+.e-steps { list-style: none; padding: 0; margin-top: 2rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; counter-reset: s; }
+.e-steps li { counter-increment: s; border-top: 8px solid var(--c); padding-top: 1.1rem; }
+.e-steps li:nth-child(1) { --c: var(--ins); }
+.e-steps li:nth-child(2) { --c: var(--inv); }
+.e-steps li:nth-child(3) { --c: var(--mor); }
+.e-steps li::before { content: counter(s); display: block; font-family: var(--font-heading); font-weight: 800; font-size: 3rem; line-height: 1; color: var(--navy); letter-spacing: -0.04em; }
+.e-steps b { display: block; margin-top: 0.6rem; font-family: var(--font-heading); font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; color: var(--navy); }
+.e-steps p { margin-top: 0.35rem; color: var(--color-muted); }
+@media (max-width: 44rem) { .e-steps { grid-template-columns: 1fr; gap: 2rem; } }
+
+/* ── Career: solid amber block ── */
+.e-career { margin-top: 4.5rem; background: var(--inv); padding-block: 4rem; }
+.e-career h2 { color: var(--navy-deep); max-width: 18ch; }
+.e-career p { margin-top: 1.1rem; color: var(--navy-deep); font-size: 1.1rem; max-width: 56ch; }
+.e-career .btn:hover { box-shadow: inset 0 -4px 0 #fff; }
+
+/* ── Contact: navy block, the number set big ── */
+.e-contact { background: var(--navy); color: #fff; padding-block: 4rem; }
+.e-contact h2 { color: #fff; }
+.e-contact-tel { display: inline-block; margin-top: 1rem; color: #fff; text-decoration: none; font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.5rem, 1.5rem + 4.4vw, 5rem); line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.e-contact-tel:hover { color: var(--inv); }
+.e-contact p { margin-top: 1.25rem; color: #cdd7e4; }
+.e-contact p a { color: #fff; }
+.site-footer { margin-top: 0; }
+body:not([data-section="home"]) .site-footer { margin-top: 4rem; }
+
+/* ── Inner pages: title bar in the page's service colour ── */
+body { --c: var(--ins); --c-tint: var(--ins-tint); }
+body[data-section="financne-poradenstvo"], body[data-section="kariera"] { --c: var(--inv); --c-tint: var(--inv-tint); }
+body[data-section="hypoteky"] { --c: var(--mor); --c-tint: var(--mor-tint); }
+body[data-section="dane"], body[data-section="cennik"] { --c: var(--tax); --c-tint: var(--tax-tint); }
+body:not([data-section="home"]) h1 { max-width: 20ch; }
+body:not([data-section="home"]) h1::before { content: ""; display: block; width: 5rem; height: 10px; background: var(--c); margin-bottom: 1.25rem; }
+.card { border-top: 4px solid var(--c); background: var(--c-tint); padding: 1.25rem 1.3rem 1.3rem; }
+.card h3 { font-size: 1.25rem; letter-spacing: -0.02em; }
+.card p { color: var(--color-ink); }
+.note { border: 0; background: var(--color-bg-soft); padding: 1rem 1.25rem; color: var(--color-ink); }
+.faq summary { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--navy); }
+.faq summary::after { color: var(--navy); font-weight: 800; }
+.price-table thead th { color: var(--navy); border-bottom: 3px solid var(--navy); }

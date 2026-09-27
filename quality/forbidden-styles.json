@@ -13,7 +13,15 @@
     "Fraunces",
     "Cormorant",
     "Vollkorn",
-    "Libre Caslon"
+    "Libre Caslon",
+    "Libre Franklin",
+    "Red Hat Display",
+    "Archivo",
+    "Public Sans",
+    "Mona Sans",
+    "Hubot Sans",
+    "Rethink Sans",
+    "Onest"
   ],
   "bannedHexes": [
     "#6366f1",

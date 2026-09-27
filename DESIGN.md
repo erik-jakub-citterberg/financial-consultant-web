@@ -47,10 +47,20 @@ especially the apostrophe-style carons on ď ť ľ Ľ.
 | Hanken Grotesk | Rejected | Detached ď apostrophe |
 | Literata | Accepted | Sturdy, excellent ď ť ľ; by TypeTogether (co-founded by Czech designer Veronika Burian) |
 | Source Serif 4, PT Serif, Spectral | Accepted | Clean Central European carons |
-| Libre Franklin, Schibsted Grotesk, Red Hat Text, Source Sans 3, IBM Plex Sans | Accepted | Clean carons at text sizes |
+| Schibsted Grotesk, Red Hat Text, Work Sans, Epilogue, Albert Sans, Familjen Grotesk, DM Sans | Accepted | Pass the pangram **and** the in-context check below at 400/700/800 |
+| Libre Franklin (Variant B, v1) | Rejected 2026-09-28 | At 700/800 the caron of ľ ď disappears before b h k l: "veľký" renders "velký", "koľko" renders "kolko" |
+| Red Hat Display, Archivo, Public Sans, Mona Sans, Hubot Sans, Rethink Sans, Onest | Rejected 2026-09-28 | Same failure at heading weights (caron shrunk, merged into the next ascender, or dropped) |
+
+**Lesson (2026-09-28):** the pangram is not enough. Several fonts draw ľ ď perfectly on their own
+and in "ďatľov", but swap in a caron-less or squashed glyph when an ascender follows (ľk ľb ľh ľl ďk ďb),
+which covers everyday words: *veľký, koľko, ďakujem, poľnohospodár*. I missed it by eye in the
+specimen; it showed up on the built page. `quality/caron-render.mjs` (in `npm run quality:built`)
+now renders every font and weight the built site actually uses and measures how much ink each
+accent adds next to the following letter versus on its own. Under 80 % fails the build check.
 
 Banned in `quality/forbidden-styles.json`: Inter, Roboto, Open Sans, Lato, Poppins, Montserrat,
-Space Grotesk, Instrument Serif, Geist, Fraunces, Cormorant, Vollkorn, Libre Caslon.
+Space Grotesk, Instrument Serif, Geist, Fraunces, Cormorant, Vollkorn, Libre Caslon, Libre Franklin,
+Red Hat Display, Archivo, Public Sans, Mona Sans, Hubot Sans, Rethink Sans, Onest.
 
 ## 3. Slovak typography (automated by `quality/sk-typo.mjs` after every build)
 

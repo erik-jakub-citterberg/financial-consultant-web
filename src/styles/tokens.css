@@ -12,8 +12,8 @@
   --color-ink:          #1a1d22;
   --color-muted:        #535c66;
   --color-bg:           #ffffff;
-  --color-bg-soft:      #f4f2ec;
-  --color-line:         #d9d4c8;
+  --color-bg-soft:      #f3f5f8;
+  --color-line:         #dde2e8;
   --color-on-brand:     #ffffff;
 
   /* Type (variants set real faces; these are safe fallbacks) */

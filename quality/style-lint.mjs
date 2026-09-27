@@ -80,6 +80,18 @@ for (const file of files) {
     }
   }
 
+  // Paper/cream page backgrounds (Claude house style)
+  if (cfg.paperBackground) {
+    const pb = cfg.paperBackground;
+    for (const m of lower.matchAll(/(--color-bg|--color-bg-soft|background(?:-color)?)\s*:\s*(#[0-9a-f]{6})\b/g)) {
+      const { h, s: sat, l } = hexToHsl(m[2]);
+      if (h >= pb.minHue && h <= pb.maxHue && sat >= pb.minSaturation && l >= pb.minLightness) {
+        console.error(`  [paper-bg] ${m[1]}: ${m[2]} is a warm cream/paper ground (Claude house style)  in ${file}`);
+        violations++;
+      }
+    }
+  }
+
   const radiusHits = (lower.match(new RegExp(`border-radius\\s*:\\s*${esc(cfg.watchRadiusValue)}`, 'g')) || []).length;
   if (radiusHits > cfg.maxIdenticalRadiusUses) {
     console.error(`  [radius] ${cfg.watchRadiusValue} used ×${radiusHits} (>${cfg.maxIdenticalRadiusUses}) — vary radii by component  in ${file}`);

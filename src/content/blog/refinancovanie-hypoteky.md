@@ -18,7 +18,7 @@ Výsledok: nižšia mesačná splátka, nižšie celkové náklady, prípadne sk
 ## Kedy má refinancovanie zmysel?
 
 **1. Na konci fixačného obdobia**
-Toto je ideálny čas. Po skončení fixácie banky znižujú úrok na 0 % (Zákon o bankách v SR stanovuje, že pri predčasnom splatení na konci fixačného obdobia banka nesmie účtovať žiadny poplatok). Máte plnú slobodu odísť ku konkurencii.
+Toto je ideálny čas. Po skončení fixácie banka nesmie účtovať žiadny poplatok za predčasné splatenie — zákon to zakazuje. Máte plnú slobodu odísť ku konkurencii.
 
 Banka vás zvyčajne upozorní 2 mesiace pred koncom fixácie a ponúkne vám novú sadzbu. Táto ponuka nie je vždy najlepšia na trhu — oplatí sa porovnať.
 
@@ -34,12 +34,13 @@ Zvýšenie príjmu, zmena rodinnej situácie, potreba zmeniť výšku splátky �
 
 - **Počas fixačného obdobia:** banka môže účtovať maximálne 1 % zo zostatku úveru (ak ste dostali úver po 21. 3. 2016)
 - **Na konci fixačného obdobia:** poplatok je 0 %
+- **Mimoriadne splátky bez poplatku:** od apríla 2024 môžete každý rok bez poplatku predčasne splatiť až **30 % istiny** (kedykoľvek, nielen na výročí fixácie)
 - **Pre úvery pred rokom 2016** platia iné podmienky — prečítajte si zmluvu
 
 Ďalšie možné náklady:
 - Znalecký posudok na nehnuteľnosť (600–900 €)
 - Poplatok za spracovanie novej hypotéky (väčšina bánk dnes neúčtuje)
-- Zápisné do katastra (66 €)
+- Zápisné do katastra (150 € elektronicky)
 
 ## Príklad: kedy sa to oplatí
 
@@ -54,7 +55,7 @@ Po refinancovaní:
 - Nová mesačná splátka: 728 €
 - **Úspora za mesiac: 105 €**
 - **Úspora za rok: 1 260 €**
-- Náklady refinancovania (znalec + kataster): cca 700–1 000 €
+- Náklady refinancovania (znalec + kataster): cca 750–1 100 €
 - **Návratnosť investície: menej ako 1 rok**
 
 V tomto príklade sa refinancovanie jasne oplatí — za rok ste v pluse a každý ďalší rok šetríte 1 260 €.

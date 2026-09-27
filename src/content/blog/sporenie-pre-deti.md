@@ -11,7 +11,7 @@ Každý rodič chce dať dieťaťu dobrý štart do života. Jednou z praktický
 
 ## Stavebné sporenie
 
-Stavebné sporenie je produkt regulovaný zákonom. Sporiteľ vkladá pravidelne peniaze, štát pridáva štátnu prémiu (v roku 2026 je to 70 € ročne pri vklade aspoň 700 €), a po 6 rokoch môžete peniaze vybrať alebo využiť na úver.
+Stavebné sporenie je produkt regulovaný zákonom. Sporiteľ vkladá pravidelne peniaze, štát pridáva štátnu prémiu (v roku 2026 je to **70 € ročne** — 6 % z vkladu — pri vklade aspoň **1 167 €** ročne), a po 6 rokoch môžete peniaze vybrať alebo využiť na úver.
 
 **Výhody:**
 - Garantovaný úrok (typicky 1–2 % ročne na sporenie)
@@ -22,9 +22,9 @@ Stavebné sporenie je produkt regulovaný zákonom. Sporiteľ vkladá pravidelne
 **Nevýhody:**
 - Nízke výnosy: po odpočítaní inflácie reálne hodnota sotva rastie
 - Viazanosť: ak vyberáte pred 6 rokmi, strácate štátnu prémiu
-- Limit štátnej prémie: ak vkladáte viac ako 700 € ročne, zvyšok dostáva len základný úrok
+- Limit štátnej prémie: ak vkladáte viac ako 1 167 € ročne, zvyšok dostáva len základný úrok
 
-**Príklad:** Vkladáte 58 € mesačne (700 € ročne) od narodenia dieťaťa po dobu 15 rokov. Po 15 rokoch máte vložených 10 500 €, k tomu 15 × 70 = 1 050 € štátnych prémií, a úroky za celé obdobie asi 200–300 €. Celkovo okolo 11 800 €.
+**Príklad:** Vkladáte 97 € mesačne (1 167 € ročne) od narodenia dieťaťa po dobu 15 rokov. Po 15 rokoch máte vložených 17 505 €, k tomu 15 × 70 = 1 050 € štátnych prémií, a úroky za celé obdobie asi 300–400 €. Celkovo okolo 19 000 €.
 
 ## Investičné fondy
 
@@ -41,7 +41,7 @@ Investičné fondy (podielové fondy) investujú vaše peniaze do akcií, dlhopi
 - Poplatky: niektoré fondy majú vstupné poplatky 1–3 % a ročné správcovské poplatky 0,5–1,5 %
 - Vyžaduje finančnú gramotnosť: treba vedieť, ako reagovať pri poklese trhu (spoiler: nevýberate)
 
-**Príklad:** Vkladáte 58 € mesačne od narodenia dieťaťa po dobu 15 rokov, do globálneho akciového fondu s priemerným výnosom 6 % ročne a poplatkami 0,8 % ročne. Po 15 rokoch je akumulovaná hodnota okolo 16 000–17 000 €. To je o 35–45 % viac ako pri stavebnom sporení, ale výnos nie je zaručený.
+**Príklad:** Vkladáte rovnakých 97 € mesačne od narodenia dieťaťa po dobu 15 rokov, do globálneho akciového fondu s priemerným výnosom 6 % ročne a poplatkami 0,8 % ročne. Po 15 rokoch je akumulovaná hodnota okolo 26 000–27 000 €. To je o 35–42 % viac ako pri stavebnom sporení, ale výnos nie je zaručený.
 
 ## Čo zohľadniť pri výbere
 

@@ -1,9 +1,9 @@
 ---
-title: "Daňové uznanie živnostníka (SZČO) s paušálnymi výdavkami 2026"
+title: "Daňové priznanie živnostníka (SZČO) s paušálnymi výdavkami 2026"
 description: "Paušálne výdavky 60 % príjmu môžu výrazne znížiť daň živnostníka. Vysvetľujeme, kto ich môže použiť a čo to v praxi znamená."
 pubDate: 2026-09-19
 draft: false
-tags: ["SZČO", "živnostník", "paušálne výdavky", "daňové uznanie"]
+tags: ["SZČO", "živnostník", "paušálne výdavky", "daňové priznanie"]
 service: "dane"
 ---
 
@@ -37,9 +37,9 @@ Predstavte si živnostníka s príjmami 30 000 € za rok 2026 a zaplatením odv
 | Paušálne výdavky (60 %) | 18 000 € |
 | Zaplatené odvody | 4 200 € |
 | Základ dane | 30 000 − 18 000 − 4 200 = **7 800 €** |
-| Nezdaniteľná časť (≈5 162 €) | −5 162 € |
-| Zdaniteľný základ | **2 638 €** |
-| Daň (19 %) | **501 €** |
+| Nezdaniteľná časť (5 967 €) | −5 967 € |
+| Zdaniteľný základ | **1 833 €** |
+| Daň (15 % — SZČO do 100 000 € príjmov) | **275 €** |
 
 **Výpočet so skutočnými výdavkami** (ak máte doklady napr. za 8 000 €):
 
@@ -49,11 +49,11 @@ Predstavte si živnostníka s príjmami 30 000 € za rok 2026 a zaplatením odv
 | Skutočné výdavky | 8 000 € |
 | Zaplatené odvody | 4 200 € |
 | Základ dane | 30 000 − 8 000 − 4 200 = **17 800 €** |
-| Nezdaniteľná časť | −5 162 € |
-| Zdaniteľný základ | **12 638 €** |
-| Daň (19 % z prvých 41 445 €) | **2 401 €** |
+| Nezdaniteľná časť | −5 967 € |
+| Zdaniteľný základ | **11 833 €** |
+| Daň (15 %) | **1 775 €** |
 
-Rozdiel: **1 900 €** v prospech paušálu — aj keď skutočné výdavky sú 8 000 €.
+Rozdiel: **1 500 €** v prospech paušálu — aj keď skutočné výdavky sú 8 000 €.
 
 Paušál dáva zmysel, keď skutočné výdavky sú nižšie ako 60 % príjmov (v tomto prípade nižšie ako 18 000 €).
 
@@ -79,8 +79,10 @@ Nemusíte evidovať výdavky — to je výhoda paušálu. Ale doklady od výdavk
 
 Spočítajte si reálne výdavky spojené s podnikaním za rok. Ak sú nižšie ako 60 % príjmov (alebo nižšie ako 20 000 €), paušál vám ušetrí nielen daň, ale aj čas.
 
+**Poznámka k sadzbe:** SZČO s príjmami do 100 000 € ročne platí v roku 2026 daň z príjmu vo výške 15 % (nie 19 %). Pri vyšších príjmoch platia progresívne pásma.
+
 Ak máte vysoké reálne výdavky (napríklad kupujete materiál, platíte prenájom, máte výdavky na auto) a ich suma presahuje 60 % príjmov — skutočné výdavky môžu byť výhodnejšie.
 
 Viac o [daňových priznanich pre živnostníkov](/dane) nájdete na stránke daní.
 
-Daňové uznanie živnostníka spracúvam od 60 €. Kontaktujte ma.
+Daňové priznanie živnostníka spracúvam od 60 €. Kontaktujte ma.

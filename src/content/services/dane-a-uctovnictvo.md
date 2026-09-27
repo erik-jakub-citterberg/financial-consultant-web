@@ -1,10 +1,11 @@
 ---
-title: "Daňové priznania a jednoduché účtovníctvo"
+title: "Daňové priznania a účtovníctvo"
 slug: "dane-a-uctovnictvo"
-summary: "Spracovanie daňových priznaní a vedenie jednoduchého účtovníctva pre fyzické osoby a firmy v regióne Brezno."
-keywords: ["daňové priznanie Brezno", "jednoduché účtovníctvo", "dane Michalová"]
+summary: "Daňové priznania, jednoduché a podvojné účtovníctvo, mzdy a personalistika pre fyzické osoby a firmy v regióne Brezno."
+keywords: ["daňové priznanie Brezno", "jednoduché účtovníctvo", "podvojné účtovníctvo", "mzdy", "dane Michalová"]
 order: 1
 ---
 
-Spracujem daňové priznanie a vediem jednoduché účtovníctvo od roku 2006. Pripravím podklady,
-skontrolujem, čo si môžete uplatniť, a priznanie podám včas.
+Spracujem daňové priznanie a vediem jednoduché aj podvojné účtovníctvo od roku 2006. Zabezpečujem
+aj spracovanie miezd a personalistiku. Pripravím podklady, skontrolujem, čo si môžete uplatniť,
+a priznanie podám včas.

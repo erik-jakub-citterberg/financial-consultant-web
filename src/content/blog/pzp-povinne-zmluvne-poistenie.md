@@ -19,7 +19,7 @@ PZP je **poistenie zodpovednosti za škodu:** nie ochranu vášho auta, ale ochr
 
 **Čo PZP nekryje:** škodu na vašom vlastnom vozidle. Na to slúži havarijné poistenie (kasko). Ak ste na Volkswagen Golf 2019 narazili sami do stĺpa, PZP vám nepomôže.
 
-Zákon stanovuje minimálne limity krytia: 5,24 mil. € na škodu na zdraví a živote, 1,05 mil. € na majetkovú škodu. Väčšina poisťovní ponúka vyššie limity — pri dnešných cenách nových áut a súdnych odškodneniach sa vyplatí požadovať minimálne 10 mil. €.
+Zákon stanovuje minimálne limity krytia: **6,45 mil. €** na škodu na zdraví a živote, **1,3 mil. €** na majetkovú škodu. Väčšina poisťovní ponúka vyššie limity — pri dnešných cenách nových áut a súdnych odškodneniach sa vyplatí požadovať minimálne 10 mil. €.
 
 ## Ako sa líšia poisťovne?
 

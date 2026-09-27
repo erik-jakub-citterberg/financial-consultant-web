@@ -13,16 +13,13 @@ Druhý pilier, teda dôchodkové sporenie, sa týka väčšiny ľudí, ktorí dn
 
 Druhý pilier (kapitalizačný pilier) je systém, pri ktorom vám z hrubej mzdy odchádza 4 % do vášho vlastného účtu v dôchodkovej správcovskej spoločnosti (DSS). Tieto peniaze sú vaše, štát ich nespravuje, a pri smrti ich dedia pozostalí.
 
-Povinne vstupujú tí, ktorí prvýkrát nastúpili do zamestnania po 1. novembri 2022. Ostatní si mohli vybrať, či vstúpii alebo nie, a mohli z neho aj vystúpiť.
+Povinne vstupujú tí, ktorých prvé sociálne poistenie vzniklo po **1. máji 2023** a ktorí ešte nedosiahli 40 rokov. Majú 180 dní na výber DSS — inak im poisťovňa pridelí správcu automaticky. Z piliera možno vystúpiť do dvoch rokov od vstupu.
 
 ## Ako fungujú poplatky?
 
-DSS si účtujú poplatky z dvoch zdrojov:
+DSS si účtujú ročný poplatok za správu majetku — zákonný limit je od roku 2024 **maximálne 0,40 % ročne** z hodnoty vášho účtu. Poplatok za vedenie účtu (1 % z príspevku) a výkonnostný poplatok boli zrušené v roku 2023.
 
-- **Za správu majetku:** 0,3 % ročne z hodnoty vášho účtu (garantovaný fond), príp. 0,5–0,6 % pre akciové fondy
-- **Za príspevky:** 1 % z každého vloženého príspevku
-
-To znie nenápadne, ale pri dlhodobom sporení sa to sčíta. Na účte s 20 000 € zaplatíte každý rok 60–120 € len na poplatku za správu — bez ohľadu na výnosy.
+Na účte s 20 000 € zaplatíte každý rok najviac 80 € za správu — bez ohľadu na výnosy.
 
 ## Porovnanie s prvým pilierom
 

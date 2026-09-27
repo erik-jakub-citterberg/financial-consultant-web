@@ -1,9 +1,9 @@
 ---
-title: "Daňové uznanie zamestnanca za rok 2026: kedy, ako a či sa to oplatí"
+title: "Daňové priznanie zamestnanca za rok 2026: kedy, ako a či sa to oplatí"
 description: "Ročné zúčtovanie alebo daňové priznanie sám? Vysvetľujeme, kto musí podať sám, kto by mal a čo sa pripraviť."
 pubDate: 2026-09-19
 draft: false
-tags: ["daňové uznanie", "zamestnanec", "rok 2026", "ročné zúčtovanie"]
+tags: ["daňové priznanie", "zamestnanec", "rok 2026", "ročné zúčtovanie"]
 service: "dane"
 ---
 
@@ -52,7 +52,6 @@ Predĺženie podáte jednoduchou notifikáciou Daňovému úradu — nie je potr
 - **Potvrdenie o zdaniteľných príjmoch** od každého zamestnávateľa za rok 2026
 - **Rodné listy detí** (pri daňovom bonuse na deti)
 - **Potvrdenie o príspevkoch na III. pilier** z vašej DDS
-- **Potvrdenie o príspevkoch na životné poistenie** (ak spĺňa podmienky)
 - **Doklady o príjme/nízkych príjmoch manžela/manželky** (ak uplatňujete odpočet)
 - **Potvrdenie o daroch** organizáciám, ak ste prispievali
 
@@ -71,4 +70,4 @@ Ak máte akýkoľvek iný príjem, predávali ste nehnuteľnosť alebo chcete ma
 
 Viac o [daňových priznanich a ročnom zúčtovaní](/dane) nájdete na stránke daní.
 
-Daňové uznanie pre zamestnancov spracúvam od 40 €. Dohodnite si termín.
+Daňové priznanie pre zamestnancov spracúvam od 40 €. Dohodnite si termín.

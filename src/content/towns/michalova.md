@@ -1,7 +1,7 @@
 ---
 name: "Michalová"
 region: "Banskobystrický kraj"
-local: "Vaša miestna poradkyňa pre dane a financie priamo v Michalovej."
+local: "Poradkyňa pre dane a financie pre Michalovú, s kanceláriou v neďalekom Brezne."
 ---
 
-Pôsobím priamo v Michalovej, takže stretnutie si dohodneme rýchlo a osobne. Postarám sa o vaše daňové priznanie, jednoduché účtovníctvo aj o hypotéku, poistenie a sporenie.
+Z Michalovej je to do mojej kancelárie v Brezne kúsok. Ak vám to viac vyhovuje, prídem za vami domov alebo sa spojíme online. Postarám sa o vaše daňové priznanie, jednoduché účtovníctvo aj o hypotéku, poistenie a sporenie.

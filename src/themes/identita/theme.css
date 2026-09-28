@@ -39,7 +39,7 @@
   --radius-sm: 0;
   --radius-md: 0;
   --radius-lg: 0;
-  --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpath d='M3 3H61M3 37H61M3 3V37M3 20H22' stroke='%2316335c' stroke-width='6' fill='none' stroke-linecap='square'/%3E%3Cpath d='M59 5L31 35' stroke='%23e3a21a' stroke-width='6' fill='none'/%3E%3C/svg%3E");
+  --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpolygon points='55,0 64,0 41,40 32,40' fill='%23e3a21a'/%3E%3Crect x='32' y='0' width='32' height='6' fill='%233f74ae'/%3E%3Crect x='32' y='34' width='32' height='6' fill='%233f74ae'/%3E%3Crect x='0' y='0' width='6' height='40' fill='%2316335c'/%3E%3Crect x='0' y='0' width='30' height='6' fill='%2316335c'/%3E%3Crect x='0' y='17' width='21' height='6' fill='%2316335c'/%3E%3Crect x='0' y='34' width='30' height='6' fill='%2316335c'/%3E%3C/svg%3E");
 }
 html, body { overflow-x: clip; }
 
@@ -70,9 +70,8 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--inv); }
 .e-lead h1 { color: #fff; margin-top: 2.25rem; max-width: 13ch; }
 .e-lead .lede { color: #cdd7e4; max-width: 40ch; }
 .e-mono { display: block; overflow: visible; }
-.e-mono path { fill: none; stroke-width: 6; }
-.e-mono-e { stroke: #fff; stroke-linecap: square; }
-.e-mono-z { stroke: var(--inv); }
+/* E in white; the Z's bars in a lighter blue; the amber diagonal sits under the bars */
+.e-mono rect, .e-mono polygon { transform-box: fill-box; }
 .e-cta { margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
 .e-cta .btn { background: var(--inv); border-color: var(--inv); color: var(--navy-deep); }
 .e-cta .btn:hover { background: #fff; border-color: #fff; color: var(--navy-deep); box-shadow: none; }
@@ -97,11 +96,16 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--inv); }
 .t-mor:hover { background: #dc583c; color: var(--navy-deep); }
 .t-tax:hover { background: #1a6099; color: #fff; }
 
-@keyframes e-draw { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+@keyframes e-grow-x { from { transform: scaleX(0); } }
+@keyframes e-grow-y { from { transform: scaleY(0); } }
+@keyframes e-wipe { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
 @keyframes e-tile { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: no-preference) {
-  .e-mono path { stroke-dasharray: 100; animation: e-draw 900ms var(--ease) both; }
-  .e-mono-z { animation-delay: 600ms !important; animation-duration: 420ms !important; }
+  /* the mark assembles once: E, then the Z bars, then the diagonal slides in between them */
+  .ez-stem { transform-origin: top; animation: e-grow-y 360ms var(--ease) both; }
+  .ez-e { transform-origin: left; animation: e-grow-x 380ms 180ms var(--ease) both; }
+  .ez-z { transform-origin: left; animation: e-grow-x 380ms 420ms var(--ease) both; }
+  .ez-d { animation: e-wipe 420ms 700ms var(--ease) both; }
   .e-tile { animation: e-tile 500ms var(--ease) both; }
   .t-ins { animation-delay: 250ms; } .t-inv { animation-delay: 350ms; }
   .t-mor { animation-delay: 450ms; } .t-tax { animation-delay: 550ms; }

@@ -21,7 +21,8 @@ const schema = {
       areaServed: ['Brezno', 'Michalová', 'Podbrezová', 'Banská Bystrica'],
       telephone: '+421907824728',
       email: 'erika.zajakova@gmail.com',
-      address: { '@type': 'PostalAddress', addressLocality: 'Michalová', postalCode: '976 57', addressRegion: 'Banskobystrický kraj', addressCountry: 'SK' },
+      // TODO: presná adresa kancelárie v Brezne (ulica, PSČ) pred spustením; dôležité pre Google
+      address: { '@type': 'PostalAddress', addressLocality: 'Brezno', postalCode: '977 01', addressRegion: 'Banskobystrický kraj', addressCountry: 'SK' },
       founder: { '@id': new URL('/#erika', Astro.site).toString() },
       url: new URL('/', Astro.site).toString(),
     },
@@ -66,7 +67,7 @@ const schema = {
     </div>
     <div class="site-header-wrap" id="hdr">
       <header class="site-header container">
-        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Finančná poradkyňa OVB · Michalová</span></a>
+        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Finančná poradkyňa OVB · Brezno</span></a>
         <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
         </button>
@@ -86,7 +87,7 @@ const schema = {
     </main>
     <footer class="site-footer container">
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
-      <p>Michalová, okres Brezno · 0907 824 728 · erika.zajakova@gmail.com</p>
+      <p>Kancelária v Brezne · 0907 824 728 · erika.zajakova@gmail.com</p>
       <p>Služby: <a href="/poistenie">Poistenie</a>, <a href="/financne-poradenstvo">Investície a sporenie</a>, <a href="/hypoteky">Hypotéky</a>, <a href="/dane">Dane a účtovníctvo</a>, <a href="/cennik">Cenník</a> · <a href="/kariera">Kariéra v OVB</a> · <a href="/blog">Blog</a></p>
       <p>Regióny: <a href="/brezno">Brezno</a>, <a href="/michalova">Michalová</a>, <a href="/podbrezova">Podbrezová</a>, <a href="/banska-bystrica">Banská Bystrica</a></p>
     </footer>

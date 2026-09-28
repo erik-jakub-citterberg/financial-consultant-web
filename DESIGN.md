@@ -177,4 +177,5 @@ square corners.
 - SEO plan (Erik): reach clients in bigger towns (Banská Bystrica, Zvolen, Liptovský Mikuláš) who
   would be served online. Town pages (`src/content/towns/*.md`) carry their own text, locative and
   genitive forms and a `remote` flag; the template adds a remote process, services and a FAQ.
-  Each new town needs genuinely town-specific text, never a name swap (thin city pages get demoted).
+  Town text states facts only (remote work, services, office in Brezno). No travel talk, no guesses
+  about local people or clients (Erik, 2026-09-28).

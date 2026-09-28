@@ -1,13 +1,13 @@
 ---
 name: "Zvolen"
 region: "Banskobystrický kraj"
-local: "Poistenie, investície a hypotéky pre klientov zo Zvolena, vybavené na diaľku."
+local: "Poistenie, investície a hypotéky pre klientov zo Zvolena, konzultácie online."
 nameIn: "vo Zvolene"
 nameFrom: "zo Zvolena"
 remote: true
 order: 5
 ---
 
-Zo Zvolena za mnou do Brezna cestovať nemusíte. S klientmi mimo Brezna pracujem na diaľku: poradíme sa cez videohovor na Zoome, cez WhatsApp alebo Messenger, prípadne obyčajným telefonátom, a zmluvy podpíšete online.
+S klientmi zo Zvolena pracujem na diaľku. Poradíme sa cez videohovor na Zoome, cez WhatsApp, Messenger alebo telefonicky a zmluvy podpíšete online, bez osobného stretnutia.
 
-Ak vo Zvolene kupujete byt alebo chcete refinancovať hypotéku, porovnám ponuky bánk a prevediem vás celým procesom. Životné a majetkové poistenie nastavím tak, aby ste neplatili dvakrát za to isté, a pri sporení na deti či dôchodok vysvetlím rozdiely jednoducho, bez odborných slov.
+Pomôžem vám s životným a majetkovým poistením, so sporením a investovaním, s hypotékou pri kúpe, stavbe alebo refinancovaní a pripravím aj daňové priznanie.

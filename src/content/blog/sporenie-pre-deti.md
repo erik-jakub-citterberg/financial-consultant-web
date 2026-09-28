@@ -1,71 +1,77 @@
 ---
-title: "Sporenie pre deti: investičné fondy vs. stavebné sporenie – čo sa oplatí viac?"
-description: "Stavebné sporenie alebo investičný fond pre dieťa? Porovnávame obe možnosti s konkrétnymi číslami, aby ste sa mohli rozhodnúť informovane."
+title: "Sporenie pre deti: stavebné sporenie alebo investičný fond?"
+description: "Stavebné sporenie alebo podielový fond pre dieťa? Porovnanie oboch možností na príklade 15 rokov sporenia, výhody, nevýhody a kedy sa hodí ktoré."
 pubDate: 2026-09-19
 draft: false
 tags: ["sporenie", "deti", "investičné fondy", "stavebné sporenie"]
 service: "financie"
 ---
 
-Každý rodič chce dať dieťaťu dobrý štart do života. Jednou z praktických vecí, ktoré môžete urobiť už dnes, je pravidelne odkladať peniaze. Ale kam? Dve najčastejšie možnosti na Slovensku sú stavebné sporenie a investičné fondy, pričom každá má iné vlastnosti.
+Pravidelne odkladať peniaze pre dieťa je jedna z najpraktickejších vecí, ktoré pre neho môžete urobiť. Najčastejšie možnosti na Slovensku sú stavebné sporenie a podielové fondy. Každá funguje inak.
 
 ## Stavebné sporenie
 
-Stavebné sporenie je produkt regulovaný zákonom. Sporiteľ vkladá pravidelne peniaze, štát pridáva štátnu prémiu (v roku 2026 je to **70 € ročne** – 6 % z vkladu – pri vklade aspoň **1 167 €** ročne), a po 6 rokoch môžete peniaze vybrať alebo využiť na úver.
+Na stavebné sporenie pravidelne vkladáte peniaze a štát k nim za splnenia podmienok pridáva štátnu prémiu. Po šiestich rokoch môžete peniaze vybrať alebo ich použiť na výhodný úver na bývanie.
 
 **Výhody:**
-- Garantovaný úrok (typicky 1–2 % ročne na sporenie)
-- Štátna prémia je garantovaná bonus, ktorý nikde inde nedostanete
-- Bezpečnosť: vklady sú chránené fondom ochrany vkladov do 100 000 €
-- Dieťa môže peniaze použiť na bývanie s výhodným úverom
+
+- garantovaný, hoci nízky úrok,
+- štátna prémia,
+- vklady sú chránené Fondom ochrany vkladov do 100 000 €,
+- výhodný úver na bývanie.
 
 **Nevýhody:**
-- Nízke výnosy: po odpočítaní inflácie reálne hodnota sotva rastie
-- Viazanosť: ak vyberáte pred 6 rokmi, strácate štátnu prémiu
-- Limit štátnej prémie: ak vkladáte viac ako 1 167 € ročne, zvyšok dostáva len základný úrok
 
-**Príklad:** Vkladáte 97 € mesačne (1 167 € ročne) od narodenia dieťaťa po dobu 15 rokov. Po 15 rokoch máte vložených 17 505 €, k tomu 15 × 70 = 1 050 € štátnych prémií, a úroky za celé obdobie asi 300–400 €. Celkovo okolo 19 000 €.
+- nízky výnos, po zohľadnení inflácie hodnota rastie len málo,
+- ak vyberiete peniaze pred šiestimi rokmi, prídete o štátnu prémiu,
+- štátna prémia je obmedzená, z vyšších vkladov dostanete len úrok.
 
-## Investičné fondy
+**Príklad:** Vkladáte približne 97 € mesačne 15 rokov. Vložíte asi 17 500 €. Pripočítajú sa štátne prémie a úroky, spolu okolo 19 000 €. Výška štátnej prémie sa každý rok mení.
 
-Investičné fondy (podielové fondy) investujú vaše peniaze do akcií, dlhopisov alebo ich kombinácie. Výnosy nie sú garantované, ale historicky akciové fondy prekonávajú dlhopisy aj stavebné sporenie pri dlhodobom horizonte.
+## Podielové fondy
+
+Podielové fondy investujú do akcií, dlhopisov alebo ich kombinácie. Výnos nie je zaručený. Pri dlhom horizonte však akciové fondy v minulosti prinášali viac ako dlhopisy či stavebné sporenie.
 
 **Výhody:**
-- Vyšší potenciálny výnos: globálny akciový index dosahoval historicky 6–8 % ročne v eurách
-- Flexibilita: peniaze môžete vybrať kedykoľvek (bez sankcií, len možné kurzové straty)
-- Likvidita: ak potrebujete časť peňazí, nemusíte rušiť celý produkt
-- Rôzne riziká: od konzervatívnych po agresívne
+
+- vyšší možný výnos,
+- peniaze môžete vybrať kedykoľvek,
+- môžete vybrať aj len časť,
+- fondy s rôznym rizikom, od opatrných po odvážnejšie.
 
 **Nevýhody:**
-- Hodnota môže klesať: pri zlom načasovaní výberu môžete dostať menej, ako ste vložili
-- Poplatky: niektoré fondy majú vstupné poplatky 1–3 % a ročné správcovské poplatky 0,5–1,5 %
-- Vyžaduje finančnú gramotnosť: treba vedieť, ako reagovať pri poklese trhu (spoiler: nevýberate)
 
-**Príklad:** Vkladáte rovnakých 97 € mesačne od narodenia dieťaťa po dobu 15 rokov, do globálneho akciového fondu s priemerným výnosom 6 % ročne a poplatkami 0,8 % ročne. Po 15 rokoch je akumulovaná hodnota okolo 26 000–27 000 €. To je o 35–42 % viac ako pri stavebnom sporení, ale výnos nie je zaručený.
+- hodnota môže aj klesnúť, pri výbere v nevhodnej chvíli môžete dostať menej, ako ste vložili,
+- poplatky: vstupné a ročné poplatky za správu,
+- pri poklese trhu treba vydržať a nepredávať.
 
-## Čo zohľadniť pri výbere
+**Príklad:** Rovnakých 97 € mesačne počas 15 rokov do akciového fondu, ktorý by po poplatkoch zarábal 5,2 % ročne, by dalo približne 26 000 €. Takýto výnos však nie je zaručený. Minulé výnosy nie sú zárukou budúcich.
 
-**Stavebné sporenie dáva väčší zmysel, ak:**
-- Chcete zaručiť aspoň čiastočne predvídateľný výsledok
-- Dieťa pravdepodobne využije peniaze na bývanie (dostane výhodný stavebný úver)
-- Nechcete sledovať trhy a reagovať na výkyvy
+## Kedy sa hodí ktoré
 
-**Investičné fondy dávajú väčší zmysel, ak:**
-- Máte dlhý horizont (15 rokov a viac): čas je veľký spojenec pri akciách
-- Dokážete psychologicky zvládnuť dočasné poklesy hodnoty
-- Chcete maximalizovať budúcu hodnotu bez obmedzenia na použitie
+**Stavebné sporenie, ak:**
 
-## Otázky, ktoré si treba položiť
+- chcete predvídateľný výsledok,
+- dieťa pravdepodobne použije peniaze na bývanie,
+- nechcete sledovať, čo robia trhy.
 
-1. **Ako dlho plánujete sporiť?** Pod 6 rokov – stavebné sporenie môže byť problematické. Nad 15 rokov – fondy majú štatisticky výhodu.
-2. **Na čo dieťa peniaze použije?** Ak na bývanie, stavebné sporenie ponúka bonus v podobe lacného úveru. Ak slobodne, fondy dávajú viac slobody.
-3. **Aké poplatky platíte?** Pri fondoch porovnajte TER (total expense ratio) – rozdiel medzi 0,3 % a 1,5 % ročne je za 15 rokov tisícky eur.
-4. **Kto je majiteľom?** Ak je sporenie vedené na meno dieťaťa, disponovať s ním plnohodnotne môže až pri plnoletosti.
+**Podielové fondy, ak:**
 
-## Kombinácia je tiež možnosť
+- sporíte 15 rokov a dlhšie,
+- znesiete, že hodnota bude občas nižšia,
+- chcete, aby dieťa mohlo peniaze použiť na čokoľvek.
 
-Nič vám nebráni kombinovať, napríklad stavebné sporenie na garantovanú časť a investičný fond na dlhodobý rast. Takto si pokryjete obidve stránky: istotu aj potenciál.
+## Otázky, ktoré si položiť
 
-Viac o [sporení a investíciách](/financne-poradenstvo) nájdete na stránke finančného poradenstva.
+1. **Ako dlho budete sporiť?** Pri kratšom horizonte je bezpečnejšie stavebné sporenie, pri dlhšom majú výhodu fondy.
+2. **Na čo budú peniaze?** Ak na bývanie, stavebné sporenie ponúka výhodný úver.
+3. **Aké sú poplatky?** Rozdiel v ročnom poplatku sa za 15 rokov môže vyšplhať na stovky až tisícky eur.
+4. **Na koho meno sporíte?** Ak je sporenie na meno dieťaťa, samo s ním môže naložiť až po dovŕšení plnoletosti.
 
-Ak chcete nastaviť sporenie pre dieťa, stretnutie je bezplatné a nezáväzné.
+## Obe možnosti naraz
+
+Kombinovať sa dá: stavebné sporenie na istú časť a fond na dlhodobý rast.
+
+Viac o [sporení a investíciách](/financne-poradenstvo).
+
+Ak chcete nastaviť sporenie pre dieťa, prvá konzultácia je bezplatná, aj cez videohovor alebo telefón.

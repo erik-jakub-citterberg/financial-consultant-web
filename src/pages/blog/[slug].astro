@@ -32,19 +32,18 @@ const serviceLabels: Record<string, string> = {
 <BaseLayout title={post.data.title} description={post.data.description}>
   <div class="page-header">
     <h1>{post.data.title}</h1>
-    <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
-    {post.data.service && (
-      <span class="service-badge">{serviceLabels[post.data.service] ?? post.data.service}</span>
-    )}
+    <p class="post-meta">Ing. Erika Zajaková, finančná poradkyňa OVB · <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time></p>
   </div>
 
   <div class="prose">
     <Content />
   </div>
 
-  <div class="section" style="margin-top: var(--space-8);">
-    <p>Potrebujete pomoc? Dohodnite si konzultáciu.</p>
-    <a href="/kontakt" class="btn">Kontaktujte ma</a>
+  <p class="note" style="margin-top: var(--space-5);">Článok má informatívny charakter a nenahrádza osobné poradenstvo. Sumy a pravidlá sa každý rok menia; vo vašej situácii ich s vami rada prepočítam.</p>
+
+  <div class="section" style="padding-top: var(--space-5);">
+    <p>Chcete to prejsť pre svoju situáciu? Prvá konzultácia je bezplatná, osobne v Brezne alebo cez videohovor či telefón.</p>
+    <p style="margin-top: var(--space-3);"><a href="/kontakt" class="btn">Dohodnúť si konzultáciu</a></p>
   </div>
 </BaseLayout>
 

@@ -1,73 +1,66 @@
 ---
-title: "Daňové priznanie zamestnanca za rok 2026: kedy, ako a či sa to oplatí"
-description: "Ročné zúčtovanie alebo daňové priznanie sám? Vysvetľujeme, kto musí podať sám, kto by mal a čo sa pripraviť."
+title: "Daňové priznanie zamestnanca za rok 2026: kedy musíte a kedy sa oplatí"
+description: "Ročné zúčtovanie alebo daňové priznanie? Kto musí podať priznanie sám, kto by mal podať dobrovoľne a aké sú termíny v roku 2027."
 pubDate: 2026-09-19
 draft: false
 tags: ["daňové priznanie", "zamestnanec", "rok 2026", "ročné zúčtovanie"]
 service: "dane"
 ---
 
-Pre väčšinu zamestnancov na Slovensku platí jednoduchá pravda: daňová povinnosť sa vysporiada sama, zamestnávateľ za nich urobí ročné zúčtovanie. Ale nie vždy. A niekedy sa oplatí podať daňové priznanie aj dobrovoľne, lebo vám vráti peniaze.
+Väčšine zamestnancov stačí ročné zúčtovanie, ktoré urobí zamestnávateľ. Niekedy však musíte podať daňové priznanie sami, a niekedy sa to oplatí, aj keď nemusíte, lebo vám vráti peniaze.
 
-## Ročné zúčtovanie vs. daňové priznanie: čo je čo?
+## Ročné zúčtovanie a daňové priznanie
 
-**Ročné zúčtovanie** robí váš zamestnávateľ automaticky (ak ho o to požiadate), zohľadní nezdaniteľné časti a vráti alebo doúčtuje daň. Vy len podpíšete vyhlásenie a odovzdáte potvrdenia.
+**Ročné zúčtovanie** urobí zamestnávateľ, ak oň požiadate. Zohľadní nezdaniteľné časti základu dane a daň vám vráti alebo doplatíte rozdiel.
 
-**Daňové priznanie (typ A alebo B)** podávate sami, buď preto, že musíte, alebo preto, že chcete uplatniť niečo, čo zamestnávateľ nezahrnie.
+**Daňové priznanie (typ A alebo B)** podávate sami, buď preto, že musíte, alebo preto, že chcete uplatniť niečo, čo zamestnávateľ nezohľadní.
 
-## Kto musí podať daňové priznanie sám?
+## Kedy musíte podať daňové priznanie sami
 
-Daňové priznanie MUSÍTE podať, ak ste v roku 2026:
+Napríklad ak ste v roku 2026:
 
-- **Mali príjmy od viacerých zamestnávateľov súčasne** (nie postupne, to zamestnávateľ zvládne)
-- **Mali príjmy zo zahraničia:** zo zahraničného zamestnávateľa alebo iných zdrojov
-- **Predali nehnuteľnosť** (ak nie ste oslobodení, napríklad pri predaji po 5 rokoch vlastníctva)
-- **Mali príjmy z prenájmu, kapitálu alebo ostatné príjmy** nad 500 € (§6–§8 zákona o dani z príjmov)
-- **Prevádzkovali živnosť alebo iné podnikanie** popri zamestnaní
-- **Dostali od zamestnávateľa výzvu** na podanie daňového priznania
+- mali príjmy od **dvoch zamestnávateľov súčasne** (ak ste zamestnávateľa len zmenili, ročné zúčtovanie urobí posledný),
+- mali príjmy **zo zahraničia**,
+- **predali nehnuteľnosť** a predaj nebol oslobodený od dane (oslobodený je spravidla po 5 rokoch vlastníctva),
+- mali príjmy **z prenájmu** alebo **ostatné príjmy** nad hranicu oslobodenia,
+- popri zamestnaní **podnikali**.
 
-## Kto by mal podať dobrovoľne?
+## Kedy sa oplatí podať priznanie dobrovoľne
 
-Aj keď nemusíte, oplatí sa podať, ak:
+- **Časť roka ste nepracovali** (materská, dlhodobá PN, nezamestnanosť). Často vznikne preplatok.
+- **Chcete uplatniť nezdaniteľnú časť na manželku alebo manžela** s nízkym príjmom.
+- **Platili ste príspevky na III. pilier** a zamestnávateľ ich nezohľadnil.
+- **Pracovali ste na dohodu** a z príjmu vám zrazili preddavky na daň, hoci celkový príjem bol nízky.
 
-- **Ste mali časť roka nízky príjem alebo žiadny** (materská, PN, nezamestnanie) – nezdaniteľná časť sa prepočíta a môže vzniknúť preplatok
-- **Chcete uplatniť nezdaniteľnú časť na manžela/manželku** s nízkym príjmom
-- **Platili ste príspevky na III. pilier** a zamestnávateľ ich nezohľadnil
-- **Máte daňový bonus na deti** a chcete sa uistiť, že bol správne vypočítaný
-- **Ste mali príjmy z brigády** (dohoda o brigádnickej práci), kde vám zrážali daň zrážkou – môžete ju vrátiť, ak celkový príjem bol pod nezdaniteľnou hranicou
-
-## Termíny, ktoré treba poznať
+## Termíny v roku 2027
 
 | Termín | Čo |
 |---|---|
-| **31. január 2027** | Požiadajte zamestnávateľa o ročné zúčtovanie (ak to chcete cez neho) |
-| **15. február 2027** | Odovzdajte zamestnávateľovi všetky potvrdenia a doklady |
-| **31. marec 2027** | Zákonný termín na podanie daňového priznania |
-| **30. apríl 2027** | Predĺžený termín – podáte oznámenie o predĺžení najneskôr 31. marca |
+| **15. február 2027** | Požiadajte zamestnávateľa o ročné zúčtovanie a odovzdajte mu potvrdenia |
+| **31. marec 2027** | Termín na podanie daňového priznania a zaplatenie dane |
+| **30. jún 2027** | Predĺžený termín, ak do 31. marca oznámite daňovému úradu predĺženie lehoty |
+| **30. september 2027** | Predĺžený termín, ak máte aj príjmy zo zahraničia |
 
-Predĺženie podáte jednoduchou notifikáciou Daňovému úradu – nie je potrebný súhlas, stačí oznámiť.
+Na predĺženie lehoty netreba súhlas úradu. Stačí ho včas oznámiť.
 
-## Aké dokumenty si pripraviť?
+## Čo si pripraviť
 
-- **Potvrdenie o zdaniteľných príjmoch** od každého zamestnávateľa za rok 2026
-- **Rodné listy detí** (pri daňovom bonuse na deti)
-- **Potvrdenie o príspevkoch na III. pilier** z vašej DDS
-- **Doklady o príjme/nízkych príjmoch manžela/manželky** (ak uplatňujete odpočet)
-- **Potvrdenie o daroch** organizáciám, ak ste prispievali
+- **Potvrdenie o zdaniteľných príjmoch** od každého zamestnávateľa za rok 2026,
+- **potvrdenie o príspevkoch na III. pilier**,
+- pri nezdaniteľnej časti na manželku či manžela **údaje o jej alebo jeho príjme**,
+- pri daňovom bonuse **rodné čísla detí**.
 
 ## Najčastejšie chyby
 
-1. **Nežiadajú o ročné zúčtovanie:** ak nepodpíšete vyhlásenie a nepožiadate, zamestnávateľ nezúčtuje
-2. **Zabudnú na príjmy z dohôd** u iného zamestnávateľa – tieto príjmy musíte zahrnúť sami, ak ich zamestnávateľ nezúčtoval
-3. **Neuplatnia odpočet na manžela/manželku** pri nízkych príjmoch partnera – tento odpočet treba aktívne uplatniť
-4. **Nepodajú pri predaji nehnuteľnosti:** aj keď predaj prebiehol bezdaňovo (napríklad oslobodenie po 5 rokoch), v niektorých prípadoch treba podať priznanie s vysvetlením
+1. **Nepožiadate o ročné zúčtovanie.** Bez žiadosti ho zamestnávateľ neurobí.
+2. **Zabudnete na príjem z dohody** u iného zamestnávateľa.
+3. **Neuplatníte nezdaniteľnú časť na manželku či manžela.** Treba ju aktívne uplatniť.
+4. **Nepodáte priznanie pri predaji nehnuteľnosti,** hoci ste mali.
 
-## Prečo požiadať odborníka?
+## Kedy sa oplatí pomoc
 
-Daňové priznanie zamestnanca (typ A) je relatívne jednoduché. Ak máte len príjmy zo zamestnania, ročné zúčtovanie cez zamestnávateľa je zvyčajne postačujúce.
+Ak máte len príjem zo zamestnania, zvyčajne vám stačí ročné zúčtovanie. Ak máte aj iné príjmy, predávali ste nehnuteľnosť alebo si nie ste istí, na čo máte nárok, oplatí sa priznanie nechať pripraviť. Chyba môže znamenať pokutu alebo zbytočne zaplatenú daň.
 
-Ak máte akýkoľvek iný príjem, predávali ste nehnuteľnosť alebo chcete maximalizovať odpočty – oplatí sa nechať to skontrolovať odborníkom. Chyba v daňovom priznaní môže viesť k pokutatám alebo plateniu dane, ktorú platiť nemusíte.
+Viac o [daňových priznaniach a ročnom zúčtovaní](/dane).
 
-Viac o [daňových priznanich a ročnom zúčtovaní](/dane) nájdete na stránke daní.
-
-Daňové priznanie pre zamestnancov spracúvam od 40 €. Dohodnite si termín.
+Daňové priznanie zamestnanca (typ A) pripravím od 40 €.

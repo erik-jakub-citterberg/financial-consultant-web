@@ -1,91 +1,71 @@
 ---
-title: "Hypotéka alebo nájom v regióne Brezno: čo sa oplatí viac v roku 2027?"
-description: "Kúpiť byt v Brezne alebo radšej naďalej platiť nájom? Porovnávame konkrétne čísla pre región Brezno a Michalová pre rok 2027."
+title: "Hypotéka alebo nájom v regióne Brezno: čo vychádza lepšie?"
+description: "Kúpiť byt v Brezne alebo platiť nájom? Porovnanie mesačných nákladov na príklade bytu za 80 000 € a čo čísla neukazujú."
 pubDate: 2026-09-19
 draft: false
 tags: ["hypotéka", "nájom", "Brezno", "kúpa nehnuteľnosti"]
 service: "hypoteky"
 ---
 
-Otázka „hypotéka alebo nájom?" nemá univerzálnu odpoveď. Závisí od vašej situácie, od lokality a od aktuálnych podmienok na trhu. Pozrime sa na to konkrétne z pohľadu niekoho, kto uvažuje o kúpe v regióne Brezno alebo zostávajúceho v prenájme.
+Na otázku „hypotéka alebo nájom?“ neexistuje jedna odpoveď. Záleží na vašej situácii, na tom, kde chcete bývať, a na aktuálnych úrokoch. Pozrime sa na to na príklade z regiónu Brezno.
 
-## Ceny nehnuteľností v regióne
+## Ceny bytov a nájmov
 
-Region Brezno je z hľadiska cien nehnuteľností atraktívnejší ako väčšie centrá. Pre ilustráciu:
+Ceny v Brezne sú nižšie ako v Banskej Bystrici. Nasledujúce sumy sú orientačné a slúžia len na výpočet:
 
-- **3-izbový byt v Brezne:** 80 000 – 110 000 € (starší bytový fond), novostavby výnimočne
-- **2-izbový byt v Brezne:** 55 000 – 80 000 €
-- **Rodinný dom v okolí Michalová/Pohronská Polhora:** 70 000 – 130 000 € podľa stavu a veľkosti
-- **Porovnanie: 3-izbový byt Banská Bystrica centrum:** 150 000 – 200 000 €
+- **2-izbový byt v Brezne:** približne 55 000 až 80 000 €,
+- **3-izbový byt v Brezne:** približne 80 000 až 110 000 €,
+- **nájom 2-izbového bytu:** približne 400 až 500 € mesačne.
 
-Brezno ponúka výrazne nižšie vstupné náklady ako krajské mesto. Pre rodiny s lokálnymi väzbami je to argument pre kúpu.
+Ponuka bytov na prenájom je v Brezne menšia ako vo väčších mestách a v okolitých obciach takmer žiadna.
 
-## Nájomné v regióne
+## Príklad: 2-izbový byt za 80 000 €
 
-Ponuka nájomných bytov v Brezne nie je veľká, trh je tu menší ako v Banskej Bystrici alebo Bratislave. Orientačné ceny:
+**Kúpa s hypotékou:**
 
-- **2-izbový byt Brezno:** 400 – 500 € mesačne
-- **3-izbový byt Brezno:** 500 – 650 € mesačne
-- Menšie obce v okolí: nájomný trh takmer neexistuje: ponuka je minimálna
+- vlastné zdroje (20 %): 16 000 €,
+- hypotéka: 64 000 € na 30 rokov,
+- úrok 3,2 % (orientačne),
+- splátka: približne 277 € mesačne,
+- k tomu správa a fond opráv: približne 80 až 120 € mesačne,
+- **spolu približne 357 až 397 € mesačne.**
 
-## Porovnávací prepočet: 2-izbový byt za 80 000 €
+**Nájom:**
 
-**Scenár A: kúpa:**
+- nájomné približne 400 až 450 € mesačne.
 
-- Kúpna cena: 80 000 €
-- Vlastné zdroje (20 % akontácia): 16 000 €
-- Hypotéka: 64 000 €
-- Doba splatnosti: 30 rokov
-- Úroková sadzba: 3,2 % (orientačná pre rok 2027)
-- Mesačná splátka: cca 276 €
-- K tomu: poplatky za byt (správa, fond opráv): 80–120 € mesačne
-- **Celkové mesačné náklady na bývanie: 356 – 396 €**
-
-**Scenár B: nájom:**
-
-- Mesačné nájomné: 400 – 450 €
-- K tomu: poplatky zvyčajne zahrnuté alebo podobné
-
-**Záver pre tento byt:** Hypotéka vychádza mesačne o 10–90 € lacnejšie ako nájom, pričom si zároveň budujete vlastný majetok.
-
-Ak by cena bytu bola 100 000 €, hypotéka (20 % akontácia, 80 000 € na 30 rokov pri 3,2 %) by dávala mesačnú splátku okolo 345 €, stále porovnateľnú s nájmom.
+V tomto príklade vychádza hypotéka mesačne o niečo lacnejšie a byt po splatení patrí vám. Pri byte za 100 000 € by splátka hypotéky (80 000 € na 30 rokov pri 3,2 %) bola približne 346 € mesačne.
 
 ## Čo čísla neukazujú
 
-Matematika je len časť rovnice. Treba zohľadniť:
+**Pre hypotéku:**
 
-**Pre hypotéku hovorí:**
-- Platíte na niečo vaše: po 30 rokoch je byt váš
-- Istota: nikto vás nevyhodí, môžete renovoať podľa seba
-- Ochrana pred rastom nájomného
-- V regióne Brezno je dostatok ponuky bytov v reálnych cenách
+- po splatení je byt váš,
+- nikto vám nezvýši nájom ani vás nevysťahuje,
+- byt si môžete upraviť podľa seba.
 
-**Pre nájom hovorí:**
-- Flexibilita: ľahšia zmena lokality pri zmene práce alebo životnej situácie
-- Nižšie počiatočné náklady: nepotrebujete 16 000 € vlastných zdrojov
-- Nestaráte sa o opravy a údržbu budovy
-- Krátkodobé plány? Nájom je rozumnejší
+**Pre nájom:**
 
-## Kedy má hypotéka jasne prevahu?
+- nepotrebujete vlastné zdroje, v príklade 16 000 €,
+- ľahšie sa presťahujete za prácou,
+- opravy a údržbu budovy rieši majiteľ.
 
-- Máte stabilný príjem v regióne a neplánujete sa sťahovať
-- Máte aspoň 20 % akontáciu a rezervu na nečakané výdavky (opravy, výpadok príjmu)
-- Plánujete v byte ostať aspoň 7–10 rokov (krátky horizont neamortizuje transakčné náklady)
-- V okolí je obmedzená ponuka nájomných bytov
+## Kedy dáva väčší zmysel hypotéka
 
-## Kedy je nájom rozumnejší výber?
+- Máte stabilný príjem a v regióne chcete zostať.
+- Máte vlastné zdroje a aj rezervu na nečakané výdavky.
+- V byte plánujete bývať aspoň 7 až 10 rokov.
 
-- Neplánujete zostať v regióne dlhodobo (nová práca, štúdium, osobné dôvody)
-- Nemáte dostatok akontácie: banka vám hypotéku schváli s nižším vlastným vkladom, ale poistenie a podmienky sú horšie
-- Váš príjem nie je stabilný alebo istý
-- Potrebujete flexibilitu: napríklad ak čakáte na vhodnejšiu nehnuteľnosť
+## Kedy dáva väčší zmysel nájom
 
-## Praktická rada pre región Brezno
+- Neviete, či v regióne zostanete.
+- Nemáte dosť vlastných zdrojov. Hypotéku síce dostanete aj s menším vkladom, ale za horších podmienok.
+- Váš príjem zatiaľ nie je stabilný.
 
-Brezno nie je Bratislava ani Banská Bystrica – tu hypotéka pri primeranom byte skutočne konkuruje nájmu mesačnou splátkou. To je dôležitý rozdiel oproti veľkým mestám, kde cena bytu a splátky sú výrazne vyššie ako nájom.
+## Zhrnutie
 
-Ak máte lokálne väzby, stabilnú prácu a dostatok na akontáciu, kúpa dáva v tomto regióne spravidla ekonomický zmysel. Naviac získate vlastníctvo a istotu.
+V Brezne je pri primerane drahom byte splátka hypotéky porovnateľná s nájmom, čo vo veľkých mestách často neplatí. Ak máte stabilnú prácu a vlastné zdroje, kúpa tu spravidla dáva zmysel.
 
-Viac o [hypotékach a financovaní nehnuteľností](/hypoteky) nájdete na stránke hypoték.
+Viac o [hypotékach](/hypoteky).
 
-Pomôžem vám prepočítať, čo dáva zmysel vo vašej konkrétnej situácii, konzultácia je zadarmo.
+Prepočítam vám, čo vychádza vo vašej situácii. Prvá konzultácia je bezplatná.

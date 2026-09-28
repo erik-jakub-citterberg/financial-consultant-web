@@ -1,86 +1,70 @@
 ---
-title: "Refinancovanie hypotéky v roku 2027: kedy sa to oplatí a ako na to"
-description: "Refinancovanie hypotéky môže znížiť mesačnú splátku o desiatky eur. Vysvetľujeme kedy to dáva zmysel, koľko to stojí a čo treba urobiť."
+title: "Refinancovanie hypotéky: kedy sa oplatí a ako na to"
+description: "Refinancovanie môže znížiť splátku hypotéky o desiatky eur mesačne. Kedy dáva zmysel, koľko stojí a ako prebieha."
 pubDate: 2026-09-19
 draft: false
 tags: ["hypotéka", "refinancovanie", "banka", "úrok"]
 service: "hypoteky"
 ---
 
-Ak splácate hypotéku niekoľko rokov, pravdepodobne ste počuli o refinancovaní. Ale kedy sa to skutočne oplatí a kedy je to len papierovanie bez výsledku? Tu sú konkrétne odpovede.
+Ak niekoľko rokov splácate hypotéku, skôr či neskôr príde otázka refinancovania. Kedy sa naozaj oplatí a kedy nie?
 
-## Čo je refinancovanie?
+## Čo je refinancovanie
 
-Refinancovanie znamená, že prevediate svoju existujúcu hypotéku z jednej banky do inej, alebo ju reštruktúrujete v tej istej banke za iných podmienok – typicky za nižší úrok.
+Hypotéku prenesiete do inej banky, ktorá vám ponúkne lepšie podmienky, najčastejšie nižší úrok. Výsledkom je nižšia splátka, nižšie celkové náklady alebo kratšia doba splácania.
 
-Výsledok: nižšia mesačná splátka, nižšie celkové náklady, prípadne skrátenie doby splatnosti.
+## Kedy má refinancovanie zmysel
 
-## Kedy má refinancovanie zmysel?
+**1. Na konci fixácie**
+Je to najlepší čas. Na konci fixácie môžete hypotéku splatiť bez poplatku a prejsť do inej banky.
 
-**1. Na konci fixačného obdobia**
-Toto je ideálny čas. Po skončení fixácie banka nesmie účtovať žiadny poplatok za predčasné splatenie – zákon to zakazuje. Máte plnú slobodu odísť ku konkurencii.
+Banka vám pred koncom fixácie pošle ponuku novej sadzby. Ak nič neurobíte, zvyčajne platí jej ponuka, ktorá nemusí byť najlepšia na trhu. Preto sa oplatí porovnať ju s inými bankami včas.
 
-Banka vás zvyčajne upozorní 2 mesiace pred koncom fixácie a ponúkne vám novú sadzbu. Táto ponuka nie je vždy najlepšia na trhu – oplatí sa porovnať.
+**2. Keď výrazne klesli úroky**
+Ak máte hypotéku s úrokom 4,5 % a dnes sa dá dostať 3,2 %, rozdiel môže pokryť náklady refinancovania aj počas fixácie.
 
-**2. Ak výrazne klesli trhové úroky**
-Ak ste brali hypotéku pri sadzbe 4,5 % a dnes sa dajú uzatvoriť zmluvy za 3,0–3,2 %, rozdiel je dostatočne veľký na to, aby pokryl náklady refinancovania.
+**3. Keď sa zmenila vaša situácia**
+Vyšší príjem, iná rodinná situácia alebo potreba nižšej splátky sú tiež dôvodom pozrieť sa na podmienky znova.
 
-**3. Zmena životnej situácie**
-Zvýšenie príjmu, zmena rodinnej situácie, potreba zmeniť výšku splátky – aj to môže byť dôvod na renegociáciu podmienok.
+## Čo refinancovanie stojí
 
-## Aké náklady refinancovanie má?
+- **Poplatok za predčasné splatenie** počas fixácie. Zákon ho obmedzuje a na konci fixácie sa neplatí. Presnú sumu nájdete v zmluve.
+- **Znalecký posudok** na nehnuteľnosť, ak ho nová banka vyžaduje.
+- **Poplatok za návrh na vklad** záložného práva do katastra.
+- Poplatok za poskytnutie úveru dnes väčšina bánk neúčtuje.
 
-**Poplatok za predčasné splatenie** je hlavná nákladová položka. Zákon v SR stanovuje:
+## Príklad
 
-- **Počas fixačného obdobia:** banka môže účtovať maximálne 1 % zo zostatku úveru (ak ste dostali úver po 21. 3. 2016)
-- **Na konci fixačného obdobia:** poplatok je 0 %
-- **Mimoriadne splátky bez poplatku:** od apríla 2024 môžete každý rok bez poplatku predčasne splatiť až **30 % istiny** (kedykoľvek, nielen na výročí fixácie)
-- **Pre úvery pred rokom 2016** platia iné podmienky – prečítajte si zmluvu
+Pôvodná hypotéka:
 
-Ďalšie možné náklady:
-- Znalecký posudok na nehnuteľnosť (600–900 €)
-- Poplatok za spracovanie novej hypotéky (väčšina bánk dnes neúčtuje)
-- Zápisné do katastra (150 € elektronicky)
-
-## Príklad: kedy sa to oplatí
-
-Aktuálna hypotéka:
-- Zostatok: 150 000 €
-- Zostávajúca splatnosť: 25 rokov
-- Úrok: 4,5 %
-- Mesačná splátka: 833 €
+- zostatok 150 000 €, zostáva 25 rokov,
+- úrok 4,5 %,
+- splátka približne 834 € mesačne.
 
 Po refinancovaní:
-- Nový úrok: 3,2 %
-- Nová mesačná splátka: 728 €
-- **Úspora za mesiac: 105 €**
-- **Úspora za rok: 1 260 €**
-- Náklady refinancovania (znalec + kataster): cca 750–1 100 €
-- **Návratnosť investície: menej ako 1 rok**
 
-V tomto príklade sa refinancovanie jasne oplatí – za rok ste v pluse a každý ďalší rok šetríte 1 260 €.
+- úrok 3,2 %,
+- splátka približne 727 € mesačne,
+- **úspora približne 107 € mesačne, teda asi 1 280 € ročne.**
 
-Ak by rozdiel v sadzbách bol len 0,3 % (napr. z 3,5 % na 3,2 %), mesačná úspora by bola okolo 25 € a návratnosť nákladov by trvala 3–4 roky. To stále dáva zmysel, ale je to menej presvedčivé.
+Ak by boli náklady refinancovania okolo 1 000 €, vrátia sa vám do jedného roka.
+
+Pri menšom rozdiele, napríklad z 3,5 % na 3,2 %, by úspora bola len niečo vyše 20 € mesačne a náklady by sa vracali niekoľko rokov.
 
 ## Ako postupovať
 
-1. **Zistite koniec vašej fixácie:** pozrite zmluvu alebo zavolajte do banky
-2. **Získajte ponuky aspoň od 3 bánk:** online kalkulačky sú orientačné, presné podmienky dostanete len na žiadosti
-3. **Porovnajte RPMN, nie len úrok:** ročná percentuálna miera nákladov zahrnuje poplatky a dáva presnejší obraz
-4. **Nečakajte na poslednú chvíľu:** celý proces trvá 6–8 týždňov: znalecký posudok, schválenie, zmluva, prepis záložného práva
+1. **Zistite, kedy vám končí fixácia.** Nájdete to v zmluve.
+2. **Porovnajte ponuky viacerých bánk.** Kalkulačky sú len orientačné.
+3. **Porovnávajte RPMN, nie len úrok.** RPMN zahŕňa aj poplatky.
+4. **Začnite včas.** Celý proces trvá niekoľko týždňov.
 
-**Kritická chyba:** Nechali sme bežať hypotéku po skončení fixácie bez nového dohodnutia. Banka automaticky prechádza na tzv. pohyblivý úrok, ktorý je zvyčajne vyšší. Každý mesiac naviac vás stojí peniaze.
+## Čo porovnávať
 
-## Čo porovnávať pri výbere banky?
+- úrok a RPMN,
+- dĺžku fixácie,
+- podmienky mimoriadnych splátok,
+- rýchlosť vybavenia.
 
-- Výška úrokovej sadzby (a RPMN)
-- Dĺžka fixácie (1, 3, 5, 10 rokov)
-- Podmienky predčasného splatenia
-- Možnosť mimoriadnych splátok
-- Rýchlosť spracovania a kvalita servisu
+Viac o [hypotékach a refinancovaní](/hypoteky).
 
-Každá banka kladie dôraz na iné aspekty – niektoré odmenia dlhú fixáciu nižšou sadzbou, iné ponúkajú flexibilitu za prirážku.
-
-Viac o [hypotékach a refinancovaní](/hypoteky) nájdete na stránke hypoték.
-
-Porovnám ponuky bánk za vás a pomôžem s celým procesom refinancovania – bez poplatku pre vás.
+Ponuky bánk porovnám za vás a refinancovanie s vami prejdem od začiatku do konca. Pre vás je to bezplatné.

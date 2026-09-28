@@ -1,87 +1,56 @@
 ---
-title: "Jednoduché účtovníctvo pre živnostníkov: čo zvládnete sami a kedy treba pomoc"
-description: "Jednoduché účtovníctvo nemusí byť strašiak. Vysvetľujeme, čo obnáša, aký softvér použiť a kedy sa oplatí prenechať to odborníkovi."
+title: "Jednoduché účtovníctvo pre živnostníkov: čo zvládnete sami a kedy sa oplatí pomoc"
+description: "Čo obnáša jednoduché účtovníctvo, aké knihy treba viesť, aký softvér použiť a kedy sa oplatí prenechať účtovníctvo niekomu inému."
 pubDate: 2026-09-19
 draft: false
 tags: ["jednoduché účtovníctvo", "živnostník", "SZČO", "účtovníctvo"]
 service: "uctovnictvo"
 ---
 
-Účtovníctvo je pre mnohých živnostníkov slabá stránka – nie preto, že by to bolo príliš ťažké, ale preto, že zaberá čas, ktorý by mohli venovať podnikaniu. Aký typ účtovníctva sa vás týka a čo všetko musíte evidovať?
+Účtovníctvo nie je pre väčšinu živnostníkov ťažké, ale zaberá čas. Aký typ evidencie sa vás týka a čo treba viesť?
 
-## Jednoduché vs. podvojné účtovníctvo
+## Tri možnosti pre živnostníka
 
-**Podvojné účtovníctvo** je povinné pre obchodné spoločnosti (s.r.o., a.s.) a vyžaduje evidenciu každej transakcie na dvoch stranách (má dať / dal). Je komplexnejšie a zvyčajne vyžaduje odborníka.
+1. **Paušálne výdavky:** vediete len evidenciu príjmov a niekoľko ďalších údajov, účtovníctvo nie.
+2. **Jednoduché účtovníctvo:** evidujete príjmy aj výdavky a uplatňujete skutočné výdavky.
+3. **Podvojné účtovníctvo:** povinné pre firmy (s.r.o., a.s.), živnostník ho môže viesť dobrovoľne.
 
-**Jednoduché účtovníctvo** vedú fyzické osoby – podnikatelia (SZČO), ktoré sa rozhodli nepoužívať paušálne výdavky, alebo ktoré sú na to povinné zo zákona. Je prehľadnejšie, ale stále vyžaduje disciplínu.
+## Čo sa vedie v jednoduchom účtovníctve
 
-Ako SZČO máte v podstate tri možnosti:
-1. **Paušálne výdavky:** len evidencia príjmov, žiadne účtovníctvo (ak nie ste platiteľ DPH)
-2. **Jednoduché účtovníctvo:** plnohodnotná evidencia príjmov a výdavkov
-3. **Podvojné účtovníctvo:** ak sa dobrovoľne rozhodnete, alebo ak to vyžaduje iný zákon
+- **Peňažný denník:** všetky príjmy a výdavky v hotovosti aj na účte.
+- **Kniha pohľadávok:** faktúry, ktoré vám odberatelia ešte nezaplatili.
+- **Kniha záväzkov:** faktúry, ktoré ešte nezaplatili ste vy.
+- **Pomocné knihy:** napríklad evidencia majetku alebo zásob.
+- Ak ste platiteľ DPH, aj **evidencia pre DPH**. Ak máte zamestnancov, aj **mzdy**.
 
-## Čo musíte evidovať v jednoducho účtovníctve?
+Na konci roka pribudne inventúra a výkaz o príjmoch a výdavkoch a výkaz o majetku a záväzkoch.
 
-Zákon o účtovníctve stanovuje tieto účtovné knihy:
+## Softvér
 
-**1. Peňažný denník**
-Zapisujete každú príjmovú a výdavkovú transakciu s dátumom, popisom a sumy. Rozčleňujete výdavky podľa účelu (materiál, služby, mzdy, poistné...). Toto je jadro jednoduchého účtovníctva.
+Najčastejšie sa používajú programy **Pohoda**, **Omega** alebo **Money S3**. Ak potrebujete najmä fakturáciu a jednoduchú evidenciu, stačia aj online aplikácie ako **iDoklad** alebo **Billdu**.
 
-**2. Kniha pohľadávok**
-Evidujete všetky splatné faktúry, ktoré vám dlhujú odberatelia, s dátumom splatnosti a stavom (zaplatená / nezaplatená).
+Pri výbere si overte, či program sleduje zmeny v zákonoch a či s ním vie pracovať aj váš účtovník.
 
-**3. Kniha záväzkov**
-Evidujete faktúry, ktoré vy dlhujete dodávateľom, s rovnakými údajmi.
+## Čo zvládnete sami
 
-**4. Evidencia DPH** (ak ste platiteľ)
-Každý mesiac alebo štvrťrok podávate daňové priznanie k DPH, k tomu vedie evidenciu vstupnej a výstupnej DPH.
+Ak máte doklady v poriadku, nie ste platiteľ DPH a nemáte zamestnancov, jednoduché účtovníctvo zvládnete aj sami. Podmienkou je pravidelnosť.
 
-**5. Mzdová evidencia** (ak máte zamestnancov)
-Výpočet miezd, odvody, prihlášky/odhlášky zo Sociálnej a zdravotnej poisťovne.
+Najčastejšia chyba: **všetko sa necháva na koniec roka.** Potom sa hľadajú januárové faktúry a vznikajú chyby. Lepšie je venovať účtovníctvu hodinu či dve každý mesiac.
 
-Okrem toho: inventúra majetku na konci roka a výkaz o majetku a záväzkoch.
+## Kedy sa oplatí prenechať účtovníctvo niekomu inému
 
-## Aký softvér použiť?
+- **Ste platiteľ DPH.** Priznania k DPH a kontrolné výkazy zaberajú čas a chyby sú drahé.
+- **Máte zamestnancov.** Mzdy a odvody sa často menia.
+- **Dokladov pribúda.** Pri desiatkach faktúr mesačne to zaberie veľa času.
+- **Radšej sa venujete práci.** Čas strávený účtovníctvom vás môže stáť viac ako účtovník.
 
-Na slovenskom trhu existuje niekoľko osvedčených možností:
+## Ako to robím ja
 
-**Pohoda** (Stormware) – pravdepodobne najrozšírenejší softvér v SR. Robustný, má verzie pre jednoduché aj podvojné účtovníctvo. Cena: od cca 130 € ročne za jednoduché účtovníctvo.
+Cenu nastavujem podľa objemu dokladov:
 
-**OMEGA** (Kros) – silná alternatíva, obľúbená najmä u účtovníkov. Dobrá podpora a aktualizácie podľa legislatívy.
+- **za doklad** od 0,90 € (pri menšom alebo nepravidelnom počte dokladov),
+- **mesačne** od 50 € (pri pravidelnom objeme).
 
-**Money S3:** ďalšia populárna voľba, intuitívne rozhranie.
+V cene je komunikácia, kontrola a podklady pre daňové priznanie. Doklady mi môžete posielať aj elektronicky.
 
-**Jednoduché online riešenia** (napr. iDoklad, Billdu) – vhodné ak potrebujete hlavne fakturáciu a základnú evidenciu. Lacnejšie, ale menej komplexné.
-
-Pri výbere softvéru si overte: podporuje export pre daňové tlačivá v aktuálnom roku? Má aktualizácie pri zmenách legislatívy? Je kompatibilný s vaším účtovníkom (ak ho plánujete mať)?
-
-## Čo zvládnete sami?
-
-Jednoduché účtovníctvo pri malej prevádzke (do 200 dokladov mesačne, žiadni zamestnanci, nie ste platiteľ DPH) je zvládnuteľné svojpomocne – ak ste ochotní venovať mu pravidelne čas a dôsledne archivovať doklady.
-
-Typická chyba ľudí, čo robia účtovníctvo sami: **nechávajú to na koniec roka**. Potom hľadajú faktúry z januára, nevedia priradiť výdavky a urobia chyby.
-
-Odporúčanie: vyhraďte si každý mesiac 1–2 hodiny na zaúčtovanie dokladov. Nie raz ročne.
-
-## Kedy je čas prenechať to odborníkovi?
-
-Zvažte externého účtovníka, ak:
-
-- **Ste platiteľ DPH:** mesačné priznania k DPH sú časovo náročné a chyba je drahá
-- **Máte zamestnancov:** mzdová agenda je komplikovaná a zmeny sú časté
-- **Rastie objem dokladov:** nad 100–150 faktúr mesačne je ručné vedenie nepraktické
-- **Nemáte čas alebo záujem:** čas strávený s účtovníkmi skôr stojí viac ako honorár účtovníka
-- **Zmenili sa okolnosti** (rozvod, zmena právnej formy, vstup spoločníka)
-
-## Ako pracujem s klientmi
-
-Každý klient je iný – malý živnostník s 20 faktúrami mesačne má iné potreby ako firma s 10 zamestnancami. Preto cenu nastavujem individuálne:
-
-- **Cena za doklad** od 0,90 € (vhodné pri nepravidelnom a menšom objeme)
-- **Paušálny mesačný poplatok** od 50 € (pri pravidelnom objeme – predvídateľné náklady)
-
-V cene je vždy komunikácia, kontrola súladu s legislatívou a príprava podkladov pre daňové priznanie.
-
-Viac o [jednoducho účtovníctve a službách](/uctovnictvo) nájdete na stránke účtovníctva.
-
-Ak vás účtovníctvo zaberá čas, ktorý by ste mohli venovať podnikaniu, ozvite sa.
+Viac o [daniach a účtovníctve](/dane).

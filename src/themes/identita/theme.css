@@ -212,4 +212,7 @@ body:not([data-section="home"]) h1::before { content: ""; display: block; width:
 .note { border: 0; background: var(--color-bg-soft); padding: 1rem 1.25rem; color: var(--color-ink); }
 .faq summary { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--navy); }
 .faq summary::after { color: var(--navy); font-weight: 800; }
+.prose h2 { font-size: clamp(1.45rem, 1.1rem + 1.1vw, 1.95rem); }
+.prose h3 { font-size: 1.2rem; }
+.post-meta { margin-top: 1rem; color: var(--color-muted); font-weight: 600; font-size: 0.95rem; }
 .price-table thead th { color: var(--navy); border-bottom: 3px solid var(--navy); }

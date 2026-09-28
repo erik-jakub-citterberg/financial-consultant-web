@@ -169,3 +169,6 @@ square corners.
   from Google Maps reviews on her Business Profile.
 - Kariéra: working with OVB is also possible on the side (popri zamestnaní, privyrobiť si).
 - Contact form: Netlify Forms (`kontakt`), thank-you page `/dakujem` (noindex).
+- Motion addition (Erik, 2026-09-28): content cards (`.card`) lean up to 5° towards the mouse and
+  their colour bar grows while hovered. Mouse only, off for touch and reduced motion. Cards never
+  move up on hover (translateY lift stays banned).

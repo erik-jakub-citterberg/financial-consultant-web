@@ -83,6 +83,29 @@
     });
   });
 
+  // ── Card tilt: a small 3D lean towards the pointer (mouse only) ──
+  // Delegated on document, so it keeps working after view-transition page swaps.
+  var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (fine && !reduce) {
+    var MAX_Y = 5, MAX_X = 4; // degrees
+    document.addEventListener('pointermove', function (e) {
+      var card = e.target.closest && e.target.closest('.card');
+      if (!card) return;
+      var r = card.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.setProperty('--ry', (px * 2 * MAX_Y).toFixed(2) + 'deg');
+      card.style.setProperty('--rx', (-py * 2 * MAX_X).toFixed(2) + 'deg');
+    }, { passive: true });
+    document.addEventListener('pointerout', function (e) {
+      var card = e.target.closest && e.target.closest('.card');
+      if (card && !card.contains(e.relatedTarget)) {
+        card.style.removeProperty('--rx');
+        card.style.removeProperty('--ry');
+      }
+    });
+  }
+
   // ── Mobile hamburger nav ──────────────────────────
   var navToggle = document.querySelector('.nav-toggle');
   var mobileNav = document.getElementById('main-nav');

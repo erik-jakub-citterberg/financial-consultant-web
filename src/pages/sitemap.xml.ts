@@ -9,7 +9,7 @@ export async function GET(context: { site?: URL }) {
     (p) => p.data.draft !== true && p.data.pubDate <= now,
   );
   const routes = [
-    '/', '/dane', '/financne-poradenstvo', '/hypoteky', '/poistenie', '/cennik', '/o-mne', '/kontakt',
+    '/', '/dane', '/financne-poradenstvo', '/hypoteky', '/poistenie', '/cennik', '/o-mne', '/kontakt', '/kariera',
     '/blog',
     ...towns.map((t) => `/${t.slug}`),
     ...publishedBlogPosts.map((p) => `/blog/${p.slug}`),

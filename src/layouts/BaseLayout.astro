@@ -2,10 +2,11 @@
 import '../styles/base.css';
 import '@theme/theme.css';
 import faviconUrl from '@theme/favicon.svg?url';
+import { office, officeLine } from '../data/office';
 import { ViewTransitions } from 'astro:transitions';
 
-interface Props { title: string; description: string; }
-const { title, description } = Astro.props;
+interface Props { title: string; description: string; noindex?: boolean; }
+const { title, description, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 // First path segment, so a theme can colour-code a page by service (poistenie, hypoteky, ...)
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -21,8 +22,7 @@ const schema = {
       areaServed: ['Brezno', 'Michalová', 'Podbrezová', 'Banská Bystrica'],
       telephone: '+421907824728',
       email: 'erika.zajakova@gmail.com',
-      // TODO: presná adresa kancelárie v Brezne (ulica, PSČ) pred spustením; dôležité pre Google
-      address: { '@type': 'PostalAddress', addressLocality: 'Brezno', postalCode: '977 01', addressRegion: 'Banskobystrický kraj', addressCountry: 'SK' },
+      address: { '@type': 'PostalAddress', streetAddress: office.street, addressLocality: office.city, postalCode: office.postalCode, addressRegion: office.region, addressCountry: 'SK' },
       founder: { '@id': new URL('/#erika', Astro.site).toString() },
       url: new URL('/', Astro.site).toString(),
     },
@@ -47,7 +47,7 @@ const schema = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={faviconUrl} />
-    {process.env.PREVIEW && <meta name="robots" content="noindex, nofollow" />}
+    {(process.env.PREVIEW || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="sk_SK" />
     <meta property="og:title" content={title} />
@@ -87,7 +87,7 @@ const schema = {
     </main>
     <footer class="site-footer container">
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
-      <p>Kancelária v Brezne · 0907 824 728 · erika.zajakova@gmail.com</p>
+      <p>Kancelária: {officeLine} · 0907 824 728 · erika.zajakova@gmail.com</p>
       <p>Služby: <a href="/poistenie">Poistenie</a>, <a href="/financne-poradenstvo">Investície a sporenie</a>, <a href="/hypoteky">Hypotéky</a>, <a href="/dane">Dane a účtovníctvo</a>, <a href="/cennik">Cenník</a> · <a href="/kariera">Kariéra v OVB</a> · <a href="/blog">Blog</a></p>
       <p>Regióny: <a href="/brezno">Brezno</a>, <a href="/michalova">Michalová</a>, <a href="/podbrezova">Podbrezová</a>, <a href="/banska-bystrica">Banská Bystrica</a></p>
     </footer>

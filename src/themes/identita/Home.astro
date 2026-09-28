@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { office, officeLine } from '../../data/office';
 // FOTO 1 (z max. dvoch): okrúhly portrét Eriky nahradí iniciály v .e-face.
 ---
 <BaseLayout
@@ -73,7 +74,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <section class="e-career">
     <div>
       <h2>Začnite vo financiách so mnou v OVB</h2>
-      <p>Hľadám ľudí z regiónu, ktorých baví pracovať s ľuďmi. Pomôžem vám s prípravou na odbornú skúšku aj s registráciou v Národnej banke Slovenska a prvé stretnutia s klientmi absolvujeme spolu.</p>
+      <p>Hľadám ľudí z regiónu, ktorých baví pracovať s ľuďmi. Začať môžete aj popri zamestnaní a privyrobiť si. Pomôžem vám s prípravou na odbornú skúšku aj s registráciou v Národnej banke Slovenska a prvé stretnutia s klientmi absolvujeme spolu.</p>
       <p><a class="btn" href="/kariera">Ako začať v OVB</a></p>
     </div>
   </section>
@@ -81,6 +82,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <section class="e-contact">
     <h2>Zavolajte alebo napíšte</h2>
     <a class="e-contact-tel" href="tel:+421907824728">0907 824 728</a>
-    <p><a href="mailto:erika.zajakova@gmail.com">erika.zajakova@gmail.com</a><br />Kancelária v Brezne · stretnutie u mňa, u vás alebo online</p>
+    <p><a href="mailto:erika.zajakova@gmail.com">erika.zajakova@gmail.com</a><br />Kancelária: <a href={office.mapsUrl} rel="noopener">{officeLine}</a><br />Stretnutie u mňa, u vás alebo online</p>
   </section>
 </BaseLayout>

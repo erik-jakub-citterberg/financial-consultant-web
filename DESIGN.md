@@ -164,3 +164,8 @@ square corners.
 - Corners: square everywhere. Motion: only the mark assembling and the four tiles appearing on the
   home page, once.
 - Meeting place: the office in Brezno (street address still to come), not Michalová.
+- Office: Švermova 1025/5, 977 01 Brezno (`src/data/office.ts`, the single place to change it).
+- No client logos or client names on the site (Erik, 2026-09-28). Social proof will come later
+  from Google Maps reviews on her Business Profile.
+- Kariéra: working with OVB is also possible on the side (popri zamestnaní, privyrobiť si).
+- Contact form: Netlify Forms (`kontakt`), thank-you page `/dakujem` (noindex).

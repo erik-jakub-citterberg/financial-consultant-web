@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { office, officeLine } from '../data/office';
 ---
 <BaseLayout
   title="Kontakt | Erika Zajaková"
-  description="Kontakt na Eriku Zajakovú: 0907 824 728, erika.zajakova@gmail.com. Kancelária v Brezne."
+  description="Kontakt na Eriku Zajakovú: 0907 824 728, erika.zajakova@gmail.com. Kancelária: Švermova, Brezno."
 >
   <section class="section" style="max-width:40rem;">
     <h1>Ozvite sa mi</h1>
@@ -12,12 +13,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>
         Telefón: <a href="tel:+421907824728">0907 824 728</a><br />
         E-mail: <a href="mailto:erika.zajakova@gmail.com">erika.zajakova@gmail.com</a><br />
-        <!-- TODO: presná adresa kancelárie -->Kancelária: Brezno
+        Kancelária: <a href={office.mapsUrl} rel="noopener">{officeLine}</a>
       </p>
     </div>
 
-    <!-- TODO: nastaviť action na reálny form endpoint (Formspree/Netlify Forms) pred spustením -->
-    <form action="https://formspree.io/f/TODO" method="POST" style="margin-top:var(--space-5);display:grid;gap:var(--space-3);">
+    <!-- Netlify Forms: submissions appear in Netlify → Forms; turn on e-mail notifications there. -->
+    <form name="kontakt" method="POST" action="/dakujem" data-netlify="true" netlify-honeypot="web" style="margin-top:var(--space-5);display:grid;gap:var(--space-3);">
+      <input type="hidden" name="form-name" value="kontakt" />
+      <p hidden><label>Nevypĺňajte: <input name="web" /></label></p>
       <label>Meno<br /><input name="meno" type="text" required style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);" /></label>
       <label>E-mail<br /><input name="email" type="email" required style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);" /></label>
       <label>Telefón<br /><input name="telefon" type="tel" style="width:100%;padding:var(--space-2);border:1px solid var(--color-line);border-radius:var(--radius-sm);" /></label>

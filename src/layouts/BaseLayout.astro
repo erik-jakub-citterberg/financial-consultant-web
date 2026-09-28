@@ -3,6 +3,8 @@ import '../styles/base.css';
 import '@theme/theme.css';
 import faviconUrl from '@theme/favicon.svg?url';
 import { office, officeLine } from '../data/office';
+import { getCollection } from 'astro:content';
+const towns = (await getCollection('towns')).sort((a, b) => a.data.order - b.data.order);
 import { ViewTransitions } from 'astro:transitions';
 
 interface Props { title: string; description: string; noindex?: boolean; }
@@ -19,7 +21,7 @@ const schema = {
       '@type': 'FinancialService',
       '@id': new URL('/#business', Astro.site).toString(),
       name: 'Erika Zajaková – dane a finančné poradenstvo',
-      areaServed: ['Brezno', 'Michalová', 'Podbrezová', 'Banská Bystrica'],
+      areaServed: [...towns.map((t) => t.data.name), 'Slovensko'],
       telephone: '+421907824728',
       email: 'erika.zajakova@gmail.com',
       address: { '@type': 'PostalAddress', streetAddress: office.street, addressLocality: office.city, postalCode: office.postalCode, addressRegion: office.region, addressCountry: 'SK' },
@@ -89,7 +91,7 @@ const schema = {
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
       <p>Kancelária: {officeLine} · 0907 824 728 · erika.zajakova@gmail.com</p>
       <p>Služby: <a href="/poistenie">Poistenie</a>, <a href="/financne-poradenstvo">Investície a sporenie</a>, <a href="/hypoteky">Hypotéky</a>, <a href="/dane">Dane a účtovníctvo</a>, <a href="/cennik">Cenník</a> · <a href="/kariera">Kariéra v OVB</a> · <a href="/blog">Blog</a></p>
-      <p>Regióny: <a href="/brezno">Brezno</a>, <a href="/michalova">Michalová</a>, <a href="/podbrezova">Podbrezová</a>, <a href="/banska-bystrica">Banská Bystrica</a></p>
+      <p>Regióny: {towns.map((t, i) => <>{i > 0 && ", "}<a href={`/${t.slug}`}>{t.data.name}</a></>)}</p>
     </footer>
   </body>
 </html>

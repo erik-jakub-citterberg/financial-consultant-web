@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+import { officeLine } from '../data/office';
 
 export async function getStaticPaths() {
   const towns = await getCollection('towns');
@@ -8,23 +10,43 @@ export async function getStaticPaths() {
 }
 const { town } = Astro.props;
 const { Content } = await town.render();
-const name = town.data.name;
+const { name, nameIn, nameFrom, remote, local } = town.data;
+
+// Each town page carries its own text (the Markdown body); the blocks below are shared.
+const faq = [
+  remote
+    ? { q: `Musím prísť osobne do Brezna?`, a: `Nemusíte. S klientmi ${nameFrom} pracujem na diaľku: poradíme sa cez Zoom, WhatsApp, Messenger alebo telefonicky a zmluvu podpíšete online.` }
+    : { q: `Kde sa stretneme?`, a: `V mojej kancelárii (${officeLine}), u vás doma, alebo na diaľku cez videohovor či telefón.` },
+  { q: 'Dá sa poistenie alebo sporenie uzavrieť online?', a: 'Áno. Všetko vám vysvetlím cez videohovor alebo telefonicky a zmluvu podpíšete online, bez osobného stretnutia.' },
+  { q: 'Koľko stojí konzultácia?', a: 'Prvá konzultácia je bezplatná a nezáväzná.' },
+];
 ---
 <BaseLayout
-  title={`Dane a finančné poradenstvo ${name} | Erika Zajaková`}
-  description={`Daňové priznania, jednoduché účtovníctvo a finančné poradenstvo pre ${name} a okolie. Prax od roku 2002.`}
+  title={`Finančná poradkyňa ${name}: poistenie, investície, hypotéky | Erika Zajaková`}
+  description={`${local} Prvá konzultácia zdarma, cez Zoom, WhatsApp alebo telefón. Poradkyňa OVB od roku 2002.`}
 >
   <section class="section">
-    <h1>Dane a financie: {name}</h1>
+    <h1>Poistenie, investície a hypotéky {nameIn}</h1>
     <div class="prose"><Content /></div>
 
-    <div class="cards">
-      <article class="card"><h3>Dane a účtovníctvo</h3><p>Daňové priznania pre zamestnancov, živnostníkov aj firmy a jednoduché účtovníctvo. <a href="/dane">Viac o daniach</a></p></article>
-      <article class="card"><h3>Hypotéky</h3><p>Výber a vybavenie hypotéky pri kúpe, stavbe alebo refinancovaní. <a href="/hypoteky">Viac o hypotékach</a></p></article>
-      <article class="card"><h3>Poistenie</h3><p>Životné, majetkové poistenie aj PZP, nastavené podľa vašej situácie. <a href="/poistenie">Viac o poistení</a></p></article>
-      <article class="card"><h3>Sporenie a investície</h3><p>Sporenie pre deti, dôchodkové piliere a investičné plány cez OVB Allfinanz. <a href="/financne-poradenstvo">Viac o sporení</a></p></article>
+    <h2>{remote ? 'Ako to prebieha na diaľku' : 'Ako to prebieha'}</h2>
+    <ol class="town-steps">
+      <li><b>Zavoláte alebo napíšete</b><p>Na <a href="tel:+421907824728">0907 824 728</a>, cez <a href="https://wa.me/421907824728" rel="noopener">WhatsApp</a> alebo <a href="/kontakt">formulárom</a>.</p></li>
+      <li><b>{remote ? 'Poradíme sa cez videohovor' : 'Poradíme sa'}</b><p>{remote ? 'Na Zoome, cez WhatsApp či Messenger alebo telefonicky. Pozriem zmluvy, ktoré už máte.' : 'V kancelárii v Brezne, u vás alebo cez videohovor. Pozriem zmluvy, ktoré už máte.'}</p></li>
+      <li><b>Podpíšete online</b><p>Návrh vám vysvetlím a zmluvu podpíšete online, keď budete chcieť.</p></li>
+    </ol>
+
+    <h2>S čím vám pomôžem</h2>
+    <div class="cards cards--2col">
+      <article class="card"><h3>Poistenie</h3><p>Životné a majetkové poistenie, PZP a havarijné, poistenie firiem. <a href="/poistenie">Viac o poistení</a></p></article>
+      <article class="card"><h3>Investície a sporenie</h3><p>Sporenie pre deti, dôchodok a pravidelné investovanie cez OVB Allfinanz. <a href="/financne-poradenstvo">Viac o sporení</a></p></article>
+      <article class="card"><h3>Hypotéky</h3><p>Kúpa, stavba aj refinancovanie. Porovnám ponuky bánk a vybavím podklady. <a href="/hypoteky">Viac o hypotékach</a></p></article>
+      <article class="card"><h3>Dane a účtovníctvo</h3><p>Daňové priznanie pre zamestnancov aj živnostníkov, jednoduché účtovníctvo. <a href="/dane">Viac o daniach</a></p></article>
     </div>
 
-    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">Dohodnúť si stretnutie</a></p>
+    <h2>Časté otázky</h2>
+    <Faq items={faq} />
+
+    <p style="margin-top:var(--space-5);"><a class="btn" href="/kontakt">{remote ? 'Dohodnúť si online konzultáciu' : 'Dohodnúť si konzultáciu'}</a></p>
   </section>
 </BaseLayout>

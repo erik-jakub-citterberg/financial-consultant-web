@@ -172,3 +172,9 @@ square corners.
 - Motion addition (Erik, 2026-09-28): content cards (`.card`) lean up to 5° towards the mouse and
   their colour bar grows while hovered. Mouse only, off for touch and reduced motion. Cards never
   move up on hover (translateY lift stays banned).
+- Remote work (Erik, 2026-09-28): consultations over Zoom, WhatsApp, Messenger or phone, contracts
+  signed online. Shown on home ("Všetko vybavíme aj na diaľku"), Kontakt, and in the FAQs.
+- SEO plan (Erik): reach clients in bigger towns (Banská Bystrica, Zvolen, Liptovský Mikuláš) who
+  would be served online. Town pages (`src/content/towns/*.md`) carry their own text, locative and
+  genitive forms and a `remote` flag; the template adds a remote process, services and a FAQ.
+  Each new town needs genuinely town-specific text, never a name swap (thin city pages get demoted).

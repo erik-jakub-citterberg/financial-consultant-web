@@ -18,6 +18,10 @@ const towns = defineCollection({
     name: z.string(),      // e.g. "Banská Bystrica"
     region: z.string(),    // e.g. "Banskobystrický kraj"
     local: z.string(),     // genuinely local content — NOT a name-swap template
+    nameIn: z.string(),    // locative with preposition: "vo Zvolene", "v Liptovskom Mikuláši"
+    nameFrom: z.string(),  // genitive with preposition: "zo Zvolena", "z Liptovského Mikuláša"
+    remote: z.boolean().default(false), // served mainly online (no regular in-person meetings)
+    order: z.number().default(50),      // position in the footer list
   }),
 });
 

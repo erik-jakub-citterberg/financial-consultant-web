@@ -7,8 +7,6 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node quality/sk-typo.mjs",
-    "build:preview": "node scripts/build-preview.mjs",
-    "preview:serve": "npx --yes serve dist-preview -l 4400",
     "preview": "astro preview",
     "lint:copy": "node quality/copy-lint.mjs",
     "lint:style": "node quality/style-lint.mjs",
@@ -22,8 +20,6 @@
   "dependencies": {
     "@fontsource-variable/albert-sans": "^5.3.0",
     "@fontsource-variable/epilogue": "^5.3.0",
-    "@fontsource-variable/red-hat-text": "^5.3.0",
-    "@fontsource-variable/schibsted-grotesk": "^5.3.0",
     "astro": "^4.15.0",
     "playwright": "^1.63.0"
   },

@@ -1,9 +1,16 @@
-# Netlify publishes the design-preview site (all designs + switcher, noindex).
-# When a design is chosen and the real site launches, switch to:
-#   command = "npm run build"   publish = "dist"
+# Netlify builds the real site from master.
 [build]
-  command = "npm run build:preview"
-  publish = "dist-preview"
+  command = "npm run build"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
+  # Pre-launch: PREVIEW=1 adds <meta name="robots" content="noindex"> to every page.
+  # LAUNCH: delete this line and the [[headers]] block below, and set `site` in astro.config.mjs.
+  PREVIEW = "1"
+
+# Pre-launch: keep the Netlify URL out of Google. LAUNCH: delete this block.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

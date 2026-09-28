@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
 import { fileURLToPath } from 'node:url';
 
-// DESIGN picks the look: src/themes/<DESIGN>/ holds theme.css, Home.astro and favicon.svg.
-// BASE_PATH / OUT_DIR are only set by scripts/build-preview.mjs, which builds every design
-// into one site with a switcher (for choosing a design with Erika).
-export const DESIGNS = ['identita', 'rozhovor'];
+// The look lives in src/themes/<DESIGN>/ (theme.css, Home.astro, favicon.svg).
+// Erika chose Identita on 2026-09-28; the other directions are kept on the design/* branches.
+export const DESIGNS = ['identita'];
 const design = process.env.DESIGN || 'identita';
 if (!DESIGNS.includes(design)) throw new Error(`Unknown DESIGN "${design}". Use one of: ${DESIGNS.join(', ')}`);
 

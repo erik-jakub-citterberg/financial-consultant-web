@@ -144,3 +144,23 @@ Guardrail: `style-lint` now fails warm cream/paper grounds (`paperBackground` in
 - Recruitment: Erika wants to bring people into OVB through her (`/kariera`), and to be presentable
   enough to be featured on OVB's own site. Harmonise with OVB navy; never copy OVB branding.
 - Motion and logos: only what we draw ourselves (CSS/SVG) or open-source assets. No paid animation.
+
+## 10. Decision 2026-09-28: Identita
+
+Erika chose **Identita** from the preview (Pôvodný, Rozhovor, Identita). From now on the manual is
+sections 2–5, 7–9 and this section. The Rozhovor theme, the frozen original and the design switcher
+were removed from master; they remain on the `design/*` branches and in git history.
+
+Identita in one sentence: a small firm with a real identity, the EZ mark, solid service colours and
+square corners.
+- Mark: E and Z share their top and bottom bars. The E is navy (white on dark), the Z bars are a
+  lighter blue with a small gap, and the amber diagonal sits under the bars with its edges passing
+  exactly through the bars' inner corners. Files: `src/themes/identita/` (theme.css `--mark`,
+  Home.astro, favicon.svg). Change all three together.
+- Colours: navy `#16335c` anchor; poistenie teal `#0b7a65`, investície amber `#e3a21a`,
+  hypotéky coral `#e5664b`, dane blue `#1f6fae`, each with a tint. Inner pages take their
+  service colour via `body[data-section]`.
+- Type: Epilogue 800 headings (tracking −0.035em) + Albert Sans text. Both pass `caron-render`.
+- Corners: square everywhere. Motion: only the mark assembling and the four tiles appearing on the
+  home page, once.
+- Meeting place: the office in Brezno (street address still to come), not Michalová.

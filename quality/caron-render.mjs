@@ -10,13 +10,16 @@
 import { chromium } from 'playwright';
 import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, join, extname } from 'node:path';
+import { resolve, dirname, join, extname } from 'node:path';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const dist = join(here, '..', 'dist');
-if (!existsSync(join(dist, 'index.html'))) { console.error('✗ caron-render: dist/ missing, run `npm run build` first.'); process.exit(1); }
+// Optional first argument: another build folder (the preview build uses one per design).
+const dist = process.argv[2] ? resolve(process.argv[2]) : join(here, '..', 'dist');
+if (!existsSync(join(dist, (process.argv[3] || ''), 'index.html'))) { console.error('✗ caron-render: dist/ missing, run `npm run build` first.'); process.exit(1); }
 
-const PAGES = ['/', '/poistenie/', '/o-mne/'];
+// Optional second argument: URL prefix of a design inside a multi-design build (e.g. /rozhovor).
+const prefix = (process.argv[3] || '').replace(/\/$/, '');
+const PAGES = ['/', '/poistenie/', '/o-mne/'].map((p) => prefix + p);
 const PAIRS = [
   ['ľk', 'lk'], ['ľb', 'lb'], ['ľh', 'lh'], ['ľl', 'll'], ['ľt', 'lt'], ['ľa', 'la'],
   ['ďk', 'dk'], ['ďb', 'db'], ['ďa', 'da'], ['ťk', 'tk'], ['ťa', 'ta'],

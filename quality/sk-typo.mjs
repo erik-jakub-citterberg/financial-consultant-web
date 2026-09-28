@@ -10,11 +10,12 @@
 //  - en dash in numeric ranges: 40-70 € -> 40–70 €
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { resolve, dirname, join } from 'node:path';
 import { walk } from './_walk.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const dist = join(here, '..', 'dist');
+// Optional first argument: another build folder (the preview build uses one per design).
+const dist = process.argv[2] ? resolve(process.argv[2]) : join(here, '..', 'dist');
 if (!existsSync(dist)) { console.error('sk-typo: dist/ not found'); process.exit(1); }
 
 const NBSP = ' ';

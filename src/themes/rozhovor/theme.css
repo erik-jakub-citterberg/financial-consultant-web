@@ -1,0 +1,252 @@
+@import '@fontsource-variable/schibsted-grotesk/wght.css';
+@import '@fontsource-variable/red-hat-text/wght.css';
+/*
+  Variant D · Rozhovor
+  Idea: the site feels like talking to Erika. Structure borrowed from Bench (product-UI
+  hero instead of photos, friendly sans, clear sections), made colourful.
+  Type: Schibsted Grotesk (headings, a newspaper grotesk from Oslo) + Red Hat Text (body).
+  (Red Hat Display was the first pick; it drops the ľ caron in "veľký", see DESIGN.md §2.)
+  Colour: navy anchor (harmonises with OVB without copying it) + one colour per service:
+  poistenie teal, investície amber, hypotéky coral, dane sky. White ground, no cream.
+  Motion: the hero chat types itself once on load. Nothing else moves on its own.
+*/
+:root {
+  --brand-navy: #16335c;
+  --ins: #0f8a73;  --ins-tint: #d4efe7; --ins-ink: #0b6f5c;
+  --inv: #e3a21a;  --inv-tint: #ffe8a8; --inv-ink: #8a5a00;
+  --mor: #e5664b;  --mor-tint: #fbd9cf; --mor-ink: #b23e26;
+  --tax: #2582c4;  --tax-tint: #d6e9f8; --tax-ink: #1f6fae;
+
+  --color-brand: #16335c;
+  --color-brand-strong: #0f2545;
+  --color-accent: #0f8a73;
+  --color-ink: #1b2330;
+  --color-muted: #4f5b6b;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f2f5f9;
+  --color-line: #dbe1e8;
+
+  --font-heading: 'Schibsted Grotesk Variable', 'Segoe UI', sans-serif;
+  --font-body:    'Red Hat Text Variable', 'Segoe UI', sans-serif;
+  --font-ui:      'Red Hat Text Variable', 'Segoe UI', sans-serif;
+  --weight-heading: 700;
+  --tracking-heading: -0.025em;
+  --leading-heading: 1.08;
+  --step-0: 1.0625rem;
+  --step-3: clamp(1.9rem, 1.4rem + 2vw, 2.75rem);
+  --step-4: clamp(2.4rem, 1.6rem + 3.4vw, 4.1rem);
+  --leading-body: 1.6;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --lift: 0 1px 2px rgba(15, 37, 69, 0.08), 0 14px 34px -14px rgba(15, 37, 69, 0.28);
+}
+
+/* Header */
+.topbar { background: var(--brand-navy); }
+.topbar a { font-weight: 700; font-variant-numeric: tabular-nums; }
+.site-header { padding-block: 1.1rem; }
+.brand { display: grid; grid-template-columns: 30px auto; column-gap: 0.7rem; align-items: center; }
+.brand::before {
+  content: ""; grid-row: 1 / span 2; width: 30px; height: 30px;
+  background: var(--ins);
+  border-radius: 9px 9px 9px 2px; /* a speech bubble, drawn with one corner */
+}
+.brand strong { font-weight: 700; font-size: 1.2rem; letter-spacing: -0.015em; }
+.brand span { font-size: 0.85rem; }
+.nav { gap: 1.5rem; }
+.nav a { font-weight: 500; font-size: 0.98rem; }
+.nav a:not(.btn):hover { color: var(--ins-ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.35em; }
+@media (max-width: 48rem) {
+  .brand span { display: none; }
+  .brand::before { grid-row: 1; }
+}
+
+a { color: var(--brand-navy); }
+a:hover { color: var(--ins-ink); }
+.btn, .nav a.btn {
+  background: var(--brand-navy); border-color: var(--brand-navy);
+  border-radius: var(--radius-sm); padding: 0.85rem 1.4rem; font-weight: 700;
+}
+.btn:hover, .nav a.btn:hover { background: var(--ins-ink); border-color: var(--ins-ink); color: #fff; }
+
+/* Service colour hooks */
+.c-ins { --c: var(--ins); --c-tint: var(--ins-tint); }
+.c-inv { --c: var(--inv); --c-tint: var(--inv-tint); }
+.c-mor { --c: var(--mor); --c-tint: var(--mor-tint); }
+.c-tax { --c: var(--tax); --c-tint: var(--tax-tint); }
+
+/* ── Hero ───────────────────────────────── */
+.d-hero {
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 3.5rem; align-items: center; padding-block: 3.5rem 4.5rem;
+}
+.d-hero h1 { max-width: 16ch; }
+.d-hero .lede { color: var(--color-muted); max-width: 40ch; margin-top: 1.25rem; }
+.d-checks { list-style: none; padding: 0; margin-top: 1.75rem; display: grid; gap: 0.7rem; }
+.d-checks li { display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.75rem; align-items: start; font-weight: 500; }
+.d-checks li::before {
+  content: ""; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--c) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.5 12.5l3.5 3.5 7.5-8' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat;
+}
+.d-cta { margin-top: 2.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
+.d-phone { font-weight: 700; font-size: 1.2rem; text-decoration: none; font-variant-numeric: tabular-nums; border-bottom: 2px solid var(--ins); }
+.d-phone:hover { color: var(--ins-ink); }
+
+/* The stage: a teal panel holding a chat and a small plan card */
+.d-stage {
+  position: relative; background: var(--ins-tint); border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem 2rem 2.75rem;
+}
+.d-chat { background: #fff; border-radius: var(--radius-md); box-shadow: var(--lift); padding: 1.1rem 1.1rem 2.2rem; max-width: 26rem; }
+.d-chat-head { display: flex; gap: 0.75rem; align-items: center; padding-bottom: 0.9rem; border-bottom: 1px solid var(--color-line); }
+.d-chat-head b { display: block; font-family: var(--font-heading); font-size: 1rem; color: var(--brand-navy); }
+.d-chat-head small { display: block; color: var(--color-muted); font-size: 0.82rem; }
+.d-avatar {
+  width: 2.75rem; height: 2.75rem; flex: none; border-radius: 50%;
+  display: grid; place-items: center; background: var(--brand-navy); color: #fff;
+  font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem;
+}
+/* Each typing indicator shares a grid cell with the message it announces */
+.d-msgs { display: grid; gap: 0.6rem; padding-top: 1rem; }
+.m1 { grid-row: 1; } .t1, .m2 { grid-row: 2; } .t2, .m3 { grid-row: 3; }
+.d-msg { font-size: 0.95rem; line-height: 1.45; padding: 0.65rem 0.9rem; max-width: 86%; grid-column: 1; }
+.d-them { background: var(--color-bg-soft); border-radius: 14px 14px 14px 4px; justify-self: start; }
+.d-me   { background: var(--brand-navy); color: #fff; border-radius: 14px 14px 4px 14px; justify-self: end; }
+.d-typing { grid-column: 1; justify-self: end; align-self: start; display: flex; gap: 4px; padding: 0.75rem 0.9rem; background: var(--color-bg-soft); border-radius: 14px 14px 4px 14px; opacity: 0; }
+.d-typing i { width: 6px; height: 6px; border-radius: 50%; background: var(--color-muted); }
+
+.d-plan {
+  position: relative; margin: -1.5rem -1.25rem 0 auto; width: 17.5rem;
+  background: #fff; border-radius: var(--radius-md); box-shadow: var(--lift); padding: 1rem 1.1rem 0.6rem;
+}
+.d-plan b { font-family: var(--font-heading); color: var(--brand-navy); font-size: 0.98rem; }
+.d-plan ul { list-style: none; padding: 0; margin-top: 0.5rem; }
+.d-plan li { display: grid; grid-template-columns: 0.6rem 1fr auto; gap: 0.6rem; align-items: center; padding-block: 0.45rem; border-top: 1px solid var(--color-line); font-size: 0.86rem; }
+.d-plan li::before { content: ""; width: 0.6rem; height: 0.6rem; border-radius: 3px; background: var(--c); }
+.d-plan em { font-style: normal; color: var(--color-muted); font-size: 0.8rem; }
+
+/* The chat writes itself once. Without motion everything is simply there. */
+@keyframes d-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes d-dot { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+@keyframes d-typing { 0% { opacity: 0; } 12%, 88% { opacity: 1; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  .d-msg, .d-plan { animation: d-in 380ms var(--ease) both; }
+  .m1 { animation-delay: 300ms; }
+  .m2 { animation-delay: 2100ms; }
+  .m3 { animation-delay: 3700ms; }
+  .d-plan { animation-delay: 4500ms; }
+  .t1 { animation: d-typing 1150ms 950ms both; }
+  .t2 { animation: d-typing 1050ms 2650ms both; }
+  .d-typing i { animation: d-dot 900ms infinite; }
+  .d-typing i:nth-child(2) { animation-delay: 150ms; }
+  .d-typing i:nth-child(3) { animation-delay: 300ms; }
+}
+
+@media (max-width: 60rem) {
+  .d-hero { grid-template-columns: 1fr; gap: 2.5rem; padding-block: 2rem 3rem; }
+  .d-stage { padding: 1.25rem 1rem; }
+  .d-chat { max-width: none; }
+  .d-plan { width: auto; margin: -1rem 0.5rem 0 1.5rem; }
+}
+
+/* ── Sections ───────────────────────────── */
+.d-section { padding-block: 4.5rem 0.5rem; }
+.d-section > h2 { max-width: 20ch; }
+
+.d-services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+.d-svc {
+  display: flex; flex-direction: column; gap: 0.6rem;
+  padding: 1.6rem 1.6rem 1.5rem; border-radius: var(--radius-md);
+  text-decoration: none; color: var(--color-ink);
+}
+.d-svc h3 { font-size: 1.45rem; }
+.d-svc p { color: var(--color-ink); }
+.d-svc svg { margin-bottom: 0.5rem; }
+.d-more { margin-top: auto; padding-top: 0.6rem; font-weight: 700; font-size: 0.95rem; }
+a.d-svc:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 0.18em; }
+.s-ins { background: var(--ins-tint); color: var(--ins); }
+.s-inv { background: var(--inv-tint); color: var(--inv); }
+.s-mor { background: var(--mor-tint); color: var(--mor); }
+.s-tax { background: var(--tax-tint); color: var(--tax); }
+.s-ins h3, .s-ins .d-more { color: var(--ins-ink); }
+.s-inv h3, .s-inv .d-more { color: var(--inv-ink); }
+.s-mor h3, .s-mor .d-more { color: var(--mor-ink); }
+.s-tax h3, .s-tax .d-more { color: var(--tax-ink); }
+.d-svc-wide { grid-column: span 2; }
+.d-svc-wide h3 { font-size: 1.9rem; }
+.d-svc-wide p { max-width: 50ch; font-size: 1.08rem; }
+.s-call { background: var(--brand-navy); color: #fff; }
+.s-call h3 { color: #fff; }
+.s-call p { color: #d2dbe8; }
+.s-call a { margin-top: auto; color: #fff; font-family: var(--font-heading); font-weight: 700; font-size: 1.6rem; text-decoration: none; font-variant-numeric: tabular-nums; }
+.s-call a:hover { color: var(--inv); }
+@media (max-width: 60rem) { .d-services { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 40rem) { .d-services { grid-template-columns: 1fr; } .d-svc-wide { grid-column: auto; } .d-svc-wide h3 { font-size: 1.6rem; } }
+
+/* About: one portrait slot (photo 1), text beside it */
+.d-about { display: grid; grid-template-columns: 17rem 1fr; gap: 3rem; align-items: center; }
+.d-about p { margin-top: 1rem; }
+.d-portrait {
+  aspect-ratio: 4 / 5; border-radius: var(--radius-lg); background: var(--inv-tint);
+  display: grid; place-items: center; overflow: hidden;
+}
+.d-portrait span { font-family: var(--font-heading); font-weight: 700; font-size: 4rem; color: var(--inv-ink); }
+@media (max-width: 44rem) { .d-about { grid-template-columns: 1fr; gap: 1.5rem; } .d-portrait { max-width: 12rem; } }
+
+/* Process: three stops on one line, each in its service colour */
+.d-steps { list-style: none; padding: 0; margin-top: 2.25rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; counter-reset: s; position: relative; }
+.d-steps::before { content: ""; position: absolute; left: 1.2rem; right: 1.2rem; top: 1.2rem; height: 2px; background: var(--color-line); }
+.d-steps li { position: relative; counter-increment: s; }
+.d-steps li::before {
+  content: counter(s); display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  background: var(--c); color: #fff; font-family: var(--font-heading); font-weight: 700; margin-bottom: 1rem;
+  box-shadow: 0 0 0 6px #fff;
+}
+.d-steps .c-inv::before { color: var(--brand-navy); }
+.d-steps b { display: block; font-family: var(--font-heading); font-size: 1.2rem; color: var(--brand-navy); }
+.d-steps p { color: var(--color-muted); margin-top: 0.35rem; }
+@media (max-width: 44rem) {
+  .d-steps { grid-template-columns: 1fr; gap: 1.5rem; }
+  .d-steps::before { left: 1.2rem; right: auto; top: 1rem; bottom: 1rem; width: 2px; height: auto; }
+  .d-steps li { padding-left: 3.5rem; }
+  .d-steps li::before { position: absolute; left: 0; top: 0; }
+}
+
+/* Career band */
+.d-career {
+  margin-top: 5rem; background: var(--inv-tint); border-radius: var(--radius-lg);
+  padding: 3rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center;
+}
+.d-career h2 { color: var(--brand-navy); }
+.d-career p { margin-top: 1rem; }
+.d-route { width: 100%; height: auto; overflow: visible; }
+.d-route text { font-family: var(--font-heading); font-weight: 700; font-size: 15px; fill: var(--brand-navy); }
+@media (max-width: 52rem) { .d-career { grid-template-columns: 1fr; padding: 2rem 1.25rem; } .d-route { max-width: 22rem; } }
+
+/* Contact band */
+.d-contact { margin-top: 1.5rem; background: var(--brand-navy); color: #fff; border-radius: var(--radius-lg); padding: 3.25rem 3rem; }
+.d-contact h2 { color: #fff; max-width: 20ch; }
+.d-contact-phone { display: inline-block; margin-top: 1rem; color: #fff; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: clamp(2.4rem, 1.5rem + 4vw, 4.5rem); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.d-contact-phone:hover { color: var(--inv); }
+.d-contact p { margin-top: 1rem; color: #d2dbe8; }
+.d-contact p a { color: #fff; }
+@media (max-width: 40rem) { .d-contact { padding: 2rem 1.25rem; } }
+
+/* ── Inner pages take their service colour ── */
+body { --c: var(--ins); --c-tint: var(--ins-tint); --c-ink: var(--ins-ink); }
+body[data-section="financne-poradenstvo"] { --c: var(--inv); --c-tint: var(--inv-tint); --c-ink: var(--inv-ink); }
+body[data-section="hypoteky"]             { --c: var(--mor); --c-tint: var(--mor-tint); --c-ink: var(--mor-ink); }
+body[data-section="kariera"] { --c: var(--inv); --c-tint: var(--inv-tint); --c-ink: var(--inv-ink); }
+body[data-section="dane"], body[data-section="cennik"] { --c: var(--tax); --c-tint: var(--tax-tint); --c-ink: var(--tax-ink); }
+body:not([data-section="home"]) main > .section:first-child { padding-top: 3rem; }
+body:not([data-section="home"]) h1::after { content: ""; display: block; width: 3.5rem; height: 6px; border-radius: 3px; background: var(--c); margin-top: 1.1rem; }
+.card { border-top: 0; background: var(--c-tint); border-radius: var(--radius-md); padding: 1.4rem 1.4rem 1.3rem; }
+.card h3 { color: var(--c-ink); font-size: 1.25rem; }
+.card p { color: var(--color-ink); }
+.note { border: 0; background: var(--color-bg-soft); border-radius: var(--radius-sm); padding: 1rem 1.25rem; color: var(--color-ink); }
+.faq summary { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--brand-navy); }
+.faq summary::after { color: var(--c-ink); font-weight: 700; }
+.price-table thead th { color: var(--brand-navy); border-bottom: 2px solid var(--brand-navy); }
+.site-footer { margin-top: 4rem; }

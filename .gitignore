@@ -15,3 +15,4 @@ node_modules/
 
 # research/scraper artifacts
 .firecrawl/
+dist-preview/

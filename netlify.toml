@@ -1,0 +1,9 @@
+# Netlify publishes the design-preview site (all designs + switcher, noindex).
+# When a design is chosen and the real site launches, switch to:
+#   command = "npm run build"   publish = "dist"
+[build]
+  command = "npm run build:preview"
+  publish = "dist-preview"
+
+[build.environment]
+  NODE_VERSION = "20"

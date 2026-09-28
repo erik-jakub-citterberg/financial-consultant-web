@@ -39,7 +39,7 @@
   --radius-sm: 0;
   --radius-md: 0;
   --radius-lg: 0;
-  --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpolygon points='55,0 64,0 41,40 32,40' fill='%23e3a21a'/%3E%3Crect x='32' y='0' width='32' height='6' fill='%233f74ae'/%3E%3Crect x='32' y='34' width='32' height='6' fill='%233f74ae'/%3E%3Crect x='0' y='0' width='6' height='40' fill='%2316335c'/%3E%3Crect x='0' y='0' width='30' height='6' fill='%2316335c'/%3E%3Crect x='0' y='17' width='21' height='6' fill='%2316335c'/%3E%3Crect x='0' y='34' width='30' height='6' fill='%2316335c'/%3E%3C/svg%3E");
+  --mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpolygon points='61.14,0 64,0 64,6 34.86,40 32,40 32,34' fill='%23e3a21a'/%3E%3Crect x='32' y='0' width='32' height='6' fill='%233f74ae'/%3E%3Crect x='32' y='34' width='32' height='6' fill='%233f74ae'/%3E%3Crect x='0' y='0' width='6' height='40' fill='%2316335c'/%3E%3Crect x='0' y='0' width='30' height='6' fill='%2316335c'/%3E%3Crect x='0' y='17' width='21' height='6' fill='%2316335c'/%3E%3Crect x='0' y='34' width='30' height='6' fill='%2316335c'/%3E%3C/svg%3E");
 }
 html, body { overflow-x: clip; }
 

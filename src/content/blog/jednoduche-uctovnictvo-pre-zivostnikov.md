@@ -39,7 +39,7 @@ Najčastejšia chyba: **všetko sa necháva na koniec roka.** Potom sa hľadajú
 
 ## Kedy sa oplatí prenechať účtovníctvo niekomu inému
 
-- **Ste platiteľ DPH.** Priznania k DPH a kontrolné výkazy zaberajú čas a chyby sú drahé.
+- **Ste platiteľ DPH.** DPH priznania a kontrolné výkazy zaberajú čas a chyby sú drahé.
 - **Máte zamestnancov.** Mzdy a odvody sa často menia.
 - **Dokladov pribúda.** Pri desiatkach faktúr mesačne to zaberie veľa času.
 - **Radšej sa venujete práci.** Čas strávený účtovníctvom vás môže stáť viac ako účtovník.

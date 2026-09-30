@@ -9,10 +9,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     align-items: start;
     padding-block: var(--space-6) var(--space-5);
   }
-  @media (max-width: 52rem) {
-    .about-grid { grid-template-columns: 1fr; }
-    .about-visual { order: -1; }
-  }
 
   .about-content .eyebrow { margin-bottom: var(--space-2); }
   .about-content h1 { margin-bottom: var(--space-4); }
@@ -22,46 +18,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .about-visual { display: flex; flex-direction: column; gap: var(--space-4); }
 
-  .photo-frame {
-    aspect-ratio: 3 / 4;
-    background: var(--color-bg-gold);
-    border: 1px solid rgba(194,137,47,0.25);
-    border-radius: var(--radius-md);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-3);
-    position: relative;
-    overflow: hidden;
-  }
-  .photo-frame::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      45deg,
-      rgba(194,137,47,0.04) 0px,
-      rgba(194,137,47,0.04) 1px,
-      transparent 1px,
-      transparent 12px
-    );
-  }
-  .photo-initials {
-    font-family: var(--font-heading);
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 700;
-    color: rgba(194,137,47,0.45);
-    letter-spacing: -0.02em;
-    line-height: 1;
-    position: relative;
-  }
-  .photo-label {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    color: var(--color-muted);
-    position: relative;
-  }
+  .about-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 
   .credentials {
     display: flex;
@@ -106,6 +63,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin-top: var(--space-3);
     letter-spacing: 0.02em;
   }
+  @media (max-width: 52rem) {
+    .about-grid { grid-template-columns: 1fr; gap: var(--space-5); }
+    /* phone: photo first, then name and text, then Skúsenosti */
+    .about-visual { display: contents; }
+    .about-photo { order: -1; }
+  }
 </style>
 <BaseLayout
   title="O mne | Erika Zajaková"
@@ -125,11 +88,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
 
     <div class="about-visual">
-      <!-- FOTO: doplní sa reálna fotka Eriky, žiadny stock -->
-      <div class="photo-frame">
-        <span class="photo-initials">E·Z</span>
-        <span class="photo-label">Foto bude doplnené</span>
-      </div>
+      <picture class="about-photo"><source type="image/webp" srcset="/images/erika-zajakova-portret-640.webp 640w, /images/erika-zajakova-portret-1024.webp 1024w" sizes="(max-width: 52rem) 100vw, 480px" /><img src="/images/erika-zajakova-portret-1024.jpg" srcset="/images/erika-zajakova-portret-640.jpg 640w, /images/erika-zajakova-portret-1024.jpg 1024w" sizes="(max-width: 52rem) 100vw, 480px" alt="Ing. Erika Zajaková pri pracovnom stole" width="1024" height="1280" fetchpriority="high" /></picture>
       <h2 class="about-subhead">Skúsenosti</h2>
       <div class="credentials">
         <div class="cred cred--with-badge">

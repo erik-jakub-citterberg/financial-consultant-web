@@ -179,3 +179,7 @@ square corners.
   genitive forms and a `remote` flag; the template adds a remote process, services and a FAQ.
   Town text states facts only (remote work, services, office in Brezno). No travel talk, no guesses
   about local people or clients (Erik, 2026-09-28).
+- Photos (2026-09-30): two portraits of Erika made with Gemini from her own holiday photos
+  (`public/images/erika-zajakova-*`): the headshot in the home-page circle, the desk portrait on
+  O mne. Same navy blazer and white T-shirt in both. The headshot also serves as schema `image`
+  and `og:image`. No other photos on the site.

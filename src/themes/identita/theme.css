@@ -121,6 +121,7 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--inv); }
 /* ── Intro: face + one big sentence ── */
 .e-intro { display: grid; grid-template-columns: 9rem 1fr; gap: 2.5rem; align-items: center; padding-block: 4.5rem; }
 .e-face { width: 9rem; height: 9rem; border-radius: 50%; background: var(--inv-tint); display: grid; place-items: center; overflow: hidden; }
+.e-face img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .e-face span { font-family: var(--font-heading); font-weight: 800; font-size: 2.6rem; color: var(--navy); }
 .e-big { font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.4rem, 1rem + 1.4vw, 2.1rem); line-height: 1.25; letter-spacing: -0.02em; color: var(--navy); max-width: 32ch; }
 .e-sign { margin-top: 1rem; color: var(--color-muted); font-weight: 600; }

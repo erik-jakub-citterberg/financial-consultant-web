@@ -33,6 +33,7 @@ const schema = {
       '@id': new URL('/#erika', Astro.site).toString(),
       name: 'Erika Zajaková',
       honorificPrefix: 'Ing.',
+      image: new URL('/images/erika-zajakova-1200.jpg', Astro.site).toString(),
       jobTitle: 'Finančná poradkyňa',
       worksFor: 'OVB Allfinanz Slovensko, a.s.',
       alumniOf: 'Bankovní institut vysoká škola, Praha',
@@ -55,6 +56,7 @@ const schema = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/images/erika-zajakova-1200.jpg', Astro.site).toString()} />
     <meta name="twitter:card" content="summary" />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     <script src="/enhance.js" defer></script>

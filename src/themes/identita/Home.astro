@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { office, officeLine } from '../../data/office';
-// FOTO 1 (z max. dvoch): okrúhly portrét Eriky nahradí iniciály v .e-face.
 ---
 <BaseLayout
   title="Poistenie, investície a hypotéky Brezno | Erika Zajaková, OVB"
@@ -28,7 +27,7 @@ import { office, officeLine } from '../../data/office';
   </section>
 
   <section class="e-intro">
-    <div class="e-face" aria-hidden="true"><span>EZ</span></div>
+    <picture class="e-face"><source srcset="/images/erika-zajakova-400.webp" type="image/webp" /><img src="/images/erika-zajakova-400.jpg" alt="Ing. Erika Zajaková" width="400" height="400" loading="lazy" decoding="async" /></picture>
     <div>
       <p class="e-big">Poistenie a financie robím v regióne od roku 2002. Chcem, aby ste zmluve rozumeli skôr, ako ju podpíšete.</p>
       <p class="e-sign">Ing. Erika Zajaková · OVB Allfinanz · Brezno</p>

@@ -7,9 +7,9 @@ export const DESIGNS = ['identita'];
 const design = process.env.DESIGN || 'identita';
 if (!DESIGNS.includes(design)) throw new Error(`Unknown DESIGN "${design}". Use one of: ${DESIGNS.join(', ')}`);
 
-// Set `site` to the real domain before launch (needed for sitemap + canonical URLs).
+// The site's domain (bought October 2026); used for sitemap, canonical URLs and schema.
 export default defineConfig({
-  site: 'https://example.sk',
+  site: 'https://www.zajakova.sk',
   base: process.env.BASE_PATH || '/',
   outDir: process.env.OUT_DIR || './dist',
   output: 'static',

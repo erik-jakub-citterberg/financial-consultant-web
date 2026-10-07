@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 
 export async function GET(context: { site?: URL }) {
-  const site = (context.site?.toString() || 'https://example.sk').replace(/\/$/, '');
+  const site = (context.site?.toString() || 'https://www.zajakova.sk').replace(/\/$/, '');
   const towns = await getCollection('towns');
   const now = new Date();
   const blogPosts = await getCollection('blog');

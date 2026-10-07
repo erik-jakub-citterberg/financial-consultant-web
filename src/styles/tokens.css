@@ -2,7 +2,7 @@
   Design tokens: the single source of truth. Each design variant overrides these
   in src/styles/theme.css. Components reference tokens only; they never hardcode
   colour, type, space or radius.
-  Brand: deep navy + warm gold (Erika's own identity; not a copy of OVB branding).
+  Brand: deep navy + warm gold (Erika's own identity; not a copy of any company's branding).
 */
 :root {
   /* Colour */

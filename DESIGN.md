@@ -183,3 +183,8 @@ square corners.
   (`public/images/erika-zajakova-*`): the headshot in the home-page circle, the desk portrait on
   O mne. Same navy blazer and white T-shirt in both. The headshot also serves as schema `image`
   and `og:image`. No other photos on the site.
+
+### Company name (October 2026)
+The site doesn't name OVB or OVB Allfinanz anywhere (copy, titles, meta, schema `worksFor`) until Erika confirms she may.
+`quality/no-company-name.mjs` runs after every build and fails if the name appears in `dist/`.
+When it's confirmed, delete that check and its step in the `build` script.

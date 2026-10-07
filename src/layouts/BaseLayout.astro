@@ -35,7 +35,6 @@ const schema = {
       honorificPrefix: 'Ing.',
       image: new URL('/images/erika-zajakova-1200.jpg', Astro.site).toString(),
       jobTitle: 'Finančná poradkyňa',
-      worksFor: 'OVB Allfinanz Slovensko, a.s.',
       alumniOf: 'Bankovní institut vysoká škola, Praha',
     },
   ],
@@ -65,13 +64,13 @@ const schema = {
   <body data-section={section}>
     <div class="topbar">
       <div class="container">
-        <span class="topbar-creds">OVB Allfinanz · Ing. Erika Zajaková · Prax od 2002</span>
+        <span class="topbar-creds">Ing. Erika Zajaková · Finančná poradkyňa · Prax od 2002</span>
         <a href="tel:+421907824728">0907 824 728</a>
       </div>
     </div>
     <div class="site-header-wrap" id="hdr">
       <header class="site-header container">
-        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Finančná poradkyňa OVB · Brezno</span></a>
+        <a href="/" class="brand"><strong>Erika Zajaková</strong><span>Finančná poradkyňa · Brezno</span></a>
         <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
         </button>
@@ -92,7 +91,7 @@ const schema = {
     <footer class="site-footer container">
       <p>Erika Zajaková · IČO 40485242 · Slobodné povolanie, fyzická osoba podnikajúca na základe iného ako živnostenského zákona.</p>
       <p>Kancelária: {officeLine} · 0907 824 728 · erika.zajakova@gmail.com</p>
-      <p>Služby: <a href="/poistenie">Poistenie</a>, <a href="/financne-poradenstvo">Investície a sporenie</a>, <a href="/hypoteky">Hypotéky</a>, <a href="/dane">Dane a účtovníctvo</a>, <a href="/cennik">Cenník</a> · <a href="/kariera">Kariéra v OVB</a> · <a href="/blog">Blog</a></p>
+      <p>Služby: <a href="/poistenie">Poistenie</a>, <a href="/financne-poradenstvo">Investície a sporenie</a>, <a href="/hypoteky">Hypotéky</a>, <a href="/dane">Dane a účtovníctvo</a>, <a href="/cennik">Cenník</a> · <a href="/kariera">Kariéra</a> · <a href="/blog">Blog</a></p>
       <p>Regióny: {towns.map((t, i) => <>{i > 0 && ", "}<a href={`/${t.slug}`}>{t.data.name}</a></>)}</p>
     </footer>
   </body>

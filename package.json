@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "SEO-first Slovak website for a freelance financial/insurance/OVB consultant in central Slovakia.",
+  "description": "SEO-first Slovak website for a freelance financial and insurance consultant in central Slovakia.",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node quality/sk-typo.mjs",
+    "build": "astro build && node quality/sk-typo.mjs && node quality/no-company-name.mjs",
     "preview": "astro preview",
     "lint:copy": "node quality/copy-lint.mjs",
     "lint:style": "node quality/style-lint.mjs",

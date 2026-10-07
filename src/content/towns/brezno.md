@@ -1,7 +1,7 @@
 ---
 name: "Brezno"
 region: "Banskobystrický kraj"
-local: "Finančná poradkyňa OVB s kanceláriou na Švermovej ulici v Brezne."
+local: "Finančná poradkyňa s kanceláriou na Švermovej ulici v Brezne."
 nameIn: "v Brezne"
 nameFrom: "z Brezna"
 order: 1
